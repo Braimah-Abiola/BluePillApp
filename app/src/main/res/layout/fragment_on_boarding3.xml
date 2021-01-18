@@ -2,14 +2,14 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple"
+    android:background="@color/purple_100"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="300dp"
         android:layout_height="300dp"
-        android:src="@drawable/doc"
+        android:src="@drawable/onboarding"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias=".3"
@@ -23,7 +23,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:text="BluePill"
-        android:textColor="@color/black"
+        android:fontFamily="@font/bree_serif"
+        android:textColor="@color/white"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
@@ -34,25 +35,13 @@
         app:layout_constraintVertical_bias="0" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Skip"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        android:layout_marginRight="30dp"
-        app:layout_constraintHorizontal_bias="1"
-        app:layout_constraintBottom_toBottomOf="@+id/textView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/textView2"
-        app:layout_constraintTop_toTopOf="@id/textView2"/>
-
-    <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-light"
-        android:text="Fresh"
-        android:textSize="42sp"
+        android:text="Track your health"
+        android:textColor="@color/white"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0"
@@ -64,8 +53,8 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Everything"
-        android:textColor="@color/black"
+        android:text="STATS"
+        android:textColor="@color/white"
         android:textSize="56sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -81,6 +70,7 @@
         android:layout_height="0dp"
         android:layout_marginTop="5dp"
         android:text="Everything you will be absolutely free"
+        android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -93,8 +83,8 @@
 
     <ImageView
         android:layout_width="50dp"
-        android:layout_height="10dp"
-        android:src="@drawable/slider1"
+        android:layout_height="50dp"
+        android:src="@drawable/slider3"
         app:layout_constraintHorizontal_bias="0"
         app:layout_constraintVertical_bias=".6"
         android:layout_marginLeft="5dp"
@@ -102,5 +92,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/textView5"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:layout_marginRight="5dp"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textView2"
+        app:layout_constraintTop_toTopOf="@id/textView2"
+        android:text="Done"
+        android:id="@+id/done"
+        android:onClick="callStartUpScreen"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

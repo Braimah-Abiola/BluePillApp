@@ -21,6 +21,7 @@ allprojects {
         githubProperties.load(new FileInputStream(rootProject.file("github.properties")))
         repositories {
             maven {
+                url "https://dl.bintray.com/cometchat/pro"
                 name = "GitHubPackages"
 
                 url = uri("https://maven.pkg.github.com/Cuberto/liquid-swipe-android")

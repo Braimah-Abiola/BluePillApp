@@ -1,6 +1,22 @@
 <resources>
     <string name="app_name">BluePill</string>
-    <string name="title_activity_splash">FullscreenActivity</string>
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <!-- ON BOARDING SCREEN -->
+    <string name="skip">Skip</string>
+    <string name="done">Done</string>
+
+
+    <!-- START UP SCREEN -->
+    <string name="slogan">Your Health is A Click Away</string>
+    <string name="doctor_startup">I am a doctor</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="how_we_work">How we work?</string>
+    <string name="create_account">Create\nAccount</string>
+    <string name="log_in">LogIn</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="forget_password">Forgot Password </string>
+    <string name="bhyte_logo">Bhyte Logo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
