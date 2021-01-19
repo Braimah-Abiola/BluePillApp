@@ -2,6 +2,7 @@ package com.example.bluepill.Common.LoginSignup;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
@@ -15,6 +16,12 @@ public class UserStartUpScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_user_start_up_screen);
+    }
+
+    public void callDoctorStartup(View view){
+
+        startActivity(new Intent(getApplicationContext(), DoctorStartUpScreen.class));
+
     }
 
 }

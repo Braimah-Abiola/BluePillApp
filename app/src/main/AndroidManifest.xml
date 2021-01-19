@@ -10,7 +10,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BluePill">
-        <activity android:name=".CometChat.CometChatActivity"></activity>
+        <activity android:name=".Common.LoginSignup.DoctorStartUpScreen"></activity>
+        <activity android:name=".Common.LoginSignup.UserLoginActivity" />
+        <activity android:name=".CometChat.CometChatActivity" />
         <activity android:name=".User.UserDashboardActivity" />
         <activity android:name=".Common.LoginSignup.UserStartUpScreen" />
         <activity android:name=".Common.IntroductoryActivity">

@@ -5,9 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    android:padding="30dp"
-    android:id="@+id/startUp"
-    tools:context=".Common.LoginSignup.UserStartUpScreen">
+    android:id="@+id/doctorStart"
+    android:padding="20dp"
+    android:scrollbars="none"
+    tools:context=".Common.LoginSignup.DoctorStartUpScreen">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -70,17 +71,18 @@
             android:layout_height="0dp"
             android:layout_marginTop="20dp"
             android:layout_weight="1"
-            android:onClick="callDoctorStartup"
-            android:text="@string/doctor_startup"
+            android:onClick="callUserStartup"
             android:background="@color/transparent"
+            android:text="@string/user_startup"
             android:textColor="@color/gray" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="10dp"
             android:layout_weight="1"
             android:text="@string/how_we_work"
+            android:onClick="callDashboard"
             android:background="@color/transparent"
             android:textColor="@color/black_overlay" />
 
