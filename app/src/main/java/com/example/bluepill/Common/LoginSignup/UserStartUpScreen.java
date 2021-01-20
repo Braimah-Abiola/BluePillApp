@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 
+import com.example.bluepill.Other.AboutActivity;
 import com.example.bluepill.R;
 
 public class UserStartUpScreen extends AppCompatActivity {
@@ -23,5 +24,25 @@ public class UserStartUpScreen extends AppCompatActivity {
         startActivity(new Intent(getApplicationContext(), DoctorStartUpScreen.class));
 
     }
+
+    public void callUserLogIn(View view){
+
+        startActivity(new Intent(getApplicationContext(), UserLogin.class));
+
+    }
+
+    public void callUserSignUp(View view){
+
+        startActivity(new Intent(getApplicationContext(), UserSignUp1.class));
+
+    }
+
+    public void callAbout(View view){
+
+        startActivity(new Intent(getApplicationContext(), AboutActivity.class));
+
+    }
+
+
 
 }
