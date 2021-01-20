@@ -24,7 +24,7 @@ public class IntroductoryActivity extends AppCompatActivity {
 
     ImageView logo, icon;
     TextView appName;
-    LottieAnimationView lottieAnimationView;
+    //LottieAnimationView lottieAnimationView;
 
     private static  final int NUM_PAGES = 3;
     private ViewPager viewPager;
@@ -38,14 +38,13 @@ public class IntroductoryActivity extends AppCompatActivity {
         icon = findViewById(R.id.icon);
         logo = findViewById(R.id.logo);
         appName = findViewById(R.id.txt);
-        lottieAnimationView = findViewById(R.id.lottie);
-
+        //lottieAnimationView = findViewById(R.id.lottie);
 
 
         logo.animate().translationY(1400).setDuration(1000).setStartDelay(3000);
         appName.animate().translationY(1400).setDuration(1000).setStartDelay(3000);
         icon.animate().translationY(1400).setDuration(1000).setStartDelay(3000);
-        lottieAnimationView.animate().translationY(1400).setDuration(1000).setStartDelay(3000);
+        //lottieAnimationView.animate().translationY(1400).setDuration(1000).setStartDelay(3000);
 
       Runnable r = new Runnable() {
             @Override
@@ -53,7 +52,7 @@ public class IntroductoryActivity extends AppCompatActivity {
                 logo.destroyDrawingCache();
                 appName.destroyDrawingCache();
                 icon.destroyDrawingCache();
-                lottieAnimationView.destroyDrawingCache();
+                //lottieAnimationView.destroyDrawingCache();
                 viewPager = findViewById(R.id.pager);
                 pagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager());
                 viewPager.setAdapter(pagerAdapter);

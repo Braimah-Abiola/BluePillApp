@@ -10,9 +10,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BluePill">
-        <activity android:name=".Common.LoginSignup.DoctorStartUpScreen"></activity>
-        <activity android:name=".Common.LoginSignup.UserLoginActivity" />
-        <activity android:name=".CometChat.CometChatActivity" />
+        <activity android:name=".Other.AboutActivity"></activity>
+        <activity
+            android:name=".Other.About"
+            android:label="@string/title_activity_about"
+            android:theme="@style/Theme.BluePill.NoActionBar" />
+        <activity android:name=".Common.Warnings.CheckConnection" />
+        <activity android:name=".Other.YoutubeActivity" />
+        <activity android:name=".Common.LoginSignup.UserSignUp5" />
+        <activity android:name=".Common.LoginSignup.UserSignUp4" />
+        <activity android:name=".Common.LoginSignup.UserSignUp3" />
+        <activity android:name=".Common.LoginSignup.UserSignUp2" />
+        <activity android:name=".Common.LoginSignup.UserSignUp1" />
+        <activity android:name=".Common.LoginSignup.DoctorStartUpScreen" />
+        <activity android:name=".Common.LoginSignup.UserLogin" />
         <activity android:name=".User.UserDashboardActivity" />
         <activity android:name=".Common.LoginSignup.UserStartUpScreen" />
         <activity android:name=".Common.IntroductoryActivity">

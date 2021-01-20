@@ -3,13 +3,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/pink">
+    android:background="@color/doctor_pink">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="300dp"
         android:layout_height="300dp"
-        android:src="@drawable/onboarding"
+        android:src="@drawable/on_boarding2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias=".3"
@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
-        android:fontFamily="@font/bree_serif"
+        android:fontFamily="@font/muli_black"
         android:text="BluePill"
         android:textColor="@color/white"
         android:textSize="16sp"
@@ -54,6 +54,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-light"
         android:textColor="@color/white"
+        android:layout_marginTop="10dp"
         android:text="Get closer to your Doctor"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
