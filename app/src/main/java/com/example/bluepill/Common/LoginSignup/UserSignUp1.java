@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 
+import com.example.bluepill.Other.YoutubeActivity;
 import com.example.bluepill.R;
 
 public class UserSignUp1 extends AppCompatActivity {
@@ -26,6 +27,12 @@ public class UserSignUp1 extends AppCompatActivity {
     public void callPage2 (View view){
 
         startActivity(new Intent (getApplicationContext(), UserSignUp2.class));
+
+    }
+
+    public void callWebsite (View view){
+
+        startActivity(new Intent (getApplicationContext(), YoutubeActivity.class));
 
     }
 
