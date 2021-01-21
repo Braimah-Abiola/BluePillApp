@@ -16,7 +16,7 @@ public class YoutubeActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_youtube);
 
-        WebView webview = (WebView)findViewById(R.id.webview);
+        WebView webview = (WebView)findViewById(R.id.web_view);
         webview.loadUrl("https://www.youtube.com/GameDevCoach");
     }
 }
