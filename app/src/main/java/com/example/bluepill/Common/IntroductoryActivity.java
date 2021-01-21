@@ -41,17 +41,14 @@ public class IntroductoryActivity extends AppCompatActivity {
         appName.animate().translationY(1400).setDuration(1000).setStartDelay(3000);
         icon.animate().translationY(1400).setDuration(1000).setStartDelay(3000);
 
-      Runnable r = new Runnable() {
-            @Override
-            public void run() {
-                logo.destroyDrawingCache();
-                appName.destroyDrawingCache();
-                icon.destroyDrawingCache();
-                viewPager = findViewById(R.id.pager);
-                pagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager());
-                viewPager.setAdapter(pagerAdapter);
-            }
-        };
+      Runnable r = () -> {
+          logo.destroyDrawingCache();
+          appName.destroyDrawingCache();
+          icon.destroyDrawingCache();
+          viewPager = findViewById(R.id.pager);
+          pagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager());
+          viewPager.setAdapter(pagerAdapter);
+      };
 
         Handler h = new Handler();
         h.postDelayed(r, 3700);
