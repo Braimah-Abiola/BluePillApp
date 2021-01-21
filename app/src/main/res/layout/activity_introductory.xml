@@ -22,9 +22,8 @@
     <ImageView
         android:id="@+id/icon"
         android:layout_width="160dp"
-        android:layout_height="110dp"
+        android:layout_height="80dp"
         android:src="@drawable/bhyte_logo"
-        android:elevation="2dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -43,21 +42,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo"
-        app:layout_constraintVertical_bias="1.12" />
-
-
-  <!--  <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/lottie"
-        android:elevation="2dp"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        app:layout_constraintBottom_toTopOf="@+id/txt"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo"
-        app:lottie_autoPlay="true"
-        app:lottie_loop="true"
-        app:lottie_rawRes="@raw/pulse" /> -->
+        app:layout_constraintVertical_bias="1" />
 
     <com.cuberto.liquid_swipe.LiquidPager
         android:id="@+id/pager"

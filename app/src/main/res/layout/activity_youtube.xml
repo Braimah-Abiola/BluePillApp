@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".Other.YoutubeActivity">
 
-    <WebView android:id="@+id/webview"
+    <WebView android:id="@+id/web_view"
         style="@android:style/Widget.Material.WebView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -14,7 +14,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

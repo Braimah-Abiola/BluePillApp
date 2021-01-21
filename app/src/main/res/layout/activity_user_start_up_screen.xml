@@ -19,7 +19,6 @@
             android:layout_width="match_parent"
             android:layout_height="250dp"
             android:layout_marginTop="50dp"
-            android:onClick="callAbout"
             android:src="@drawable/user_startup" />
 
         <TextView
@@ -87,6 +86,7 @@
             android:layout_height="0dp"
             android:layout_marginTop="20dp"
             android:layout_weight="1"
+            android:onClick="callAbout"
             android:text="@string/how_we_work"
             android:background="@color/transparent"
             android:textColor="@color/black_overlay" />
