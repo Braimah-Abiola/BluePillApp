@@ -4,6 +4,15 @@
     <!-- ON BOARDING SCREEN -->
     <string name="skip">Skip</string>
     <string name="done">Done</string>
+    <string name="fleming_1">Get Answers to Queries</string>
+    <string name="fleming_2">FLEMING</string>
+    <string name="fleming_3">Free 24/7 access to Artificially Intelligent Medical ChatBot online or offline</string>
+    <string name="telemed_1">Get closer to your Doctor</string>
+    <string name="telemed_2">TELEMED</string>
+    <string name="telemed_3">Book virtual consultations with doctors and chat with your favourite doctors</string>
+    <string name="track_1">Track your health</string>
+    <string name="track_2">STATS</string>
+    <string name="track_3">Track your vitals right on your phone all for free</string>
 
 
     <!-- START UP SCREEN -->
@@ -48,7 +57,6 @@
     <string name="pg_4">4 of 5</string>
     <string name="pg_5">5 of 5</string>
     <string name="have_account">Already have an account? Sign In</string>
-    <string name="title_activity_about">ScrollingActivity</string>
     <string name="large_text">
         "Material is the metaphor.\n\n"
 
@@ -138,18 +146,6 @@
         "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
         "when a user tries to pick up one of cards.\n\n"
     </string>
-    <string name="action_settings">Settings</string>
-    <string name="title_activity_navigation_drawer">NavigationDrawer</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
-    <string name="nav_header_desc">Navigation header</string>
-
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
-
     <string name="rate_dialog_message">Hey there, Rate BluePill now!</string>
 
 </resources>
