@@ -7,7 +7,7 @@
     android:background="@color/white"
     android:padding="20dp"
     android:orientation="vertical"
-    tools:context=".Common.LoginSignup.UserSignUp2">
+    tools:context=".Common.UserLogInSignUp.UserSignUp2">
 
 
     <ProgressBar
@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/pg_2"
-        android:layout_marginBottom="200dp"
+        android:layout_marginBottom="40dp"
         android:layout_marginTop="5dp"
         android:layout_gravity="center"
         android:textColor="@color/black"/>
@@ -37,16 +37,14 @@
 
     <LinearLayout android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
         android:layout_height="wrap_content">
 
-        <EditText
-            android:id="@+id/editTextDate2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="date" />
+        <DatePicker android:headerBackground="@color/signature_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
     </LinearLayout>
 
     <Button

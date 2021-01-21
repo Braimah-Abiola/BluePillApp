@@ -7,7 +7,7 @@
     android:background="@color/white"
     android:padding="20dp"
     android:orientation="vertical"
-    tools:context=".Common.LoginSignup.UserSignUp3">
+    tools:context=".Common.UserLogInSignUp.UserSignUp3">
 
 
     <ProgressBar

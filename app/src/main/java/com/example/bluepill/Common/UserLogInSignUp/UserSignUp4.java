@@ -1,4 +1,4 @@
-package com.example.bluepill.Common.LoginSignup;
+package com.example.bluepill.Common.UserLogInSignUp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,18 +9,18 @@ import android.view.WindowManager;
 
 import com.example.bluepill.R;
 
-public class UserSignUp2 extends AppCompatActivity {
+public class UserSignUp4 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity_user_sign_up2);
+        setContentView(R.layout.activity_user_sign_up4);
     }
 
-    public void callPage3 (View view){
+    public void callPage5 (View view){
 
-        startActivity(new Intent(getApplicationContext(), UserSignUp3.class));
+        startActivity(new Intent(getApplicationContext(), UserSignUp5.class));
 
     }
 

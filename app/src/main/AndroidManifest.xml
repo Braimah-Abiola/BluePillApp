@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.bluepill" >
+    package="com.example.bluepill">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -13,15 +15,15 @@
         <activity android:name=".Other.AboutActivity" />
         <activity android:name=".Common.Warnings.CheckConnection" />
         <activity android:name=".Other.YoutubeActivity" />
-        <activity android:name=".Common.LoginSignup.UserSignUp5" />
-        <activity android:name=".Common.LoginSignup.UserSignUp4" />
-        <activity android:name=".Common.LoginSignup.UserSignUp3" />
-        <activity android:name=".Common.LoginSignup.UserSignUp2" />
-        <activity android:name=".Common.LoginSignup.UserSignUp1" />
-        <activity android:name=".Common.LoginSignup.DoctorStartUpScreen" />
-        <activity android:name=".Common.LoginSignup.UserLogin" />
+        <activity android:name=".Common.UserLogInSignUp.UserSignUp5" />
+        <activity android:name=".Common.UserLogInSignUp.UserSignUp4" />
+        <activity android:name=".Common.UserLogInSignUp.UserSignUp3" />
+        <activity android:name=".Common.UserLogInSignUp.UserSignUp2" />
+        <activity android:name=".Common.UserLogInSignUp.UserSignUp1" />
+        <activity android:name=".Common.DoctorLogInSignUp.DoctorStartUpScreen" />
+        <activity android:name=".Common.UserLogInSignUp.UserLogin" />
         <activity android:name=".User.UserDashboardActivity" />
-        <activity android:name=".Common.LoginSignup.UserStartUpScreen" />
+        <activity android:name=".Common.UserLogInSignUp.UserStartUpScreen" />
         <activity android:name=".Common.IntroductoryActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

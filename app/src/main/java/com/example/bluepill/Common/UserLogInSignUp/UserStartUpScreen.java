@@ -1,4 +1,4 @@
-package com.example.bluepill.Common.LoginSignup;
+package com.example.bluepill.Common.UserLogInSignUp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 
+import com.example.bluepill.Common.DoctorLogInSignUp.DoctorStartUpScreen;
 import com.example.bluepill.Other.AboutActivity;
 import com.example.bluepill.R;
 

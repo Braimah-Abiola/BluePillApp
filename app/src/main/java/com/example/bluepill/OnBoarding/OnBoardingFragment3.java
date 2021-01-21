@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
 
-import com.example.bluepill.Common.LoginSignup.UserStartUpScreen;
+import com.example.bluepill.Common.UserLogInSignUp.UserStartUpScreen;
 import com.example.bluepill.R;
 
 public class OnBoardingFragment3 extends Fragment {

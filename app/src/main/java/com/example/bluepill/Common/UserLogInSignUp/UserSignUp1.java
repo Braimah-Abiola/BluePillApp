@@ -1,4 +1,4 @@
-package com.example.bluepill.Common.LoginSignup;
+package com.example.bluepill.Common.UserLogInSignUp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
