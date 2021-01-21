@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/pg_3"
-        android:layout_marginBottom="200dp"
+        android:layout_marginBottom="150dp"
         android:layout_marginTop="5dp"
         android:layout_gravity="center"
         android:textColor="@color/black"/>
@@ -47,7 +47,7 @@
             android:elevation="1dp"
             android:layout_gravity="center"
             android:transitionName="button_tran"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:text="@string/male"/>
 
         <Button
@@ -55,7 +55,7 @@
             android:elevation="1dp"
             android:layout_gravity="center"
             android:transitionName="button_tran"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:text="@string/female"/>
 
         <Button
@@ -63,7 +63,7 @@
             android:elevation="1dp"
             android:layout_gravity="center"
             android:transitionName="button_tran"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:text="@string/other"/>
 
 
@@ -76,7 +76,7 @@
         android:layout_marginTop="100dp"
         android:layout_gravity="center"
         android:transitionName="button_tran"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:text="@string/next"/>
 
 

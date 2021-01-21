@@ -116,7 +116,7 @@
         android:layout_marginTop="50dp"
         android:layout_gravity="center"
         android:transitionName="button_tran"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:text="@string/done"/>
 
 </LinearLayout>
