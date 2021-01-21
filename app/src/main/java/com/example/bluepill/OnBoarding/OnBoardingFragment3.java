@@ -19,10 +19,10 @@ public class OnBoardingFragment3 extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View root = (ViewGroup) inflater.inflate(R.layout.fragment_on_boarding3, container, false);
+        View root = inflater.inflate(R.layout.fragment_on_boarding3, container, false);
 
         intent = new Intent(getActivity(), UserStartUpScreen.class);
-        final  Button button = (Button) root.findViewById(R.id.done);
+        final  Button button = root.findViewById(R.id.done);
 
         button.setOnClickListener(v -> startActivity(intent));
             return root;
