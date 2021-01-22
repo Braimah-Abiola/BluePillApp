@@ -22,13 +22,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/pg_2"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="80dp"
         android:layout_marginTop="5dp"
         android:layout_gravity="center"
         android:textColor="@color/black"/>
 
 
-    <TextView
+    <TextView android:layout_marginTop="60dp"
         android:layout_width="wrap_content"
         android:layout_gravity="center"
         android:layout_height="wrap_content"
@@ -37,20 +37,25 @@
 
     <LinearLayout android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="20dp"
         android:layout_marginBottom="10dp"
         android:layout_height="wrap_content">
 
         <DatePicker android:headerBackground="@color/signature_blue"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
+            android:calendarViewShown="false"
+            android:layout_gravity="center"
+            android:datePickerMode="spinner"
+            android:calendarTextColor="@color/black"
+            android:spinnersShown="true"
             android:layout_height="wrap_content"/>
 
     </LinearLayout>
 
     <Button
         android:layout_width="200dp"
-        android:elevation="1dp"
         android:onClick="callPage3"
+        android:layout_marginTop="20dp"
         android:layout_gravity="center"
         android:transitionName="button_tran"
         android:layout_height="60dp"

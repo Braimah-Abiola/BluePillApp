@@ -29,6 +29,15 @@
     <string name="over_view">How we work?</string>
     <string name="doctor">I am a Doctor</string>
     <string name="forget_password">Forgot Password </string>
+    <string name="make_selection">Make Selection</string>
+    <string name="sms">via sms:</string>
+    <string name="password_updated">Password Updated</string>
+    <string name="password_updated_msg">Your Password Has Been Updated</string>
+    <string name="verify_code">Verify Code</string>
+    <string name="new_credentials">New Credentials</string>
+    <string name="demo_mail">support@gmail.com</string>
+    <string name="via_mail">via mail:</string>
+    <string name="forget_password_detail">Provide your accounts email for which you want to reset your password!</string>
     <string name="bhyte_logo">Bhyte Logo</string>
     <string name="user_startup">I am a user</string>
     <string name="new_user">New User? Sign Up</string>
@@ -147,5 +156,23 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="rate_dialog_message">Hey there, Rate BluePill now!</string>
+
+
+    <!--- HOME PAGE -->
+
+    <string name="featured_locations">All featured locations</string>
+    <string name="most_viewed">Most Viewed</string>
+    <string name="categories">Categories</string>
+    <string name="view_all">View All</string>
+    <string name="featured_locations_description">All the locations that are featured and have the top demand in town!</string>
+
+    <!-- MAIN MENU -->
+
+    <string name="home">HOME</string>
+    <string name="search">SEARCH</string>
+    <string name="all_categories">ALL CATEGORIES</string>
+    <string name="add_missing_place">ADD MISSING PLACE</string>
+    <string name="profile">PROFILE</string>
+    <string name="logout">LOG OUT</string>
 
 </resources>

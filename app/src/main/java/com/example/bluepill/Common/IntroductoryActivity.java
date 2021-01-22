@@ -13,6 +13,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.example.bluepill.OnBoarding.OnBoardingFragment1;
 import com.example.bluepill.OnBoarding.OnBoardingFragment2;
 import com.example.bluepill.OnBoarding.OnBoardingFragment3;

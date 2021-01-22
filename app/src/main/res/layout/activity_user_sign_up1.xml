@@ -23,16 +23,16 @@
         android:layout_height="wrap_content"
         android:text="@string/pg_1"
         android:onClick="callWebsite"
-        android:layout_marginBottom="200dp"
+        android:layout_marginBottom="80dp"
         android:layout_marginTop="5dp"
         android:layout_gravity="center"
         android:textColor="@color/black"/>
-
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_gravity="center"
         android:id="@+id/sloganText"
+        android:layout_marginTop="40dp"
         android:layout_height="wrap_content"
         android:transitionName="sloganText"
         android:text="@string/name"
@@ -46,9 +46,12 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/name"
+            app:startIconDrawable="@drawable/ic_edit"
+            app:startIconTint="@color/black"
+            app:hintTextColor="@color/black"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/first_name"
+            android:hint="Full Name"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -64,7 +67,45 @@
             android:id="@+id/username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/last_name"
+            app:startIconDrawable="@drawable/ic_profile"
+            app:startIconTint="@color/black"
+            android:hint="@string/username"
+            app:hintTextColor="@color/black"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:inputType="text"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:startIconDrawable="@drawable/ic_mail"
+            app:startIconTint="@color/black"
+            android:hint="@string/email"
+            app:hintTextColor="@color/black"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:inputType="text"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:startIconDrawable="@drawable/ic_lock"
+            app:startIconTint="@color/black"
+            android:hint="@string/password"
+            app:passwordToggleEnabled="true"
+            app:hintTextColor="@color/black"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText

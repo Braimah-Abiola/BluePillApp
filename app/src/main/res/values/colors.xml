@@ -21,9 +21,13 @@
     <color name="signature_blue">#5187D6</color>
     <color name="transparent">#00FFFFFF</color>
     <color name="orange">#FF9800</color>
+    <color name="light_white">#ADE8E8E8</color>
 
 
     <!-- DOCTOR COLORS-->
     <color name="doctor_pink">#FF4F5A</color>
+
+    <color name="banner_background_light">#AEFFCA7D</color>
+    <color name="banner_background">#FFCC83</color>
 
 </resources>
