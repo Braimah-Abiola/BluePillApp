@@ -26,10 +26,6 @@ public class Dashboard extends AppCompatActivity {
     RecyclerView.Adapter adapter;
     private GradientDrawable gradient1, gradient2, gradient3, gradient4, gradient5;
 
-    //Drawer Menu
-    DrawerLayout drawerLayout;
-    NavigationView navigationView;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
