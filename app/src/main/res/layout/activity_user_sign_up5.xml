@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/pg_5"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="40dp"
         android:layout_marginTop="5dp"
         android:layout_gravity="center"
         android:textColor="@color/black"/>
@@ -59,27 +59,36 @@
         android:layout_height="wrap_content"
         android:text="Enter one time code sent to +233 595 604 098"
         android:textAlignment="center"
+        android:textColor="@color/black"
         android:textAllCaps="true"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/muli"
         android:textSize="16sp"/>
 
 
+    <com.chaos.view.PinView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:itemCount="6"
+        app:itemWidth="50dp"
+        app:itemHeight="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:inputType="number"
+        app:lineColor="@color/signature_blue"
+        android:cursorVisible="true"
+        app:cursorColor="@color/black"
+        app:hideLineWhenFilled="true"
+        app:itemRadius="5dp"
+        style="@style/PinWidget.PinView"/>
+
     <Button
         android:layout_width="200dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="30dp"
         android:layout_gravity="center"
         android:transitionName="button_tran"
         android:layout_height="60dp"
         android:text="@string/verify_code"/>
 
-    <Button android:backgroundTint="@color/transparent"
-        android:layout_width="200dp"
-        android:textColor="@color/black"
-        android:layout_marginTop="50dp"
-        android:layout_gravity="center"
-        android:transitionName="button_tran"
-        android:layout_height="wrap_content"
-        android:text="@string/close"/>
 
 </LinearLayout>

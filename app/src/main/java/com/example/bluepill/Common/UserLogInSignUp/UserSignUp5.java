@@ -17,10 +17,4 @@ public class UserSignUp5 extends AppCompatActivity {
         setContentView(R.layout.activity_user_sign_up5);
     }
 
-    public void callAddImage (View view){
-
-
-
-    }
-
 }
