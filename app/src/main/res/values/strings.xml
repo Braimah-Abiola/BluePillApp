@@ -25,6 +25,7 @@
     <string name="user_welcome">Welcome Back, Sign In or Log In as a User</string>
     <string name="log_in">Log In</string>
     <string name="remember_me">Remember Me</string>
+    <string name="close">Close</string>
     <string name="user">I am a User</string>
     <string name="over_view">How we work?</string>
     <string name="doctor">I am a Doctor</string>
@@ -53,9 +54,11 @@
     <string name="phone_number">Enter your phone number</string>
     <string name="gender">When is your gender?</string>
     <string name="male">Male</string>
+    <string name="login2">Login</string>
     <string name="female">Female</string>
     <string name="other">Other</string>
     <string name="almost_done">You are almost done</string>
+    <string name="doctor_id">Doctor ID</string>
     <string name="profile_picture">Choose your profile picture</string>
     <string name="first_name">First Name</string>
     <string name="last_name">Last Name</string>

@@ -38,4 +38,11 @@ public class DoctorStartUpScreen extends AppCompatActivity {
         startActivity(new Intent(getApplicationContext(), CheckConnection.class));
 
     }
+
+    public void callDoctorLogin(View view){
+
+        startActivity(new Intent(getApplicationContext(), DoctorLogin.class));
+
+    }
+
 }

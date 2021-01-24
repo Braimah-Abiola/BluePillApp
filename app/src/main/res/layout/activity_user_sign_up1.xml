@@ -45,7 +45,7 @@
         android:layout_height="wrap_content">
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/name"
+            android:id="@+id/signup_fullname"
             app:startIconDrawable="@drawable/ic_edit"
             app:startIconTint="@color/black"
             app:hintTextColor="@color/black"

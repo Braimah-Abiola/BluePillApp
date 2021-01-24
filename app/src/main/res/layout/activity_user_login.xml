@@ -10,10 +10,28 @@
     android:padding="20dp"
     tools:context=".Common.UserLogInSignUp.UserLogin">
 
-    <ImageView android:padding="15dp"
+
+    <ImageView android:onClick="goBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_back"/>
+
+    <RelativeLayout
+        android:visibility="invisible"
+        android:id="@+id/progress"
+        android:background="@drawable/blue_circle"
+        android:padding="10dp"
+        android:elevation="8dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ProgressBar android:id="@+id/progressbar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
 
     <ImageView
         android:layout_width="150dp"
@@ -29,19 +47,11 @@
         android:textSize="40sp"
         android:fontFamily="@font/muli_black"
         android:textAlignment="center"
+        android:textAllCaps="true"
         android:layout_gravity="center"
         android:textColor="@color/black"
         android:transitionName="logo_text"
-        android:text="HELLO THERE,\nWELCOME BACK"/>
-
-    <TextView
-        android:transitionName="sloganText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:textAlignment="center"
-        android:fontFamily="@font/antic"
-        android:text="Sign In to continue"/>
+        android:text="@string/login2"/>
 
 
     <LinearLayout
@@ -88,34 +98,53 @@
         </com.google.android.material.textfield.TextInputLayout>
 
 
-        <Button
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:background="@color/transparent"
-            android:layout_gravity="right"
-            android:elevation="0dp"
-            android:textColor="@color/black_overlay"
-            android:text="@string/forget_password"/>
+
+<RelativeLayout
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/forgot_password_block">
+
+
+    <CheckBox android:text="Remember Me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/black"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:backgroundTint="@color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:onClick="callForgotPassword"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_alignParentRight="true"
+        android:textAllCaps="true"
+        android:text="@string/forget_password"/>
+
+</RelativeLayout>
+
 
 
         <Button android:id="@+id/login_btn"
             android:layout_width="200dp"
+            android:onClick="letTheUserLogIn"
             android:layout_height="60dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:layout_gravity="center"
-            android:transitionName="button_tran"
             android:text="@string/log_in"/>
 
         <Button android:id="@+id/callSignUp"
             android:layout_width="200dp"
+            android:layout_marginTop="20dp"
             android:layout_height="wrap_content"
             android:background="@color/transparent"
             android:layout_gravity="center"
-            android:elevation="0dp"
             android:onClick="callUserSignUp"
-            android:transitionName="button_tran2"
             android:textColor="@color/black_overlay"
-            android:text="@string/new_user"
+            android:text="Create Account"
             android:textAllCaps="true"/>
 
 

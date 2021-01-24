@@ -23,7 +23,7 @@
             android:title="@string/add_missing_place"/>
     </group>
 
-    <item android:title="Profile">
+    <item android:title="@string/profile">
         <menu>
             <group android:checkableBehavior="single">
                 <item

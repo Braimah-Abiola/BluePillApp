@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.bluepill">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -12,11 +14,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BluePill">
-        <activity android:name=".Common.ForgotPassword.User.SuccessMessage"></activity>
+        <activity android:name=".Common.Dashboard"/>
+        <activity android:name=".Common.DoctorLogInSignUp.DoctorLogin" />
+        <activity android:name=".Common.ForgotPassword.User.SuccessMessage" />
         <activity android:name=".Common.ForgotPassword.User.SetNewPassword" />
         <activity android:name=".Common.ForgotPassword.User.MakeSelection" />
         <activity android:name=".Common.ForgotPassword.User.ForgotPassword" />
-        <activity android:name=".Common.Popups.AppVersion" />
         <activity android:name=".Other.AboutActivity" />
         <activity android:name=".Common.Warnings.CheckConnection" />
         <activity android:name=".Other.YoutubeActivity" />

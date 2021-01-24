@@ -28,24 +28,18 @@
         android:textColor="@color/black"/>
 
 
-    <ImageView
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="30dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_close"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_gravity="center"
         android:layout_height="wrap_content"
         android:text="CO\nDE"
+        android:includeFontPadding="false"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:fontFamily="@font/muli_black"
         android:textColor="@color/black"
-        android:textSize="60sp"/>
+        android:textSize="100sp"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -70,6 +64,7 @@
         android:fontFamily="@font/muli"
         android:textSize="16sp"/>
 
+
     <Button
         android:layout_width="200dp"
         android:layout_marginTop="80dp"
@@ -77,5 +72,14 @@
         android:transitionName="button_tran"
         android:layout_height="60dp"
         android:text="@string/verify_code"/>
+
+    <Button android:backgroundTint="@color/transparent"
+        android:layout_width="200dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:transitionName="button_tran"
+        android:layout_height="wrap_content"
+        android:text="@string/close"/>
 
 </LinearLayout>

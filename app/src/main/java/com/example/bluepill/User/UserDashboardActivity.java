@@ -1,11 +1,10 @@
 package com.example.bluepill.User;
 
+import android.os.Bundle;
+import android.view.WindowManager;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-
-import android.os.Bundle;
-import android.view.View;
-import android.view.WindowManager;
 
 import com.example.bluepill.R;
 import com.ismaeldivita.chipnavigation.ChipNavigationBar;
@@ -13,6 +12,7 @@ import com.ismaeldivita.chipnavigation.ChipNavigationBar;
 public class UserDashboardActivity extends AppCompatActivity {
 
     ChipNavigationBar chipNavigationBar;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

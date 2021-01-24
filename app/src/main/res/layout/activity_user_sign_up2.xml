@@ -41,7 +41,8 @@
         android:layout_marginBottom="10dp"
         android:layout_height="wrap_content">
 
-        <DatePicker android:headerBackground="@color/signature_blue"
+        <DatePicker
+            android:id="@+id/birthday_picker"
             android:layout_width="match_parent"
             android:calendarViewShown="false"
             android:layout_gravity="center"
