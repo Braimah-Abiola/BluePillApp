@@ -20,6 +20,7 @@
             android:layout_height="250dp"
             android:id="@+id/background"
             android:layout_marginTop="50dp"
+            android:onClick="callHome"
             android:transitionName="background"
             android:src="@drawable/user_startup" />
 

@@ -32,10 +32,11 @@
         android:layout_width="wrap_content"
         android:layout_gravity="center"
         android:id="@+id/sloganText"
+        android:textColor="@color/black"
         android:layout_marginTop="40dp"
         android:layout_height="wrap_content"
         android:transitionName="sloganText"
-        android:text="@string/name"
+        android:text="Please fill in your details"
         android:textSize="18sp"/>
 
     <LinearLayout android:orientation="vertical"

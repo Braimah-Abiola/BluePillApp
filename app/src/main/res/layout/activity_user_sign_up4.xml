@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    android:padding="20dp"
     android:orientation="vertical"
+    android:padding="20dp"
     tools:context=".Common.UserLogInSignUp.UserSignUp4">
 
 
@@ -14,47 +14,70 @@
         android:id="@+id/progress_pg1"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="match_parent"
-        android:progressTint="@color/signature_blue"
+        android:layout_height="wrap_content"
         android:progress="80"
-        android:layout_height="wrap_content" />
+        android:progressTint="@color/signature_blue" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/pg_4"
-        android:layout_marginBottom="200dp"
+        android:layout_gravity="center"
         android:layout_marginTop="5dp"
-        android:layout_gravity="center"
-        android:textColor="@color/black"/>
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_marginBottom="160dp"
+        android:text="@string/pg_4"
+        android:textColor="@color/black" />
 
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_gravity="center"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
         android:text="@string/phone_number"
         android:textColor="@color/black"
-        android:textSize="18sp"/>
+        android:textSize="18sp" />
 
-    <EditText
-        android:id="@+id/editPhone"
+
+    <com.hbb20.CountryCodePicker
+        android:background="@drawable/black_border"
+        android:id="@+id/country_picker"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="phone" />
+        android:padding="7dp"
+        app:ccp_autoDetectCountry="true"
+        app:ccp_showFlag="true"
+        app:ccp_showFullName="true"
+        android:layout_marginBottom="15dp"
+        app:ccp_showNameCode="true" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phone_number"
+        app:startIconDrawable="@drawable/ic_call"
+        app:startIconTint="@color/black"
+        app:hintTextColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:layout_height="wrap_content"/>
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
         android:elevation="1dp"
         android:onClick="callPage5"
-        android:layout_marginTop="100dp"
-        android:layout_gravity="center"
-        android:transitionName="button_tran"
-        android:layout_height="60dp"
-        android:text="@string/next"/>
+        android:text="@string/next"
+        android:transitionName="button_tran" />
 
 
 </LinearLayout>

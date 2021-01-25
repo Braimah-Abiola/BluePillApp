@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.bluepill.Common.Dashboard;
 import com.example.bluepill.Common.DoctorLogInSignUp.DoctorStartUpScreen;
 import com.example.bluepill.Other.AboutActivity;
 import com.example.bluepill.R;
@@ -63,6 +64,10 @@ public class UserStartUpScreen extends AppCompatActivity {
 
     }
 
+    public void callHome(View view){
 
+        startActivity(new Intent(getApplicationContext(), Dashboard.class));
+
+    }
 
 }
