@@ -24,4 +24,10 @@ public class DoctorLogin extends AppCompatActivity {
 
     }
 
+    public void callDoc1(View view){
+
+        startActivity(new Intent(getApplicationContext(), DoctorSignUp1.class));
+
+    }
+
 }

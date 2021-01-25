@@ -27,6 +27,12 @@ public class DoctorStartUpScreen extends AppCompatActivity {
 
     }
 
+    public void  callDoc1(View view){
+
+        startActivity(new Intent(getApplicationContext(), DoctorSignUp1.class));
+
+    }
+
     public void callUserStartup(View view){
 
         startActivity(new Intent(getApplicationContext(), UserStartUpScreen.class));

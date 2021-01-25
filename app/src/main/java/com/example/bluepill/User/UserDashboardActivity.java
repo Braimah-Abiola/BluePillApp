@@ -40,6 +40,9 @@ public class UserDashboardActivity extends AppCompatActivity {
                     case R.id.bottom_nav_fleming:
                         fragment = new UserFlemingFragment();
                         break;
+                    case R.id.bottom_nav_tele_medicine:
+                        fragment = new UserTelemedFragment();
+                        break;
                     case R.id.bottom_nav_dashboard:
                         fragment = new UserDashboardFragment();
                         break;

@@ -12,6 +12,11 @@
         android:icon="@drawable/ic_fleming"
         app:cnb_backgroundColor="@color/signature_blue" />
 
+    <item android:title="TeleMed"
+        android:id="@+id/bottom_nav_tele_medicine"
+        android:icon="@drawable/ic_telemed"
+        app:cnb_backgroundColor="@color/signature_blue" />
+
     <item android:title="Dashboard"
         android:id="@+id/bottom_nav_dashboard"
         android:icon="@drawable/ic_dashboard"

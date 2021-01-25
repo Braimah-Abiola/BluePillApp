@@ -74,6 +74,7 @@
         android:layout_height="60dp"
         android:layout_gravity="center"
         android:layout_marginTop="100dp"
+        android:drawableRight="@drawable/ic_next"
         android:elevation="1dp"
         android:onClick="callPage5"
         android:text="@string/next"

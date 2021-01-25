@@ -18,6 +18,7 @@ import com.example.bluepill.OnBoarding.OnBoardingFragment1;
 import com.example.bluepill.OnBoarding.OnBoardingFragment2;
 import com.example.bluepill.OnBoarding.OnBoardingFragment3;
 import com.example.bluepill.R;
+import com.zingat.rateme.Rateme;
 
 
 public class IntroductoryActivity extends AppCompatActivity {
@@ -38,21 +39,19 @@ public class IntroductoryActivity extends AppCompatActivity {
         logo = findViewById(R.id.logo);
         appName = findViewById(R.id.txt);
 
-        logo.animate().translationY(1400).setDuration(1000).setStartDelay(3000);
-        appName.animate().translationY(1400).setDuration(1000).setStartDelay(3000);
-        icon.animate().translationY(1400).setDuration(1000).setStartDelay(3000);
+        logo.animate().translationY(1400).setDuration(1000).setStartDelay(1500);
+        appName.animate().translationY(1400).setDuration(1000).setStartDelay(1500);
+        icon.animate().translationY(1400).setDuration(1000).setStartDelay(1500);
 
       Runnable r = () -> {
-          logo.destroyDrawingCache();
-          appName.destroyDrawingCache();
-          icon.destroyDrawingCache();
           viewPager = findViewById(R.id.pager);
           pagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager());
           viewPager.setAdapter(pagerAdapter);
       };
 
         Handler h = new Handler();
-        h.postDelayed(r, 3700);
+        h.postDelayed(r, 1500);
+
 
     }
 

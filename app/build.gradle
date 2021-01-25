@@ -70,4 +70,7 @@ dependencies {
     //OTP PIN VIEW DESIGN
     implementation 'com.chaos.view:pinview:1.4.3'
 
+    //Rate App
+    implementation 'com.zingat:rateme:1.3.0'
+
 }

@@ -1,15 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple_100"
+    android:background="@color/white"
+    android:orientation="vertical"
     tools:context=".User.UserFlemingFragment">
 
-    <TextView
+    <RelativeLayout android:background="@color/signature_blue"
+        android:padding="15dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="Fragment Fleming"/>
+        android:layout_height="wrap_content">
 
-</FrameLayout>
+        <ImageView
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_menu_white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fleming"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </ScrollView>
+
+
+</LinearLayout>

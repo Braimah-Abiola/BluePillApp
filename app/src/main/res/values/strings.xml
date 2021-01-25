@@ -178,4 +178,12 @@
     <string name="profile">PROFILE</string>
     <string name="logout">LOG OUT</string>
 
+
+    <!-- OTHER -->
+
+    <string name="med_empty_1">Looks like you have not added any doctors</string>
+    <string name="med_empty_2">Press the button below to start finding doctors</string>
+    <string name="add_doctors">Add Doctors</string>
+    <string name="medical_data">Personal Medical Data</string>
+
 </resources>

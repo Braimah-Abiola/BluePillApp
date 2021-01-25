@@ -130,7 +130,6 @@
         <Button android:id="@+id/login_btn"
             android:backgroundTint="@color/doctor_pink"
             android:layout_width="200dp"
-            android:onClick="letTheUserLogIn"
             android:layout_height="60dp"
             android:layout_marginTop="10dp"
             android:layout_gravity="center"
@@ -142,7 +141,7 @@
             android:layout_height="wrap_content"
             android:background="@color/transparent"
             android:layout_gravity="center"
-            android:onClick="callUserSignUp"
+            android:onClick="callDoc1"
             android:textColor="@color/black_overlay"
             android:text="Create Account"
             android:textAllCaps="true"/>

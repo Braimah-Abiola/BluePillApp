@@ -44,11 +44,11 @@
 
         <Button
             android:layout_width="200dp"
-            android:elevation="1dp"
-            android:layout_gravity="center"
-            android:transitionName="button_tran"
             android:layout_height="60dp"
-            android:text="@string/male"/>
+            android:layout_gravity="center"
+            android:elevation="1dp"
+            android:text="@string/male"
+            android:transitionName="button_tran" />
 
         <Button
             android:layout_width="200dp"
@@ -71,13 +71,14 @@
 
     <Button
         android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:drawableRight="@drawable/ic_next"
         android:elevation="1dp"
         android:onClick="callPage4"
-        android:layout_marginTop="60dp"
-        android:layout_gravity="center"
-        android:transitionName="button_tran"
-        android:layout_height="60dp"
-        android:text="@string/next"/>
+        android:text="@string/next"
+        android:transitionName="button_tran" />
 
 
 
