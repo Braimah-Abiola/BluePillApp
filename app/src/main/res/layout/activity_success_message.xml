@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:padding="20dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Common.ForgotPassword.User.SuccessMessage">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:src="@drawable/ic_back"/>
+
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+
+        <TextView android:layout_marginTop="-80dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password_updated"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:textAllCaps="true"
+            android:fontFamily="@font/muli_black"
+            android:textAlignment="center"
+            android:gravity="center"/>
+
+        <ImageView android:layout_margin="20dp"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:src="@drawable/ic_verified"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password_updated_msg"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:fontFamily="@font/muli"
+            android:textAlignment="center"
+            android:gravity="center"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:text="@string/log_in"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

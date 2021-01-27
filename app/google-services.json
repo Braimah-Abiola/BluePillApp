@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "552664521985",
+    "project_id": "bluepill-ba68f",
+    "storage_bucket": "bluepill-ba68f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:552664521985:android:f860afbe78e496bbb9cf00",
+        "android_client_info": {
+          "package_name": "com.example.bluepill"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "552664521985-r6jg6vg8buoqkf9193d820u0h00rmvfa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFprOXbRrU8fop9P-so-Rbdh22thxy9Ew"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "552664521985-r6jg6vg8buoqkf9193d820u0h00rmvfa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

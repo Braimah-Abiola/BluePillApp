@@ -1,0 +1,10 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/signature_blue</item>
+        <item name="colorPrimaryDark">#000</item>
+        <item name="colorAccent">@color/orange</item>
+    <item name="android:windowContentTransitions">true</item>
+    </style>
+    
+</resources>

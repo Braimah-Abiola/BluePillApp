@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bluepill">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BluePill">
+        <activity android:name=".Common.Dashboard"/>
+        <activity android:name=".Common.DoctorLogInSignUp.DoctorLogin" />
+        <activity android:name=".Common.ForgotPassword.User.SuccessMessage" />
+        <activity android:name=".Common.ForgotPassword.User.SetNewPassword" />
+        <activity android:name=".Common.ForgotPassword.User.MakeSelection" />
+        <activity android:name=".Common.ForgotPassword.User.ForgotPassword" />
+        <activity android:name=".Other.AboutActivity" />
+        <activity android:name=".Common.Warnings.CheckConnection" />
+        <activity android:name=".Other.YoutubeActivity" />
+        <activity android:name=".Common.UserLogInSignUp.UserSignUp5" />
+        <activity android:name=".Common.UserLogInSignUp.UserSignUp4"></activity>
+        <activity android:name=".Common.UserLogInSignUp.UserSignUp3" />
+        <activity android:name=".Common.UserLogInSignUp.UserSignUp2" />
+        <activity android:name=".Common.UserLogInSignUp.UserSignUp1" />
+        <activity android:name=".Common.DoctorLogInSignUp.DoctorStartUpScreen" />
+        <activity android:name=".Common.UserLogInSignUp.UserLogin" />
+        <activity android:name=".User.UserDashboardActivity" />
+        <activity android:name=".Common.UserLogInSignUp.UserStartUpScreen" />
+        <activity android:name=".Common.IntroductoryActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

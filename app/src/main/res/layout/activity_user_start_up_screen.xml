@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/signature_blue"
+    android:padding="20dp"
+    android:scrollbars="none"
+    android:id="@+id/startUp"
+    tools:context=".Common.UserLogInSignUp.UserStartUpScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/background"
+            android:layout_marginTop="50dp"
+            android:onClick="callHome"
+            android:transitionName="background"
+            android:src="@drawable/user_startup" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:transitionName="appname"
+            android:id="@+id/app_name"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/muli_black"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/muli"
+            android:textSize="18sp"
+            android:transitionName="slogan"
+            android:id="@+id/sloganText"
+            android:text="@string/user_welcome"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <Button android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:id="@+id/login_btn"
+                android:transitionName="login"
+                android:onClick="callUserLogIn"
+                android:text="@string/log_in" />
+
+            <Button android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:layout_width="0dp"
+                android:id="@+id/signup_btn"
+                android:transitionName="signup"
+                android:layout_height="60dp"
+                android:onClick="callUserSignUp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:text="@string/sign_up" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:transitionName="none"
+            android:onClick="callDoctorStartup"
+            android:text="@string/doctor"
+            android:id="@+id/btn_other"
+            android:background="@color/transparent"
+            android:textColor="@color/white" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:onClick="callAbout"
+            android:id="@+id/work_btn"
+            android:transitionName="work"
+            android:text="@string/how_we_work"
+            android:background="@color/transparent"
+            android:textColor="@color/black_overlay" />
+
+    </LinearLayout>
+
+
+</ScrollView>
