@@ -24,7 +24,6 @@ public class UserDashboardActivity extends AppCompatActivity {
         chipNavigationBar.setItemSelected(R.id.bottom_nav_home, true);
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new  UserHomeFragment()).commit();
         bottomMenu();
-
     }
 
     private void  bottomMenu(){

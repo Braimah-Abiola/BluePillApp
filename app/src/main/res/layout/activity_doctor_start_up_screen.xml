@@ -76,8 +76,8 @@
                 android:transitionName="signup"
                 android:layout_width="0dp"
                 android:layout_height="60dp"
-                android:layout_marginStart="10dp"
                 android:onClick="callDoc1"
+                android:layout_marginStart="10dp"
                 android:layout_weight="1"
                 android:id="@+id/signup_btn"
                 android:text="@string/sign_up" />

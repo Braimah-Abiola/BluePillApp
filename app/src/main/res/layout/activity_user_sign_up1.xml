@@ -120,10 +120,11 @@
 
     <Button
         android:layout_width="200dp"
-        android:layout_height="60dp"
-        android:layout_gravity="center"
-        android:drawableRight="@drawable/ic_next"
+        android:elevation="1dp"
         android:onClick="callPage2"
+        android:layout_gravity="center"
+        android:transitionName="button_tran"
+        android:layout_height="60dp"
         android:text="@string/next"/>
 
 

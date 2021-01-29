@@ -38,7 +38,7 @@ public class UserSignUp2 extends AppCompatActivity {
         int month = datePicker.getMonth();
         int year = datePicker.getYear();
 
-        String _date = day+"/"+month+"/"+year;
+        String date = day+"/"+month+"/"+year;
 
         startActivity(new Intent(getApplicationContext(), UserSignUp3.class));
 

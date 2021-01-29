@@ -22,7 +22,8 @@
             android:layout_marginTop="50dp"
             android:onClick="callHome"
             android:transitionName="background"
-            android:src="@drawable/user_startup" />
+            android:src="@drawable/user_startup"
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -54,6 +55,9 @@
             android:textColor="@color/white" />
 
         <LinearLayout
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp">

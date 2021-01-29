@@ -44,12 +44,13 @@
         <DatePicker
             android:id="@+id/birthday_picker"
             android:layout_width="match_parent"
-            android:calendarViewShown="false"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:datePickerMode="spinner"
             android:calendarTextColor="@color/black"
-            android:spinnersShown="true"
-            android:layout_height="wrap_content"/>
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            android:hapticFeedbackEnabled="true"
+            android:spinnersShown="true" />
 
     </LinearLayout>
 

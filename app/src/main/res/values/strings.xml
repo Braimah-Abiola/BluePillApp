@@ -33,15 +33,16 @@
     <string name="make_selection">Make Selection</string>
     <string name="sms">via sms:</string>
     <string name="password_updated">Password Updated</string>
-    <string name="password_updated_msg">Your Password Has Been Updated</string>
+    <string name="password_updated_msg">Your password has been updated\nlogin to continue</string>
     <string name="verify_code">Verify Code</string>
-    <string name="new_credentials">New Credentials</string>
+    <string name="new_credentials">New\nCredentials</string>
     <string name="demo_mail">support@gmail.com</string>
     <string name="via_mail">via mail:</string>
     <string name="forget_password_detail">Provide your accounts email for which you want to reset your password!</string>
     <string name="bhyte_logo">Bhyte Logo</string>
     <string name="user_startup">I am a user</string>
     <string name="new_user">New User? Sign Up</string>
+    <string name="login_account">Login into your account</string>
 
     <!-- HINTS -->
     <string name="username">Username</string>
@@ -178,12 +179,30 @@
     <string name="profile">PROFILE</string>
     <string name="logout">LOG OUT</string>
 
-
     <!-- OTHER -->
 
     <string name="med_empty_1">Looks like you have not added any doctors</string>
     <string name="med_empty_2">Press the button below to start finding doctors</string>
     <string name="add_doctors">Add Doctors</string>
     <string name="medical_data">Personal Medical Data</string>
+
+    <!-- App Rate -->
+
+
+    <!-- ChatKit -->
+    <string name="enter_a_message">Type a message</string>
+    <string name="doc1">Doctor Stephen Strange</string>
+    <string name="online">Online</string>
+    <string name="or_login_with">or LogIn with</string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+    <string name="hello_blank_fragment">hello_blank_fragment</string>
+    <string name="you_need_an_internet_connection_to_use_bluepill_check_your_connection_and_try_again">You need an internet connection to use BluePill. Check your connection and try again</string>
+    <string name="looks_like_you_are_offline">Looks like you are offline</string>
+    <string name="retry">Retry</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="telemed">TeleMed</string>
+    <string name="fleming">Fleming</string>
+    <string name="home_">Home</string>
 
 </resources>

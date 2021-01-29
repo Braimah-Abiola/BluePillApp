@@ -15,7 +15,7 @@
             android:id="@+id/logo"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/ic_add"
+            android:src="@drawable/pulse"
             android:contentDescription="@string/app_name" />
 
         <ImageView android:layout_marginLeft="230dp"

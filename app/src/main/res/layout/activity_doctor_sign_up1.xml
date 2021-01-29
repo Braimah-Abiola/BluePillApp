@@ -45,6 +45,7 @@
         android:layout_height="wrap_content">
 
         <com.google.android.material.textfield.TextInputLayout
+            app:boxStrokeColor="@color/doctor_pink"
             android:id="@+id/signup_fullname"
             app:startIconDrawable="@drawable/ic_edit"
             app:startIconTint="@color/black"
@@ -64,6 +65,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
+            app:boxStrokeColor="@color/doctor_pink"
             android:id="@+id/username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -81,6 +83,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
+            app:boxStrokeColor="@color/doctor_pink"
             android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -91,6 +94,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
+                app:boxStrokeColor="@color/doctor_pink"
                 android:layout_width="match_parent"
                 android:inputType="text"
                 android:layout_height="wrap_content"/>
@@ -98,6 +102,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
+            app:boxStrokeColor="@color/doctor_pink"
             android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

@@ -15,6 +15,10 @@ import com.example.bluepill.Common.Dashboard;
 import com.example.bluepill.Common.DoctorLogInSignUp.DoctorStartUpScreen;
 import com.example.bluepill.Other.AboutActivity;
 import com.example.bluepill.R;
+import com.mikhaellopez.ratebottomsheet.RateBottomSheet;
+import com.mikhaellopez.ratebottomsheet.RateBottomSheetManager;
+
+import guy4444.smartrate.SmartRate;
 
 public class UserStartUpScreen extends AppCompatActivity {
 

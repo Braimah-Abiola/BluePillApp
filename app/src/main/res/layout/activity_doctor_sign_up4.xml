@@ -39,7 +39,7 @@
 
 
     <com.hbb20.CountryCodePicker
-        android:background="@drawable/black_border"
+        android:background="@drawable/pink_border"
         android:id="@+id/country_picker"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -52,6 +52,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/phone_number"
+        app:boxStrokeColor="@color/doctor_pink"
         app:startIconDrawable="@drawable/ic_call"
         app:startIconTint="@color/black"
         app:hintTextColor="@color/black"

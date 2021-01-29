@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="5dp"
-        android:src="@drawable/ic_back"/>
+        android:src="@drawable/close"/>
 
     <LinearLayout android:orientation="vertical"
         android:layout_width="match_parent"
@@ -34,8 +34,9 @@
 
         <ImageView android:layout_margin="20dp"
             android:layout_width="200dp"
+            android:onClick="callCheckConnection2"
             android:layout_height="150dp"
-            android:src="@drawable/ic_verified"/>
+            android:src="@drawable/safe_dark"/>
 
         <TextView
             android:layout_width="wrap_content"

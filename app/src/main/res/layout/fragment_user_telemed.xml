@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
+    android:id="@+id/telemed"
     tools:context=".User.UserTelemedFragment">
 
 
@@ -13,12 +14,6 @@
         android:padding="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
-        <ImageView
-            android:layout_marginLeft="15dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_menu_white"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -31,59 +26,65 @@
 
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_search_white"
-            android:layout_marginRight="15dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/scan_dark"
             android:layout_centerVertical="true"
-            android:layout_alignParentEnd="true"/>
+            android:layout_alignParentEnd="true"
+            app:tint="@color/white" />
 
     </RelativeLayout>
 
 
     <ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarStyle="outsideOverlay">
 
-        <LinearLayout android:orientation="vertical"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/no_data" />
 
             <TextView
-                android:textSize="24sp"
-                android:textAlignment="center"
-                android:gravity="center"
-                android:textColor="@color/black"
-                android:fontFamily="@font/muli"
-                android:layout_gravity="center"
-                android:layout_marginTop="200dp"
                 android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="65dp"
+                android:fontFamily="@font/muli"
+                android:gravity="center"
                 android:text="@string/med_empty_1"
-                android:layout_height="wrap_content"/>
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
 
             <TextView
-                android:textSize="16sp"
-                android:textAlignment="center"
-                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                android:layout_width="wrap_content"
+                android:gravity="center"
                 android:text="@string/med_empty_2"
-                android:layout_height="wrap_content"/>
+                android:textAlignment="center"
+                android:textSize="16sp" />
 
             <Button
                 android:layout_width="200dp"
                 android:layout_height="60dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="40dp"
-                android:layout_marginBottom="320dp"
                 android:text="@string/add_doctors"
+                android:id="@+id/add_doctors"
                 android:textColor="@color/white"
                 app:icon="@drawable/ic_add" />
 
-
         </LinearLayout>
 
-</ScrollView>
+    </ScrollView>
 
 </LinearLayout>

@@ -34,7 +34,6 @@
         android:layout_gravity="center"
         android:layout_height="wrap_content"
         android:text="CO\nDE"
-        android:lineHeight="75dp"
         android:includeFontPadding="false"
         android:textAlignment="center"
         android:textAllCaps="true"
@@ -58,10 +57,11 @@
         android:layout_width="wrap_content"
         android:layout_gravity="center"
         android:layout_height="wrap_content"
-        android:text="Enter one time code sent to "
+        android:text="Enter one time code sent to +233 595 604 098"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textAllCaps="true"
+        android:layout_marginTop="10dp"
         android:fontFamily="@font/muli"
         android:textSize="16sp"/>
 
@@ -84,13 +84,11 @@
 
     <Button
         android:layout_width="200dp"
-        android:layout_height="60dp"
-        android:layout_gravity="center"
         android:layout_marginTop="30dp"
-        android:drawableRight="@drawable/ic_verified"
-        android:drawableTint="#FFFFFF"
-        android:text="@string/verify_code"
-        android:transitionName="button_tran" />
+        android:layout_gravity="center"
+        android:transitionName="button_tran"
+        android:layout_height="60dp"
+        android:text="@string/verify_code"/>
 
 
 </LinearLayout>

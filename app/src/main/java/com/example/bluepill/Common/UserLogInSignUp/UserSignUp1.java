@@ -1,13 +1,12 @@
 package com.example.bluepill.Common.UserLogInSignUp;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 
-import com.example.bluepill.Other.YoutubeActivity;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.bluepill.R;
 import com.google.android.material.textfield.TextInputLayout;
 
@@ -50,12 +49,16 @@ public class UserSignUp1 extends AppCompatActivity {
     private boolean validateFullName() {
 
         String val = fullName.getEditText().getText().toString().trim();
+        String check_spaces = "\\A\\w{1,20}\\z";
 
         if (val.isEmpty()) {
 
-            fullName.setError("Field can not be empty");
+            fullName.setError("Field cannot be empty!");
             return false;
 
+        }  else if (val.matches(check_spaces)) {
+            fullName.setError("Enter more than one name!");
+            return false;
         } else {
             fullName.setError(null);
             fullName.setErrorEnabled(false);
@@ -64,24 +67,21 @@ public class UserSignUp1 extends AppCompatActivity {
     }
 
     private boolean validateUsername() {
-
         String val = username.getEditText().getText().toString().trim();
-        String checkspaces = "\\A\\w{1,20}\\z";
+        String check_spaces = "\\A\\w{1,20}\\z";
 
-        if (val.isEmpty()) {
+        if(val.isEmpty()){
 
-            username.setError("Field can not be empty");
+            username.setError("Field cannot be empty!");
             return false;
-
-        } else if (val.length() > 20) {
-            username.setError("Username is too large!");
+        } else if (val.length()>10){
+            username.setError("Username is too long!");
             return false;
-        } else if (val.matches(checkspaces)) {
-
+        } else if (!val.matches(check_spaces)){
             username.setError("No spaces are allowed!");
             return false;
-
-        } else {
+        }
+        else{
             username.setError(null);
             username.setErrorEnabled(false);
             return true;
@@ -91,12 +91,12 @@ public class UserSignUp1 extends AppCompatActivity {
     private boolean validateEmail() {
 
         String val = email.getEditText().getText().toString().trim();
-        String checkemail = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
+        String check_email = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
 
         if (val.isEmpty()) {
-            email.setError("Field can not be empty");
+            email.setError("Field cannot be empty!");
             return false;
-        } else if (!val.matches(checkemail)) {
+        } else if (!val.matches(check_email)) {
             email.setError("Invalid Email!");
             return false;
         }
@@ -110,21 +110,21 @@ public class UserSignUp1 extends AppCompatActivity {
     private boolean validatePassword() {
 
         String val = password.getEditText().getText().toString().trim();
-        String checkPassword = "^" +
+        String check_password = "^" +
                 //"(?=.*[0-9])" +   // at least 1 digit
                 //"(?=.*[a-z])" +   // at least 1 lower case letter
                 //"(?=.*[A-Z])" +   // at least 1 upper case letter
                 "(?=.*[a-zA-Z])" + // any letter
                 "(?=.*[@#$%^&+=])" + // at least one special character
                 "(?=\\S+$)" + // no white spaces
-                ".{4,}" + //at least 4 characters
+                ".{8,}" + //at least 8 characters
                 "$";
 
         if (val.isEmpty()) {
-            password.setError("Field can not be empty");
+            password.setError("Field cannot be empty!");
             return false;
-        } else if (!val.matches(checkPassword)) {
-            password.setError("Password should contain four characters!");
+        } else if (!val.matches(check_password)) {
+            password.setError("Password should contain 8 characters!");
             return false;
         }
         else {
@@ -134,10 +134,5 @@ public class UserSignUp1 extends AppCompatActivity {
         }
     }
 
-    public void callWebsite(View view) {
-
-        startActivity(new Intent(getApplicationContext(), YoutubeActivity.class));
-
-    }
 
 }

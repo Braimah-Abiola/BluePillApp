@@ -39,7 +39,7 @@
 
 
     <com.hbb20.CountryCodePicker
-        android:background="@drawable/black_border"
+        android:background="@drawable/blue_border"
         android:id="@+id/country_picker"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -51,13 +51,14 @@
         app:ccp_showNameCode="true" />
 
     <com.google.android.material.textfield.TextInputLayout
+        app:boxStrokeColor="@color/signature_blue"
         android:id="@+id/phone_number"
         app:startIconDrawable="@drawable/ic_call"
         app:startIconTint="@color/black"
         app:hintTextColor="@color/black"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Phone Number"
+        android:hint="@string/phone_number"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -74,7 +75,6 @@
         android:layout_height="60dp"
         android:layout_gravity="center"
         android:layout_marginTop="100dp"
-        android:drawableRight="@drawable/ic_next"
         android:elevation="1dp"
         android:onClick="callPage5"
         android:text="@string/next"

@@ -27,12 +27,6 @@ public class DoctorStartUpScreen extends AppCompatActivity {
 
     }
 
-    public void  callDoc1(View view){
-
-        startActivity(new Intent(getApplicationContext(), DoctorSignUp1.class));
-
-    }
-
     public void callUserStartup(View view){
 
         startActivity(new Intent(getApplicationContext(), UserStartUpScreen.class));
@@ -48,6 +42,12 @@ public class DoctorStartUpScreen extends AppCompatActivity {
     public void callDoctorLogin(View view){
 
         startActivity(new Intent(getApplicationContext(), DoctorLogin.class));
+
+    }
+
+    public void callDoc1(View view){
+
+        startActivity(new Intent(getApplicationContext(), DoctorSignUp1.class));
 
     }
 
