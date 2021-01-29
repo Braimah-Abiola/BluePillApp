@@ -35,16 +35,16 @@ public class UserSignUp1 extends AppCompatActivity {
 
     }
 
+
     public void callPage2(View view) {
 
-        if(!validateFullName() | !validateUsername() | !validateEmail() | !validatePassword()){
+        if (!validateFullName() | !validateUsername() | !validateEmail() | !validatePassword()) {
             return;
         }
 
         startActivity(new Intent(getApplicationContext(), UserSignUp2.class));
 
     }
-
 
     private boolean validateFullName() {
 
@@ -56,7 +56,7 @@ public class UserSignUp1 extends AppCompatActivity {
             fullName.setError("Field cannot be empty!");
             return false;
 
-        }  else if (val.matches(check_spaces)) {
+        } else if (val.matches(check_spaces)) {
             fullName.setError("Enter more than one name!");
             return false;
         } else {
@@ -70,18 +70,17 @@ public class UserSignUp1 extends AppCompatActivity {
         String val = username.getEditText().getText().toString().trim();
         String check_spaces = "\\A\\w{1,20}\\z";
 
-        if(val.isEmpty()){
+        if (val.isEmpty()) {
 
             username.setError("Field cannot be empty!");
             return false;
-        } else if (val.length()>10){
+        } else if (val.length() > 10) {
             username.setError("Username is too long!");
             return false;
-        } else if (!val.matches(check_spaces)){
+        } else if (!val.matches(check_spaces)) {
             username.setError("No spaces are allowed!");
             return false;
-        }
-        else{
+        } else {
             username.setError(null);
             username.setErrorEnabled(false);
             return true;
@@ -99,8 +98,7 @@ public class UserSignUp1 extends AppCompatActivity {
         } else if (!val.matches(check_email)) {
             email.setError("Invalid Email!");
             return false;
-        }
-        else {
+        } else {
             email.setError(null);
             email.setErrorEnabled(false);
             return true;
@@ -126,8 +124,7 @@ public class UserSignUp1 extends AppCompatActivity {
         } else if (!val.matches(check_password)) {
             password.setError("Password should contain 8 characters!");
             return false;
-        }
-        else {
+        } else {
             password.setError(null);
             password.setErrorEnabled(false);
             return true;

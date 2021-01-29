@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".Common.Dashboard">
+    tools:context=".Common.Dashboard"
+    android:id="@+id/drawer_layout">
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:headerLayout="@layout/menu_header"
+        app:menu="@menu/main_menu"
+        android:layout_gravity="start"/>
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -13,6 +29,7 @@
             android:padding="15dp">
 
             <ImageView
+                android:id="@+id/menu_icon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
@@ -23,7 +40,6 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
-                android:layout_marginRight="15dp"
                 android:src="@drawable/ic_add" />
 
         </RelativeLayout>
@@ -47,7 +63,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"
                         android:fontFamily="@font/muli_black"
-                        android:text="@string/app_name"
+                        android:text="@string/get_a_way"
                         android:textColor="@color/black"
                         android:textSize="24sp" />
 
@@ -59,7 +75,7 @@
                         android:layout_marginTop="20dp"
                         android:layout_marginRight="40dp"
                         android:layout_marginBottom="20dp"
-                        android:background="@color/white"
+                        android:background="@drawable/search_box_border"
                         android:elevation="8dp">
 
 
@@ -67,30 +83,24 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerVertical="true"
-                            android:layout_marginStart="15dp"
-                            android:text="Search" />
-
-                        <com.airbnb.lottie.LottieAnimationView
-                            android:id="@+id/loading"
-                            android:layout_width="150dp"
-                            android:layout_height="100dp"
-                            android:layout_centerInParent="true"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:lottie_autoPlay="true"
-                            app:lottie_rawRes="@raw/first"
-                            app:lottie_loop="true"
-                            app:lottie_repeatCount="1"/>
+                            android:layout_marginStart="60dp"
+                            android:text="@string/search2" />
 
                         <ImageView
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:layout_alignParentRight="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="15dp"
+                            android:src="@drawable/ic_search" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
                             android:layout_marginEnd="15dp"
-                            android:src="@drawable/ic_search" />
+                            android:src="@drawable/ic_more_vertical" />
 
 
                     </RelativeLayout>
@@ -127,7 +137,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center_horizontal"
-                            android:text="Hospitals"
+                            android:text="@string/hospitals"
                             android:textAlignment="center" />
 
                     </LinearLayout>
@@ -156,7 +166,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center_horizontal"
-                            android:text="Pharmacies"
+                            android:text="@string/pharmacies"
                             android:textAlignment="center" />
 
                     </LinearLayout>
@@ -185,7 +195,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center_horizontal"
-                            android:text="Doctors"
+                            android:text="@string/doctors"
                             android:textAlignment="center" />
 
                     </LinearLayout>
@@ -214,7 +224,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center_horizontal"
-                            android:text="Health Care"
+                            android:text="@string/first_aid"
                             android:textAlignment="center" />
 
                     </LinearLayout>
@@ -302,6 +312,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="100dp"
                     android:orientation="vertical"
                     android:padding="20dp">
 
@@ -330,7 +342,8 @@
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/categories_recycler"
                         android:layout_width="match_parent"
-                        android:layout_height="100dp" />
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp" />
 
                 </LinearLayout>
 
@@ -339,4 +352,6 @@
         </ScrollView>
 
     </LinearLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>
 

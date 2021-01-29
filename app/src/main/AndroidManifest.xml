@@ -14,7 +14,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BluePill">
-        <activity android:name=".Common.Warnings.CheckConnection2"></activity>
+        <activity android:name=".Common.Features"></activity>
+        <activity android:name=".Common.Warnings.CheckConnection2" />
         <activity android:name=".ChatKit.Chat" />
         <activity android:name=".Common.DoctorLogInSignUp.DoctorSignUp5" />
         <activity android:name=".Common.DoctorLogInSignUp.DoctorSignUp4" />
@@ -29,7 +30,6 @@
         <activity android:name=".Common.ForgotPassword.User.ForgotPassword" />
         <activity android:name=".Other.AboutActivity" />
         <activity android:name=".Common.Warnings.CheckConnection" />
-        <activity android:name=".Other.YoutubeActivity" />
         <activity android:name=".Common.UserLogInSignUp.UserSignUp5" />
         <activity android:name=".Common.UserLogInSignUp.UserSignUp4" />
         <activity android:name=".Common.UserLogInSignUp.UserSignUp3" />

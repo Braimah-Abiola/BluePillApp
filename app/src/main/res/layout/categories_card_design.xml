@@ -1,32 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="250dp"
-    android:layout_height="150dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardElevation="8dp"
-    android:layout_margin="12dp"
-    app:cardCornerRadius="5dp">
+    app:cardCornerRadius="2dp"
+    app:cardElevation="8dp">
 
-    <RelativeLayout android:id="@+id/category_bg"
-        android:background="@drawable/card_1"
-        android:padding="15dp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <RelativeLayout
+        android:padding="5dp"
+        android:layout_width="300dp"
+        android:layout_height="140dp">
 
-        <TextView android:id="@+id/category_title"
+        <ImageView android:id="@+id/categories_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/card_1"
+            android:scaleType="centerCrop"/>
+
+        <TextView android:id="@+id/categories_title"
+            android:text="Macdonald's"
+            android:layout_toRightOf="@id/categories_image"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RatingBar android:id="@+id/categories_rating"
+            style="@style/Widget.AppCompat.RatingBar.Small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Resturant"
-            android:textSize="20sp"
-            android:textColor="@color/black"/>
+            android:layout_below="@id/categories_title"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/categories_image"
+            android:progressTint="@color/black"
+            android:rating="2.3" />
 
-        <ImageView android:id="@+id/category_image"
-            android:layout_width="110dp"
-            android:layout_height="110dp"
-            android:src="@drawable/card_4"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"/>
+        <TextView android:id="@+id/categories_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hey You Me She They Are Them Tits Nice Wow"
+            android:layout_below="@id/categories_rating"
+            android:layout_toRightOf="@id/categories_image"
+            android:padding="10dp"/>
+
 
     </RelativeLayout>
+
 
 </androidx.cardview.widget.CardView>

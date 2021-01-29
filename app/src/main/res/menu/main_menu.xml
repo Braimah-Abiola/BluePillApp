@@ -13,9 +13,9 @@
             android:title="@string/search"/>
 
         <item
-            android:id="@+id/nav_all_categories"
+            android:id="@+id/nav_features"
             android:icon="@drawable/ic_dashboard"
-            android:title="@string/all_categories"/>
+            android:title="FEATURES"/>
 
         <item
             android:id="@+id/nav_missing_place"
@@ -38,6 +38,27 @@
 
                 <item
                     android:id="@+id/nav_logout"
+                    android:icon="@drawable/ic_dashboard"
+                    android:title="@string/logout"/>
+
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Test">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_1"
+                    android:icon="@drawable/ic_home"
+                    android:title="@string/log_in"/>
+                <item
+                    android:id="@+id/bottom_nav_2"
+                    android:icon="@drawable/ic_profile"
+                    android:title="@string/profile"/>
+
+                <item
+                    android:id="@+id/nav_3"
                     android:icon="@drawable/ic_dashboard"
                     android:title="@string/logout"/>
 

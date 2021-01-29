@@ -20,6 +20,7 @@
     <color name="pink">#f469a9</color>
     <color name="purple">#ba53de</color>
     <color name="signature_blue">#5187D6</color>
+    <color name="signature_blue_translucent">#805187D6</color>
     <color name="transparent">#00FFFFFF</color>
     <color name="orange">#FF9800</color>
     <color name="light_white">#ADE8E8E8</color>

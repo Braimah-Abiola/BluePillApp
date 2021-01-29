@@ -22,7 +22,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/pg_1"
-        android:onClick="callWebsite"
         android:layout_marginBottom="80dp"
         android:layout_marginTop="5dp"
         android:layout_gravity="center"
@@ -121,7 +120,7 @@
     <Button
         android:layout_width="200dp"
         android:elevation="1dp"
-        android:onClick="callPage2"
+        android:id="@+id/next_btn"
         android:layout_gravity="center"
         android:transitionName="button_tran"
         android:layout_height="60dp"

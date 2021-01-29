@@ -50,16 +50,15 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
     public static class CategoryViewHolder extends RecyclerView.ViewHolder{
 
         ImageView image;
-        TextView title;
-        RelativeLayout background;
+        TextView title, desc;
 
         public CategoryViewHolder(@NonNull View itemView) {
             super(itemView);
 
             //Hooks
-            image = itemView.findViewById(R.id.category_image);
-            title = itemView.findViewById(R.id.category_title);
-            background = itemView.findViewById(R.id.category_bg);
+            image = itemView.findViewById(R.id.categories_image);
+            title = itemView.findViewById(R.id.categories_title);
+            desc = itemView.findViewById(R.id.featured_description);
 
         }
     }
