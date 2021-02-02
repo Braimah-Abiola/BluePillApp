@@ -1,8 +1,5 @@
 package com.example.bluepill.Common.UserLogInSignUp;
 
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -14,12 +11,12 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.ProgressBar;
 
-import com.example.bluepill.ChatKit.Chat;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.bluepill.Common.ForgotPassword.User.ForgotPassword;
 import com.example.bluepill.R;
 import com.google.android.material.textfield.TextInputLayout;
-
-import java.util.Objects;
 
 public class UserLogin extends AppCompatActivity {
 
@@ -45,22 +42,11 @@ public class UserLogin extends AppCompatActivity {
 
 
     }
+
     public void callUserStartup(View view) {
 
         startActivity(new Intent(getApplicationContext(), UserStartUpScreen.class));
 
-
-    }
-
-    public void goBack(View view) {
-
-        startActivity(new Intent(getApplicationContext(), UserStartUpScreen.class));
-
-    }
-
-    public void callChat (View view) {
-
-        startActivity(new Intent(getApplicationContext(), Chat.class));
 
     }
 
@@ -74,12 +60,12 @@ public class UserLogin extends AppCompatActivity {
     public void letTheUserLogIn(View view) {
 
         if (!isConnected(this)) {
-
             showCustomDialog();
-
+            return;
         }
 
-        if (!validateUsername() | !validatePassword()) {
+        if ( !validateUsername() | !validatePassword()) {
+            return;
         }
 
     }
@@ -88,7 +74,7 @@ public class UserLogin extends AppCompatActivity {
 
         AlertDialog.Builder builder = new AlertDialog.Builder(UserLogin.this);
         builder.setMessage("Please connect to the internet to proceed further")
-                .setCancelable(true)
+                .setCancelable(false)
                 .setPositiveButton("Connect", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -112,8 +98,11 @@ public class UserLogin extends AppCompatActivity {
         NetworkInfo wifiConn = connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI);
         NetworkInfo mobileConn = connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE);
 
-        return (wifiConn != null && wifiConn.isConnected()) || (mobileConn != null && mobileConn.isConnected());
-
+        if ((wifiConn != null && wifiConn.isConnected()) || (mobileConn != null && mobileConn.isConnected())) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
 
@@ -122,18 +111,17 @@ public class UserLogin extends AppCompatActivity {
         String val = username.getEditText().getText().toString().trim();
         String check_spaces = "\\A\\w{1,20}\\z";
 
-        if(val.isEmpty()){
+        if (val.isEmpty()) {
 
             username.setError("Field cannot be empty!");
             return false;
-        } else if (val.length()>10){
+        } else if (val.length() > 10) {
             username.setError("Username is too long!");
             return false;
-        } else if (!val.matches(check_spaces)){
+        } else if (!val.matches(check_spaces)) {
             username.setError("No spaces are allowed!");
             return false;
-        }
-        else{
+        } else {
             username.setError(null);
             username.setErrorEnabled(false);
             return true;
@@ -160,8 +148,7 @@ public class UserLogin extends AppCompatActivity {
         } else if (!val.matches(check_password)) {
             password.setError("Password should contain 8 characters!");
             return false;
-        }
-        else {
+        } else {
             password.setError(null);
             password.setErrorEnabled(false);
             return true;

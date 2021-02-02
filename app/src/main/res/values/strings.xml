@@ -33,7 +33,7 @@
     <string name="make_selection">Make Selection</string>
     <string name="sms">via sms:</string>
     <string name="password_updated">Password Updated</string>
-    <string name="password_updated_msg">Your password has been updated\nlogin to continue</string>
+    <string name="password_updated_msg">Your password has been updated!</string>
     <string name="verify_code">Verify Code</string>
     <string name="new_credentials">New\nCredentials</string>
     <string name="demo_mail">support@gmail.com</string>
@@ -53,7 +53,7 @@
     <string name="name">What is your name?</string>
     <string name="birthday">When is your birthday?</string>
     <string name="phone_number">Enter your phone number</string>
-    <string name="gender">When is your gender?</string>
+    <string name="gender">Choose your gender</string>
     <string name="male">Male</string>
     <string name="login2">Login</string>
     <string name="female">Female</string>

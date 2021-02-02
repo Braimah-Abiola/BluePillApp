@@ -42,6 +42,8 @@ public class UserSignUp1 extends AppCompatActivity {
             return;
         }
 
+        // Pass Data to Next Screen
+
         startActivity(new Intent(getApplicationContext(), UserSignUp2.class));
 
     }
@@ -57,7 +59,7 @@ public class UserSignUp1 extends AppCompatActivity {
             return false;
 
         } else if (val.matches(check_spaces)) {
-            fullName.setError("Enter more than one name!");
+            fullName.setError("Enter your full name!");
             return false;
         } else {
             fullName.setError(null);
