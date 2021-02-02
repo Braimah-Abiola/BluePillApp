@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/header_background"
     android:orientation="vertical"
     android:scrollbars="none"
     tools:context=".Common.UserLogInSignUp.UserLogin">
@@ -15,15 +14,13 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:textSize="40sp"
+            android:textSize="24sp"
             android:textColor="@color/black"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:layout_centerVertical="true"
-            android:textAllCaps="true"
-            android:text="@string/login2"
-            android:fontFamily="@font/muli_black"/>
+            android:text="Enter your details" />
 
 
         <ImageView
@@ -31,7 +28,8 @@
             android:layout_marginLeft="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_back"
+            android:src="@drawable/ic_close"
+            app:tint = "@color/black"
             android:layout_centerVertical="true"
             android:layout_alignParentStart="true"
             tools:ignore="ContentDescription" />
@@ -44,24 +42,20 @@
         android:layout_height="wrap_content"
         android:padding="20dp">
 
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="40sp"
-            android:layout_marginBottom="10dp"
-            android:fontFamily="@font/muli"
-            android:textAlignment="center"
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_marginTop="-55dp"
             android:layout_gravity="center"
-            android:transitionName="logo_text"
-            android:text="@string/login_account"/>
-
+            app:lottie_rawRes="@raw/pulse"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:layout_width="200dp"
+            android:layout_height="200dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:orientation="vertical"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="-30dp"
             android:layout_marginBottom="10dp">
 
             <com.google.android.material.textfield.TextInputLayout
@@ -82,6 +76,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:hint="@string/password"
                 app:hintTextColor="@color/black"
@@ -128,20 +123,22 @@
             </RelativeLayout>
 
 
-
-            <Button android:id="@+id/login_btn"
+            <Button
+                android:id="@+id/login_btn"
                 android:layout_width="200dp"
-                android:onClick="letTheUserLogIn"
                 android:layout_height="60dp"
                 android:layout_gravity="center"
-                android:text="@string/log_in"/>
+                android:onClick="letTheUserLogIn"
+                android:text="@string/log_in" />
 
             <TextView
-                android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/or_login_with"
-                android:layout_gravity="center"/>
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="or"
+                android:textAlignment="center" />
 
             <LinearLayout
                 android:gravity="center"
@@ -154,7 +151,7 @@
                     android:backgroundTint="@color/google"
                     android:layout_width="wrap_content"
                     android:text="@string/google"
-                    android:drawableStart="@drawable/ic_google"
+                    android:drawableLeft="@drawable/ic_google"
                     android:drawableTint="@color/white"
                     android:layout_margin="10dp"
                     android:layout_height="wrap_content"/>
@@ -164,24 +161,21 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
-                    android:drawableStart="@drawable/ic_facebook"
+                    android:drawableLeft="@drawable/ic_facebook"
                     android:drawableTint="#FFFFFF"
                     android:text="@string/facebook" />
 
 
             </LinearLayout>
 
-            <Button android:id="@+id/callSignUp"
-                android:layout_width="200dp"
-                android:layout_marginTop="15dp"
-                android:textAlignment="center"
+            <TextView
+                android:layout_marginTop="50dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@color/transparent"
-                android:layout_gravity="center"
-                android:onClick="callUserSignUp"
-                android:textColor="@color/black_overlay"
-                android:text="@string/create_account"
-                android:textAllCaps="true"/>
+                android:text="By Creating an account, I accept Blue Pill's\nTerns and Conditions"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_gravity="center"/>
 
         </LinearLayout>
 

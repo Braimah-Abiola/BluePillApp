@@ -14,7 +14,6 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 
-import com.example.bluepill.Common.Features;
 import com.example.bluepill.R;
 import com.google.android.material.navigation.NavigationView;
 import com.ismaeldivita.chipnavigation.ChipNavigationBar;
@@ -40,7 +39,7 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
 
         chipNavigationBar = findViewById(R.id.bottom_nav_menu);
         chipNavigationBar.setItemSelected(R.id.bottom_nav_home, true);
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new  UserHomeFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new UserHomeFragment()).commit();
         bottomMenu();
 
         //Hooks
@@ -108,25 +107,50 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
 
-            case R.id.nav_features:
-                Intent intent = new Intent(getApplicationContext(), Features.class);
+            case R.id.nav_home:
+                Intent home = new Intent(getApplicationContext(), UserDashboardActivity.class);
+                startActivity(home);
+                break;
+            case R.id.fleming_lens:
+                Intent intent = new Intent(getApplicationContext(), FlemingLens.class);
                 startActivity(intent);
                 break;
+            case R.id.settings:
+                Intent settings = new Intent(getApplicationContext(), Settings.class);
+                startActivity(settings);
+                break;
+            case R.id.nav_health_articles:
+                Intent articles = new Intent(getApplicationContext(), Articles.class);
+                startActivity(articles);
+                break;
+            case R.id.nav_search:
+                Intent search = new Intent(getApplicationContext(), Search.class);
+                startActivity(search);
+                break;
+            case R.id.nav_feedback:
+                Intent feedback = new Intent(getApplicationContext(), Feedback.class);
+                startActivity(feedback);
+                break;
+            case R.id.reminder:
+                Intent reminder = new Intent(getApplicationContext(), Reminder.class);
+                startActivity(reminder);
+                break;
+
         }
 
         return true;
     }
 
 
-    private void  bottomMenu(){
+    private void bottomMenu() {
 
         chipNavigationBar.setOnItemSelectedListener(new ChipNavigationBar.OnItemSelectedListener() {
             @Override
             public void onItemSelected(int i) {
                 Fragment fragment = null;
-                switch (i){
+                switch (i) {
                     case R.id.bottom_nav_home:
                         fragment = new UserHomeFragment();
                         break;

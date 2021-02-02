@@ -41,8 +41,6 @@
             app:cnb_radius="8dp"
             android:layout_margin="30dp"
             android:elevation="8dp"/>
-
-
     </RelativeLayout>
 
 

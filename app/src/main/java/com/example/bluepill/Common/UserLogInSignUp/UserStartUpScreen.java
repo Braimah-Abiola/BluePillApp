@@ -2,7 +2,6 @@ package com.example.bluepill.Common.UserLogInSignUp;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Pair;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -11,14 +10,10 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.bluepill.Common.Dashboard;
+import com.example.bluepill.User.Articles;
 import com.example.bluepill.Common.DoctorLogInSignUp.DoctorStartUpScreen;
 import com.example.bluepill.Other.AboutActivity;
 import com.example.bluepill.R;
-import com.mikhaellopez.ratebottomsheet.RateBottomSheet;
-import com.mikhaellopez.ratebottomsheet.RateBottomSheetManager;
-
-import guy4444.smartrate.SmartRate;
 
 public class UserStartUpScreen extends AppCompatActivity {
 
@@ -70,7 +65,7 @@ public class UserStartUpScreen extends AppCompatActivity {
 
     public void callHome(View view){
 
-        startActivity(new Intent(getApplicationContext(), Dashboard.class));
+        startActivity(new Intent(getApplicationContext(), Articles.class));
 
     }
 

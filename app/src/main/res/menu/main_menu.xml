@@ -13,57 +13,81 @@
             android:title="@string/search"/>
 
         <item
-            android:id="@+id/nav_features"
-            android:icon="@drawable/ic_dashboard"
-            android:title="FEATURES"/>
-
-        <item
-            android:id="@+id/nav_missing_place"
-            android:icon="@drawable/ic_home"
-            android:title="@string/add_missing_place"/>
+            android:id="@+id/nav_health_articles"
+            android:icon="@drawable/ic_article"
+            android:title="HEALTH ARTICLES"/>
     </group>
+
+    <item android:title="FEATURES" android:id="@+id/features">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/fleming_lens"
+                    android:icon="@drawable/ic_fleming_lens"
+                    android:title="FLEMING LENS"/>
+                <item
+                    android:id="@+id/reminder"
+                    android:icon="@drawable/ic_notification"
+                    android:title="REMINDER"/>
+                <item
+                    android:id="@+id/navigation"
+                    android:icon="@drawable/ic_navigation"
+                    android:title="NAVIGATION"/>
+                <item
+                    android:id="@+id/meal_planner"
+                    android:icon="@drawable/ic_planner"
+                    android:title="MEAL PLANNER"/>
+                <item
+                    android:id="@+id/AR"
+                    android:icon="@drawable/ic_brush"
+                    android:title="AR"/>
+
+            </group>
+        </menu>
+    </item>
 
     <item android:title="@string/profile">
         <menu>
             <group android:checkableBehavior="single">
                 <item
-                    android:id="@+id/nav_login"
-                    android:icon="@drawable/ic_home"
-                    android:title="@string/log_in"/>
-
-                <item
                     android:id="@+id/bottom_nav_profile"
-                    android:icon="@drawable/ic_profile"
+                    android:icon="@drawable/ic_person_pin"
                     android:title="@string/profile"/>
 
                 <item
                     android:id="@+id/nav_logout"
-                    android:icon="@drawable/ic_dashboard"
+                    android:icon="@drawable/ic_power"
                     android:title="@string/logout"/>
 
             </group>
         </menu>
     </item>
 
-    <item android:title="Test">
+    <item android:title="MORE">
         <menu>
             <group android:checkableBehavior="single">
                 <item
-                    android:id="@+id/nav_1"
-                    android:icon="@drawable/ic_home"
-                    android:title="@string/log_in"/>
+                    android:icon="@drawable/ic_settings"
+                    android:id="@+id/settings"
+                    android:title="Settings" />
                 <item
-                    android:id="@+id/bottom_nav_2"
-                    android:icon="@drawable/ic_profile"
-                    android:title="@string/profile"/>
+                    android:icon="@drawable/ic_share"
+                    android:id="@+id/nav_share"
+                    android:title="Share" />
+                <item
+                    android:icon="@drawable/ic_feedback"
+                    android:id="@+id/nav_feedback"
+                    android:title="Help &amp; Feedback" />
+                <item
+                    android:icon="@drawable/ic_about"
+                    android:id="@+id/nav_about"
+                    android:title="About Blue Pill" />
 
                 <item
-                    android:id="@+id/nav_3"
-                    android:icon="@drawable/ic_dashboard"
-                    android:title="@string/logout"/>
-
+                    android:icon="@drawable/ic_help"
+                    android:id="@+id/nav_help"
+                    android:title="Help" />
             </group>
         </menu>
     </item>
-
 </menu>

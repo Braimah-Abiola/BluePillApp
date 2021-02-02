@@ -16,7 +16,7 @@
 
 
     <!-- START UP SCREEN -->
-    <string name="slogan">Your Health is A Click Away</string>
+    <string name="slogan">Your Healthcare is A Click Away</string>
     <string name="doctor_startup">I am a doctor</string>
     <string name="sign_up">Sign Up</string>
     <string name="how_we_work">How we work?</string>
@@ -221,5 +221,25 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="get_a_way">Get A Way</string>
+
+    <string name="feedback_explanation">Tell us what you like or not about Blue Pill and we promise that we will improve! 😇 (You can also use this to report bugs)</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <string name="notifications">Notifications</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
 
 </resources>

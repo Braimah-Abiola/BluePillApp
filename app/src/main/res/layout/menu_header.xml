@@ -5,23 +5,26 @@
     android:orientation="vertical"
     android:gravity="bottom"
     android:background="@drawable/header_background"
-    android:padding="20dp">
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp">
 
-    <LinearLayout android:orientation="horizontal"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <ImageView
             android:id="@+id/logo"
+            android:layout_alignParentStart="true"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:src="@drawable/pulse" />
 
-    </LinearLayout>
+    </RelativeLayout>
 
 
-    <TextView
+    <TextView android:paddingLeft="20dp"
         android:id="@+id/app_name"
+        android:layout_marginTop="-15dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/muli_black"
@@ -29,11 +32,12 @@
         android:textColor="@color/black"
         android:textSize="24sp" />
 
-    <TextView
+    <TextView android:paddingLeft="20dp"
+        android:layout_marginTop="5dp"
         android:id="@+id/sloganText"
+        android:textSize="20sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
         android:text="@string/slogan" />
 
 </LinearLayout>
