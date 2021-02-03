@@ -37,48 +37,53 @@
         android:textSize="18sp"/>
 
     <LinearLayout android:orientation="vertical"
+        android:background="@drawable/pink_border"
         android:layout_width="match_parent"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="80dp"
         android:layout_height="wrap_content">
 
-        <Button
-            android:layout_width="200dp"
-            android:elevation="1dp"
-            android:backgroundTint="@color/doctor_pink"
+        <RadioGroup
+            android:theme="@style/Theme.BluePill.Doctor"
+            android:id="@+id/radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
             android:layout_gravity="center"
-            android:transitionName="button_tran"
-            android:layout_height="60dp"
-            android:text="@string/male"/>
+            android:orientation="horizontal">
 
-        <Button
-            android:layout_width="200dp"
-            android:elevation="1dp"
-            android:layout_gravity="center"
-            android:backgroundTint="@color/doctor_pink"
-            android:transitionName="button_tran"
-            android:layout_height="60dp"
-            android:text="@string/female"/>
+            <RadioButton
+                android:padding="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/male"
+                android:text="Male"/>
 
-        <Button
-            android:layout_width="200dp"
-            android:elevation="1dp"
-            android:backgroundTint="@color/doctor_pink"
-            android:layout_gravity="center"
-            android:transitionName="button_tran"
-            android:layout_height="60dp"
-            android:text="@string/other"/>
+            <RadioButton
+                android:padding="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/female"
+                android:text="Female"/>
 
+            <RadioButton
+                android:padding="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/other"
+                android:text="Other"/>
+
+        </RadioGroup>
 
     </LinearLayout>
 
     <Button
         android:layout_width="200dp"
         android:elevation="1dp"
-        android:backgroundTint="@color/doctor_pink"
+        android:theme="@style/Theme.BluePill.Doctor"
+        android:onClick="callDoc4"
         android:layout_marginTop="60dp"
         android:layout_gravity="center"
-        android:onClick="callDoc4"
         android:transitionName="button_tran"
         android:layout_height="60dp"
         android:text="@string/next"/>

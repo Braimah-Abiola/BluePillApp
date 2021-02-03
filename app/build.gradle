@@ -65,14 +65,15 @@ dependencies {
     implementation 'androidx.core:core:1.3.2'
     implementation 'androidx.core:core-ktx:1.3.2'
     implementation 'com.hbb20:ccp:2.3.1'
-    implementation 'com.github.guy-4444:SmartRateUsDialog-Android:1.00.08'
     implementation 'com.mikhaellopez:ratebottomsheet:1.1.0'
     implementation 'com.github.coyarzun89:fabtransitionactivity:0.2.0'
 
     //OTP PIN VIEW DESIGN
     implementation 'com.chaos.view:pinview:1.4.3'
 
-    implementation 'com.mikhaellopez:ratebottomsheet:1.1.0'
+    // ChatKit
     implementation 'com.github.stfalcon:chatkit:0.3.3'
-    implementation 'com.github.p32929:AndroidAppLockscreen:1.2'
+
+    // Rate app
+    implementation 'com.github.hotchemi:android-rate:1.0.1'
 }

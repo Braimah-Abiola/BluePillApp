@@ -14,7 +14,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BluePill">
-        <activity android:name=".User.ArticleBookmarks"></activity>
+        <activity android:name=".Notifications.ReminderNotification"></activity>
+        <activity android:name=".User.RemindersActivity" />
+        <activity android:name=".User.ArticleBookmarks" />
         <activity android:name=".User.Reminder" />
         <activity android:name=".User.FlemingLens" />
         <activity android:name=".User.Search" />

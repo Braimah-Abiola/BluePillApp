@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:scrollbars="none"
     tools:context=".Common.DoctorLogInSignUp.DoctorLogin">
 
     <RelativeLayout
@@ -22,9 +21,8 @@
             android:layout_centerVertical="true"
             android:text="Enter your details" />
 
-
         <ImageView
-            android:onClick="callUserStartup"
+            android:onClick="callDoctorStartUp"
             android:layout_marginLeft="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -42,20 +40,29 @@
         android:layout_height="wrap_content"
         android:padding="20dp">
 
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_marginTop="-65dp"
+            android:layout_gravity="center"
+            app:lottie_rawRes="@raw/pulse_pink"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:layout_width="200dp"
+            android:layout_height="200dp"/>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:orientation="vertical"
             android:layout_height="wrap_content"
-            android:layout_marginTop="70dp"
+            android:layout_marginTop="-40dp"
             android:layout_marginBottom="10dp">
 
             <com.google.android.material.textfield.TextInputLayout
-                app:boxStrokeColor="@color/doctor_pink"
                 android:layout_width="match_parent"
                 android:transitionName="username_tran"
                 android:hint="@string/doctor_id"
                 android:layout_height="wrap_content"
                 android:id="@+id/username"
+                app:boxStrokeColor="@color/doctor_pink"
                 app:startIconDrawable="@drawable/ic_edit"
                 app:startIconTint="@color/black"
                 app:hintTextColor="@color/black"
@@ -69,9 +76,9 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_marginTop="10dp"
-                app:boxStrokeColor="@color/doctor_pink"
                 android:layout_width="match_parent"
                 android:hint="@string/password"
+                app:boxStrokeColor="@color/doctor_pink"
                 app:hintTextColor="@color/black"
                 app:startIconDrawable="@drawable/ic_lock"
                 app:startIconTint="@color/black"
@@ -115,23 +122,22 @@
             </RelativeLayout>
 
 
-
-            <Button android:id="@+id/login_btn"
-                android:backgroundTint="@color/doctor_pink"
+            <Button
+                android:theme="@style/Theme.BluePill.Doctor"
+                android:id="@+id/login_btn"
                 android:layout_width="200dp"
                 android:layout_height="60dp"
                 android:layout_gravity="center"
-                android:text="@string/log_in"/>
-
+                android:text="@string/log_in" />
 
             <TextView
-                android:textAlignment="center"
-                android:gravity="center"
-                android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
                 android:text="or"
-                android:layout_gravity="center"/>
+                android:textAlignment="center" />
 
             <LinearLayout
                 android:gravity="center"
@@ -162,10 +168,10 @@
             </LinearLayout>
 
             <TextView
-                android:layout_marginTop="80dp"
+                android:layout_marginTop="40dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="By Creating an account, I accept Blue Pill's\nTerns and Conditions"
+                android:text="@string/terms_and_conditions"
                 android:textAlignment="center"
                 android:gravity="center"
                 android:layout_gravity="center"/>

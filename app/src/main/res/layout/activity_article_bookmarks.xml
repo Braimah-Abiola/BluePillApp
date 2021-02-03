@@ -58,11 +58,11 @@
             <ImageView
                 app:tint="@color/white"
                 android:layout_marginRight="80dp"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
-                android:src="@drawable/ic_bookmarks" />
+                android:src="@drawable/ic_search" />
 
         </RelativeLayout>
 
@@ -74,10 +74,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent">
 
+                <ImageView
+                    android:id="@+id/no_bookmark_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/no_bookmark"/>
+
                 <TextView
+                    android:layout_below="@id/no_bookmark_image"
                     android:textSize="30sp"
+                    android:layout_marginTop="-100dp"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginTop="30dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="No bookmarks"/>

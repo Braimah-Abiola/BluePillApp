@@ -5,7 +5,6 @@
 
         <EditTextPreference
             android:icon="@drawable/ic_edit"
-            android:theme="@style/Theme.BluePill.Custom.Settings"
             app:key="signature"
             app:title="@string/signature_title"
             app:useSimpleSummaryProvider="true" />
@@ -19,6 +18,21 @@
             app:useSimpleSummaryProvider="true" />
 
     </PreferenceCategory>
+
+    <PreferenceCategory app:title="App Theme">
+
+        <SwitchPreferenceCompat
+            android:icon="@drawable/ic_sun"
+            app:key="dark"
+            app:title="Light theme" />
+
+        <SwitchPreferenceCompat
+            android:icon="@drawable/ic_moon"
+            app:key="light"
+            app:title="Dark theme" />
+
+    </PreferenceCategory>
+
 
     <PreferenceCategory app:title="@string/sync_header">
 
@@ -36,7 +50,7 @@
 
     </PreferenceCategory>
 
-    <PreferenceCategory app:title="@string/notifications">
+    <PreferenceCategory app:title="@string/notifications" android:icon="@drawable/ic_notification">
 
         <EditTextPreference
             app:key="signature"
@@ -50,6 +64,15 @@
             app:key="reply"
             app:title="@string/reply_title"
             app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory  android:title="Version: v1.3.4" >
+
+    </PreferenceCategory>
+
+    <PreferenceCategory>
+        
 
     </PreferenceCategory>
 

@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:padding="20dp"
     android:scrollbars="none"
-    android:background="@color/signature_blue"
     tools:context=".Other.AboutActivity">
 
 
@@ -14,14 +13,27 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="About"
-            android:fontFamily="@font/muli_black"
-            android:textColor="@color/white"
-            android:layout_gravity="center"
-            android:textSize="28sp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_close"/>
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About"
+                android:fontFamily="@font/muli_black"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:textSize="28sp"/>
+
+        </RelativeLayout>
 
         <ImageView android:layout_marginTop="20dp"
             android:layout_width="match_parent"
@@ -32,7 +44,7 @@
             android:layout_width="wrap_content"
             android:fontFamily="@font/muli"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:text="@string/large_text"/>
 
     </LinearLayout>

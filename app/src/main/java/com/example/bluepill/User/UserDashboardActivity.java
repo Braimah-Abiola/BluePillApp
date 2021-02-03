@@ -1,5 +1,6 @@
 package com.example.bluepill.User;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -14,6 +15,7 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 
+import com.example.bluepill.Other.AboutActivity;
 import com.example.bluepill.R;
 import com.google.android.material.navigation.NavigationView;
 import com.ismaeldivita.chipnavigation.ChipNavigationBar;
@@ -104,6 +106,7 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
             super.onBackPressed();
     }
 
+    @SuppressLint("NonConstantResourceId")
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
@@ -133,42 +136,39 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
                 Intent feedback = new Intent(getApplicationContext(), Feedback.class);
                 startActivity(feedback);
                 break;
-            case R.id.reminder:
-                Intent reminder = new Intent(getApplicationContext(), Reminder.class);
-                startActivity(reminder);
+            case R.id.nav_about:
+                Intent about = new Intent(getApplicationContext(), AboutActivity.class);
+                startActivity(about);
                 break;
-
         }
 
         return true;
     }
 
 
+    @SuppressLint("NonConstantResourceId")
     private void bottomMenu() {
 
-        chipNavigationBar.setOnItemSelectedListener(new ChipNavigationBar.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(int i) {
-                Fragment fragment = null;
-                switch (i) {
-                    case R.id.bottom_nav_home:
-                        fragment = new UserHomeFragment();
-                        break;
-                    case R.id.bottom_nav_fleming:
-                        fragment = new UserFlemingFragment();
-                        break;
-                    case R.id.bottom_nav_tele_medicine:
-                        fragment = new UserTelemedFragment();
-                        break;
-                    case R.id.bottom_nav_dashboard:
-                        fragment = new UserDashboardFragment();
-                        break;
-                    case R.id.bottom_nav_profile:
-                        fragment = new UserProfileFragment();
-                        break;
-                }
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, fragment).commit();
+        chipNavigationBar.setOnItemSelectedListener(i -> {
+            Fragment fragment = null;
+            switch (i) {
+                case R.id.bottom_nav_home:
+                    fragment = new UserHomeFragment();
+                    break;
+                case R.id.bottom_nav_fleming:
+                    fragment = new UserFlemingFragment();
+                    break;
+                case R.id.bottom_nav_tele_medicine:
+                    fragment = new UserTelemedFragment();
+                    break;
+                case R.id.bottom_nav_dashboard:
+                    fragment = new UserDashboardFragment();
+                    break;
+                case R.id.bottom_nav_profile:
+                    fragment = new UserProfileFragment();
+                    break;
             }
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, fragment).commit();
         });
 
     }
