@@ -22,9 +22,9 @@
         android:icon="@drawable/ic_dashboard"
         app:cnb_backgroundColor="@color/signature_blue" />
 
-    <item android:title="@string/profile"
-        android:id="@+id/bottom_nav_profile"
-        android:icon="@drawable/ic_person_pin"
+    <item android:title="Explore"
+        android:id="@+id/bottom_nav_explore"
+        android:icon="@drawable/ic_navigation"
         app:cnb_backgroundColor="@color/signature_blue" />
 
 </menu>

@@ -1,17 +1,10 @@
 package com.example.bluepill.Common.UserLogInSignUp;
 
-import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.os.Bundle;
-import android.provider.Settings;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.ProgressBar;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.bluepill.Common.ForgotPassword.User.ForgotPassword;
@@ -22,7 +15,7 @@ public class UserLogin extends AppCompatActivity {
 
     // Get Data Variables
     TextInputLayout username, password;
-    ProgressBar progressBar;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +40,6 @@ public class UserLogin extends AppCompatActivity {
 
         startActivity(new Intent(getApplicationContext(), UserStartUpScreen.class));
 
-
     }
 
     public void callForgotPassword(View view) {
@@ -57,69 +49,20 @@ public class UserLogin extends AppCompatActivity {
     }
 
 
-    public void letTheUserLogIn(View view) {
-
-        if (!isConnected(this)) {
-            showCustomDialog();
-            return;
-        }
-
-        if ( !validateUsername() | !validatePassword()) {
-            return;
-        }
-
-    }
-
-    private void showCustomDialog() {
-
-        AlertDialog.Builder builder = new AlertDialog.Builder(UserLogin.this);
-        builder.setMessage("Please connect to the internet to proceed further")
-                .setCancelable(false)
-                .setPositiveButton("Connect", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        startActivity(new Intent(Settings.ACTION_WIFI_SETTINGS));
-                    }
-                })
-                .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        startActivity(new Intent(getApplicationContext(), UserStartUpScreen.class));
-                        finish();
-                    }
-                });
-
-    }
-
-    private boolean isConnected(UserLogin userLogin) {
-
-        ConnectivityManager connectivityManager = (ConnectivityManager) userLogin.getSystemService(Context.CONNECTIVITY_SERVICE);
-
-        NetworkInfo wifiConn = connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI);
-        NetworkInfo mobileConn = connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE);
-
-        if ((wifiConn != null && wifiConn.isConnected()) || (mobileConn != null && mobileConn.isConnected())) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-
-
     // Validate Username and Password
     private boolean validateUsername() {
         String val = username.getEditText().getText().toString().trim();
-        String check_spaces = "\\A\\w{1,20}\\z";
+        String check_spaces = getString(R.string.spaces);
 
         if (val.isEmpty()) {
 
-            username.setError("Field cannot be empty!");
+            username.setError(getString(R.string.error_empty));
             return false;
         } else if (val.length() > 10) {
-            username.setError("Username is too long!");
+            username.setError(getString(R.string.error_username_long));
             return false;
         } else if (!val.matches(check_spaces)) {
-            username.setError("No spaces are allowed!");
+            username.setError(getString(R.string.no_spaces));
             return false;
         } else {
             username.setError(null);
@@ -132,21 +75,21 @@ public class UserLogin extends AppCompatActivity {
     private boolean validatePassword() {
 
         String val = password.getEditText().getText().toString().trim();
-        String check_password = "^" +
+        String check_password = getString(R.string.power_sign) +
                 //"(?=.*[0-9])" +   // at least 1 digit
                 //"(?=.*[a-z])" +   // at least 1 lower case letter
                 //"(?=.*[A-Z])" +   // at least 1 upper case letter
-                "(?=.*[a-zA-Z])" + // any letter
-                "(?=.*[@#$%^&+=])" + // at least one special character
-                "(?=\\S+$)" + // no white spaces
-                ".{8,}" + //at least 8 characters
-                "$";
+                getString(R.string.any_letter) + // any letter
+                getString(R.string.one_special_char) + // at least one special character
+                getString(R.string.no_white_spaces) + // no white spaces
+                getString(R.string.eight_char) + //at least 8 characters
+                getString(R.string.dollar_sign);
 
         if (val.isEmpty()) {
-            password.setError("Field cannot be empty!");
+            password.setError(getString(R.string.error_empty));
             return false;
         } else if (!val.matches(check_password)) {
-            password.setError("Password should contain 8 characters!");
+            password.setError(getString(R.string.error_password));
             return false;
         } else {
             password.setError(null);

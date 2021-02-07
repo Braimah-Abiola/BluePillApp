@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/layout"
     android:layout_width="350dp"
-    android:layout_height="350dp"
+    android:layout_height="wrap_content"
     android:layout_gravity="center"
     android:background="@drawable/blue_border"
     android:orientation="vertical">
@@ -37,6 +37,8 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/positive"
+            android:layout_marginBottom="20dp"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_marginStart="10dp"
@@ -44,6 +46,8 @@
             android:text="Yes" />
 
         <Button
+            android:id="@+id/negative"
+            android:layout_marginBottom="20dp"
             android:layout_weight="1"
             android:layout_marginStart="10dp"
             android:layout_width="0dp"

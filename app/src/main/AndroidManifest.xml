@@ -3,8 +3,9 @@
     package="com.example.bluepill">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -14,10 +15,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BluePill">
-        <activity android:name=".Notifications.ReminderNotification"></activity>
-        <activity android:name=".User.RemindersActivity" />
+        <activity android:name=".User.UserProfile" />
         <activity android:name=".User.ArticleBookmarks" />
-        <activity android:name=".User.Reminder" />
         <activity android:name=".User.FlemingLens" />
         <activity android:name=".User.Search" />
         <activity
@@ -25,7 +24,6 @@
             android:label="@string/title_activity_settings" />
         <activity android:name=".User.FilterTags" />
         <activity android:name=".User.Feedback" />
-        <activity android:name=".Common.Popup.LogOut" />
         <activity android:name=".Common.Features" />
         <activity android:name=".Common.Warnings.CheckConnection2" />
         <activity android:name=".ChatKit.Chat" />

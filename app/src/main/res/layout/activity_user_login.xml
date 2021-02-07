@@ -128,7 +128,6 @@
                 android:layout_width="200dp"
                 android:layout_height="60dp"
                 android:layout_gravity="center"
-                android:onClick="letTheUserLogIn"
                 android:text="@string/log_in" />
 
             <TextView

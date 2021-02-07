@@ -26,6 +26,8 @@ import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;
 
+import hotchemi.android.rate.AppRate;
+
 public class Articles extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     //Variables
@@ -64,6 +66,14 @@ public class Articles extends AppCompatActivity implements NavigationView.OnNavi
         mostViewedRecycler();
         categoriesRecycler();
 
+        //App Rate
+        AppRate.with(this)
+                .setInstallDays(1)
+                .setLaunchTimes(1)
+                .setRemindInterval(1)
+                .monitor();
+
+        AppRate.showRateDialogIfMeetsConditions(this);
     }
 
     // Navigation Drawer Functions

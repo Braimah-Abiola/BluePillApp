@@ -4,7 +4,15 @@
         <item name="colorPrimary">@color/signature_blue</item>
         <item name="colorPrimaryDark">#000</item>
         <item name="colorAccent">@color/orange</item>
+        <item name="android:windowAnimationStyle">@style/animation</item>
     <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <style name="animation">
+
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+
     </style>
     
 </resources>

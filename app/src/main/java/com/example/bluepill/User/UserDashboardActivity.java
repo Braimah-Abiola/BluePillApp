@@ -140,6 +140,10 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
                 Intent about = new Intent(getApplicationContext(), AboutActivity.class);
                 startActivity(about);
                 break;
+            case R.id.nav_profile:
+                Intent profile = new Intent(getApplicationContext(), UserProfile.class);
+                startActivity(profile);
+                break;
         }
 
         return true;
@@ -164,8 +168,8 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
                 case R.id.bottom_nav_dashboard:
                     fragment = new UserDashboardFragment();
                     break;
-                case R.id.bottom_nav_profile:
-                    fragment = new UserProfileFragment();
+                case R.id.bottom_nav_explore:
+                    fragment = new UserExploreFragment();
                     break;
             }
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, fragment).commit();

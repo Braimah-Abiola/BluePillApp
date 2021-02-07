@@ -1,7 +1,15 @@
 <resources>
+    <!-- APP STRINGS -->
+
     <string name="app_name">BluePill</string>
+    <string name="app_version">Version: <b>v1.0.0 alpha</b></string>
+    <string name="slogan">Your Health care is A Click Away</string>
+    <string name="terms_and_conditions">By signing in to Blue Pill, you agree to our <b>Terms</b> and <b>Privacy Policy</b></string>
+
+    <!-- END APP STRINGS -->
 
     <!-- ON BOARDING SCREEN -->
+
     <string name="skip">Skip</string>
     <string name="done">Done</string>
     <string name="fleming_1">Get Answers to Queries</string>
@@ -14,9 +22,11 @@
     <string name="track_2">STATS</string>
     <string name="track_3">Track your vitals right on your phone all for free</string>
 
+    <!-- END ON BOARDING SCREEN-->
+
 
     <!-- START UP SCREEN -->
-    <string name="slogan">Your Healthcare is A Click Away</string>
+
     <string name="doctor_startup">I am a doctor</string>
     <string name="sign_up">Sign Up</string>
     <string name="how_we_work">How we work?</string>
@@ -44,12 +54,19 @@
     <string name="new_user">New User? Sign Up</string>
     <string name="login_account">Login into your account</string>
 
+    <!-- END STARTUP SCREEN -->
+
     <!-- HINTS -->
+
     <string name="username">Username</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
+    <string name="doctor_id">Doctor ID</string>
 
-    <!-- SIGN UP PAGES -->
+    <!-- END HINTS -->
+
+    <!-- SIGN UP / LOGIN -->
+
     <string name="name">What is your name?</string>
     <string name="birthday">When is your birthday?</string>
     <string name="phone_number">Enter your phone number</string>
@@ -59,7 +76,6 @@
     <string name="female">Female</string>
     <string name="other">Other</string>
     <string name="almost_done">You are almost done</string>
-    <string name="doctor_id">Doctor ID</string>
     <string name="profile_picture">Choose your profile picture</string>
     <string name="first_name">First Name</string>
     <string name="last_name">Last Name</string>
@@ -70,6 +86,116 @@
     <string name="pg_4">4 of 5</string>
     <string name="pg_5">5 of 5</string>
     <string name="have_account">Already have an account? Sign In</string>
+
+    <!-- END SIGN UP / LOGIN -->
+
+
+    <!--- HOME PAGE -->
+
+    <string name="featured_locations">All featured articles</string>
+    <string name="most_viewed">Most Viewed</string>
+    <string name="categories">Categories</string>
+    <string name="view_all">View All</string>
+    <string name="featured_locations_description">All the locations that are featured and have the top demand in town!</string>
+
+    <!-- MAIN MENU STRINGS -->
+
+    <string name="home">HOME</string>
+    <string name="search">SEARCH</string>
+    <string name="articles">HEALTH ARTICLES</string>
+    <string name="fleming_lens">FLEMING LENS</string>
+    <string name="reminder">REMINDER</string>
+    <string name="navigation">NAVIGATION</string>
+    <string name="meal_planner">MEAL PLANNER</string>
+    <string name="ar">AR</string>
+    <string name="log_out">LOG OUT</string>
+    <string name="settings">SETTINGS</string>
+    <string name="share">SHARE</string>
+    <string name="feedback">HELP &amp; FEEDBACK</string>
+    <string name="about">ABOUT BLUEPILL</string>
+    <string name="help">HELP</string>
+    <string name="more">MORE</string>
+    <string name="profile">PROFILE</string>
+    <string name="features">FEATURES</string>
+
+    <!-- END MAIN MENU STRINGS -->
+
+    <!-- TELEMED STRINGS -->
+
+    <string name="med_empty_1">Looks like you have not added any doctors</string>
+    <string name="med_empty_2">Press the button below to start finding doctors</string>
+    <string name="add_doctors">Add Doctors</string>
+    <string name="medical_data">Personal Medical Data</string>
+
+    <!-- END TELEMED STRINGS -->
+
+
+    <!-- APP RATE -->
+
+    <string name="rate_dialog_message">Hey there, Rate BluePill now!</string>
+
+    <!-- END APP RATE -->
+
+
+    <!-- CHAT KIT STRINGS -->
+
+    <string name="enter_a_message">Type a message</string>
+    <string name="doc1">Doctor Stephen Strange</string>
+    <string name="online">Online</string>
+    <string name="or_login_with">or LogIn with</string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+    <string name="hello_blank_fragment">hello_blank_fragment</string>
+    <string name="you_need_an_internet_connection_to_use_bluepill_check_your_connection_and_try_again">You need an internet connection to use BluePill. Check your connection and try again</string>
+    <string name="looks_like_you_are_offline">Looks like you are offline</string>
+    <string name="retry">Retry</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="telemed">TeleMed</string>
+    <string name="fleming">Fleming</string>
+    <string name="home_">Home</string>
+    <string name="first_aid">First Aid</string>
+    <string name="doctors">Doctors</string>
+    <string name="pharmacies">Pharmacies</string>
+    <string name="hospitals">Hospitals</string>
+    <string name="search2">Search</string>
+    <string name="title_activity_navigation_drawer">NavigationDrawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="get_a_way">Get A Way</string>
+    <string name="feedback_explanation">Tell us what you like or not about Blue Pill and we promise that we will improve! 😇 (You can also use this to report bugs)</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- END CHAT KIT STRINGS -->
+
+
+    <!-- SETTINGS STRINGS -->
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+    <string name="notifications">Notifications</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails</string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="articles_action_bar"><![CDATA[News & Articles]]></string>
+    <string name="menu_icon">menu_icon</string>
+
+    <!-- END SETTINGS STRINGS -->
+
+
+    <!-- DUMMY STRINGS -->
+
     <string name="large_text">
         "Material is the metaphor.\n\n"
 
@@ -159,92 +285,24 @@
         "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
         "when a user tries to pick up one of cards.\n\n"
     </string>
-    <string name="rate_dialog_message">Hey there, Rate BluePill now!</string>
 
+    <!-- END DUMMY STRINGS -->
 
-    <!--- HOME PAGE -->
+    <!-- VALIDATION STRINGS -->
 
-    <string name="featured_locations">All featured articles</string>
-    <string name="most_viewed">Most Viewed</string>
-    <string name="categories">Categories</string>
-    <string name="view_all">View All</string>
-    <string name="featured_locations_description">All the locations that are featured and have the top demand in town!</string>
+    <string name="spaces">\\A\\w{1,20}\\z</string>
+    <string name="any_letter">(?=.*[a-zA-Z])</string>
+    <string name="one_special_char"><![CDATA[(?=.*[@#$%^&+=])]]></string>
+    <string name="no_white_spaces">(?=\\S+$)</string>
+    <string name="eight_char">.{8,}</string>
+    <string name="dollar_sign">$</string>
+    <string name="error_password">Password should contain 8 characters!</string>
+    <string name="error_empty">Field cannot be empty!</string>
+    <string name="power_sign">^</string>
+    <string name="error_username_long">Username is too long!</string>
+    <string name="no_spaces">No spaces are allowed!</string>
+    <string name="connect_to_proceed">Please connect to the internet to proceed further</string>
 
-    <!-- MAIN MENU -->
-
-    <string name="home">HOME</string>
-    <string name="search">SEARCH</string>
-    <string name="all_categories">ALL CATEGORIES</string>
-    <string name="add_missing_place">ADD MISSING PLACE</string>
-    <string name="profile">PROFILE</string>
-    <string name="logout">LOG OUT</string>
-
-    <!-- OTHER -->
-
-    <string name="med_empty_1">Looks like you have not added any doctors</string>
-    <string name="med_empty_2">Press the button below to start finding doctors</string>
-    <string name="add_doctors">Add Doctors</string>
-    <string name="medical_data">Personal Medical Data</string>
-
-    <!-- App Rate -->
-
-
-    <!-- ChatKit -->
-    <string name="enter_a_message">Type a message</string>
-    <string name="doc1">Doctor Stephen Strange</string>
-    <string name="online">Online</string>
-    <string name="or_login_with">or LogIn with</string>
-    <string name="google">Google</string>
-    <string name="facebook">Facebook</string>
-    <string name="hello_blank_fragment">hello_blank_fragment</string>
-    <string name="you_need_an_internet_connection_to_use_bluepill_check_your_connection_and_try_again">You need an internet connection to use BluePill. Check your connection and try again</string>
-    <string name="looks_like_you_are_offline">Looks like you are offline</string>
-    <string name="retry">Retry</string>
-    <string name="dashboard">Dashboard</string>
-    <string name="telemed">TeleMed</string>
-    <string name="fleming">Fleming</string>
-    <string name="home_">Home</string>
-    <string name="first_aid">First Aid</string>
-    <string name="doctors">Doctors</string>
-    <string name="pharmacies">Pharmacies</string>
-    <string name="hospitals">Hospitals</string>
-    <string name="search2">Search</string>
-    <string name="title_activity_navigation_drawer">NavigationDrawer</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
-    <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
-
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
-    <string name="get_a_way">Get A Way</string>
-
-    <string name="feedback_explanation">Tell us what you like or not about Blue Pill and we promise that we will improve! 😇 (You can also use this to report bugs)</string>
-    <string name="title_activity_settings">Settings</string>
-
-    <!-- SETTINGS STRINGS -->
-
-    <!-- Preference Titles -->
-    <string name="messages_header">Messages</string>
-    <string name="sync_header">Sync</string>
-
-    <!-- Messages Preferences -->
-    <string name="signature_title">Your signature</string>
-    <string name="reply_title">Default reply action</string>
-
-    <string name="notifications">Notifications</string>
-
-    <!-- Sync Preferences -->
-    <string name="sync_title">Sync email periodically</string>
-    <string name="attachment_title">Download incoming attachments</string>
-    <string name="attachment_summary_on">Automatically download attachments for incoming emails
-    </string>
-    <string name="attachment_summary_off">Only download attachments when manually requested</string>
-    <string name="terms_and_conditions">By signing in to Blue Pill, you agree to our <b>Terms</b> and <b>Privacy Policy</b></string>
-
-    <!-- END SETTINGS STRINGS -->
+    <!-- END VALIDATION STRINGS -->
 
 </resources>

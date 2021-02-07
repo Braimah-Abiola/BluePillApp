@@ -35,17 +35,18 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:src="@drawable/ic_menu"
-                app:tint="@color/white" />
+                app:tint="@color/white"
+                android:contentDescription="@string/menu_icon" />
 
             <TextView
                 android:textColor="@color/white"
                 android:textSize="18sp"
-                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
                 android:layout_centerVertical="true"
-                android:layout_toRightOf="@id/menu_icon"
+                android:layout_toEndOf="@id/menu_icon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="News &amp; Articles"/>
+                android:text="@string/articles_action_bar"/>
 
             <ImageView
                 android:id="@+id/add"

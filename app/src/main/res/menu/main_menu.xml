@@ -15,32 +15,32 @@
         <item
             android:id="@+id/nav_health_articles"
             android:icon="@drawable/ic_article"
-            android:title="HEALTH ARTICLES"/>
+            android:title="@string/articles"/>
     </group>
 
-    <item android:title="FEATURES" android:id="@+id/features">
+    <item android:title="@string/features" android:id="@+id/features">
         <menu>
             <group android:checkableBehavior="single">
                 <item
                     android:id="@+id/fleming_lens"
                     android:icon="@drawable/ic_fleming_lens"
-                    android:title="FLEMING LENS"/>
+                    android:title="@string/fleming_lens"/>
                 <item
                     android:id="@+id/reminder"
                     android:icon="@drawable/ic_notification"
-                    android:title="REMINDER"/>
+                    android:title="@string/reminder"/>
                 <item
                     android:id="@+id/navigation"
                     android:icon="@drawable/ic_navigation"
-                    android:title="NAVIGATION"/>
+                    android:title="@string/navigation"/>
                 <item
                     android:id="@+id/meal_planner"
                     android:icon="@drawable/ic_planner"
-                    android:title="MEAL PLANNER"/>
+                    android:title="@string/meal_planner"/>
                 <item
                     android:id="@+id/AR"
                     android:icon="@drawable/ic_brush"
-                    android:title="AR"/>
+                    android:title="@string/ar"/>
 
             </group>
         </menu>
@@ -49,44 +49,45 @@
     <item android:title="@string/profile">
         <menu>
             <group android:checkableBehavior="single">
+
                 <item
-                    android:id="@+id/bottom_nav_profile"
-                    android:icon="@drawable/ic_person_pin"
+                    android:id="@+id/nav_profile"
+                    android:icon="@drawable/ic_profile"
                     android:title="@string/profile"/>
 
                 <item
                     android:id="@+id/nav_logout"
                     android:icon="@drawable/ic_power"
-                    android:title="@string/logout"/>
+                    android:title="@string/log_out"/>
 
             </group>
         </menu>
     </item>
 
-    <item android:title="MORE">
+    <item android:title="@string/more">
         <menu>
             <group android:checkableBehavior="single">
                 <item
                     android:icon="@drawable/ic_settings"
                     android:id="@+id/settings"
-                    android:title="Settings" />
+                    android:title="@string/settings" />
                 <item
                     android:icon="@drawable/ic_share"
                     android:id="@+id/nav_share"
-                    android:title="Share" />
+                    android:title="@string/share" />
                 <item
                     android:icon="@drawable/ic_feedback"
                     android:id="@+id/nav_feedback"
-                    android:title="Help &amp; Feedback" />
+                    android:title="@string/feedback" />
                 <item
                     android:icon="@drawable/ic_about"
                     android:id="@+id/nav_about"
-                    android:title="About BluePill" />
+                    android:title="@string/about" />
 
                 <item
                     android:icon="@drawable/ic_help"
                     android:id="@+id/nav_help"
-                    android:title="Help" />
+                    android:title="@string/help" />
             </group>
         </menu>
     </item>
