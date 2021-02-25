@@ -96,7 +96,6 @@ public class Articles extends AppCompatActivity implements NavigationView.OnNavi
 
     private void animateNavigationDrawer() {
 
-        drawerLayout.setScrimColor(getResources().getColor(R.color.signature_blue_translucent));
         drawerLayout.addDrawerListener(new DrawerLayout.SimpleDrawerListener() {
             @Override
             public void onDrawerSlide(@NonNull View drawerView, float slideOffset) {
@@ -140,11 +139,11 @@ public class Articles extends AppCompatActivity implements NavigationView.OnNavi
 
         ArrayList<MostViewedHelperClass> mostViewed = new ArrayList<>();
 
-        mostViewed.add(new MostViewedHelperClass(R.drawable.card_1, "Macdonald's 1", "Hey there my name is abiola and I am currently developing an app called blue pill. Stay tuned for more."));
-        mostViewed.add(new MostViewedHelperClass(R.drawable.card_2, "Macdonald's 2", "Hey there my name is abiola and I am currently developing an app called blue pill. Stay tuned for more."));
-        mostViewed.add(new MostViewedHelperClass(R.drawable.card_3, "Macdonald's 3", "Hey there my name is abiola and I am currently developing an app called blue pill. Stay tuned for more."));
-        mostViewed.add(new MostViewedHelperClass(R.drawable.card_4, "Macdonald's 4", "Hey there my name is abiola and I am currently developing an app called blue pill. Stay tuned for more."));
-        mostViewed.add(new MostViewedHelperClass(R.drawable.card_1, "Macdonald's 5", "Hey there my name is abiola and I am currently developing an app called blue pill. Stay tuned for more."));
+        mostViewed.add(new MostViewedHelperClass(R.drawable.card_brain, "Macdonald's 1", "Hey there my name is abiola and I am currently developing an app called blue pill. Stay tuned for more."));
+        mostViewed.add(new MostViewedHelperClass(R.drawable.card_covid, "Macdonald's 2", "Hey there my name is abiola and I am currently developing an app called blue pill. Stay tuned for more."));
+        mostViewed.add(new MostViewedHelperClass(R.drawable.card_cancer, "Macdonald's 3", "Hey there my name is abiola and I am currently developing an app called blue pill. Stay tuned for more."));
+        mostViewed.add(new MostViewedHelperClass(R.drawable.card_fitness, "Macdonald's 4", "Hey there my name is abiola and I am currently developing an app called blue pill. Stay tuned for more."));
+        mostViewed.add(new MostViewedHelperClass(R.drawable.card_dna, "Macdonald's 5", "Hey there my name is abiola and I am currently developing an app called blue pill. Stay tuned for more."));
 
 
         adapter = new MostViewedAdapter(mostViewed);
@@ -190,6 +189,10 @@ public class Articles extends AppCompatActivity implements NavigationView.OnNavi
 
     public void callBookmarks(View view){
         startActivity(new Intent(getApplicationContext(), ArticleBookmarks.class));
+    }
+
+    public void callNotifications(View view){
+        startActivity(new Intent(getApplicationContext(), ArticleNotifications.class));
     }
 
     public void callFilterTag(View view){

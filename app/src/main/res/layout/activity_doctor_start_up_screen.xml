@@ -22,7 +22,7 @@
             android:id="@+id/background"
             android:onClick="callWarning"
             android:transitionName="background"
-            android:src="@drawable/doctor_startup"/>
+            android:src="@drawable/doctors"/>
 
         <TextView
             android:layout_width="wrap_content"

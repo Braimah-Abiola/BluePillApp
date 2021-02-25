@@ -120,6 +120,10 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
                 Intent intent = new Intent(getApplicationContext(), FlemingLens.class);
                 startActivity(intent);
                 break;
+            case R.id.reminder:
+                Intent reminder = new Intent(getApplicationContext(), Reminder.class);
+                startActivity(reminder);
+                break;
             case R.id.settings:
                 Intent settings = new Intent(getApplicationContext(), Settings.class);
                 startActivity(settings);
@@ -143,6 +147,10 @@ public class UserDashboardActivity extends AppCompatActivity implements Navigati
             case R.id.nav_profile:
                 Intent profile = new Intent(getApplicationContext(), UserProfile.class);
                 startActivity(profile);
+                break;
+            case R.id.nav_share:
+                Intent share = new Intent(getApplicationContext(), TurnOnNotification.class);
+                startActivity(share);
                 break;
         }
 

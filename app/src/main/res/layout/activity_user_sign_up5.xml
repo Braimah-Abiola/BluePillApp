@@ -67,20 +67,22 @@
 
 
     <com.chaos.view.PinView
+        android:gravity="center"
+        android:padding="20dp"
+        style="@style/PinWidget.PinView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:itemCount="6"
-        app:itemWidth="50dp"
-        app:itemHeight="50dp"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
-        android:inputType="number"
-        app:lineColor="@color/signature_blue"
         android:cursorVisible="true"
+        android:inputType="number"
         app:cursorColor="@color/black"
         app:hideLineWhenFilled="true"
+        app:itemCount="6"
+        app:itemHeight="50dp"
         app:itemRadius="5dp"
-        style="@style/PinWidget.PinView"/>
+        app:itemWidth="50dp"
+        app:lineColor="@color/signature_blue" />
 
     <Button
         android:layout_width="200dp"

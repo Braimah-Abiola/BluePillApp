@@ -32,12 +32,4 @@
         android:textColor="@color/black"
         android:textSize="24sp" />
 
-    <TextView android:paddingLeft="20dp"
-        android:layout_marginTop="5dp"
-        android:id="@+id/sloganText"
-        android:textSize="20sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/slogan" />
-
 </LinearLayout>

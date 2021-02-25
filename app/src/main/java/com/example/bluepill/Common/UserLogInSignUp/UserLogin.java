@@ -2,20 +2,24 @@ package com.example.bluepill.Common.UserLogInSignUp;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.bluepill.Common.ForgotPassword.User.ForgotPassword;
 import com.example.bluepill.R;
+import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.textfield.TextInputLayout;
 
 public class UserLogin extends AppCompatActivity {
+    private Button showSheet;
+    private BottomSheetDialog bottomSheetDialog;
 
     // Get Data Variables
     TextInputLayout username, password;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +30,21 @@ public class UserLogin extends AppCompatActivity {
         // Get Data Hooks
         username = findViewById(R.id.username);
         password = findViewById(R.id.password);
+
+        showSheet = findViewById(R.id.show);
+
+        showSheet.setOnClickListener(v -> {
+            bottomSheetDialog = new BottomSheetDialog(UserLogin.this, R.style.BottomSheetTheme);
+
+            View sheetView = LayoutInflater.from(getApplicationContext()).inflate(R.layout.success_bottom_sheet,
+                    findViewById(R.id.bottom_sheet));
+
+           // sheetView.findViewById(R.id.go).setOnClickListener(v1 -> Toast.makeText(UserLogin.this, "Loading User Dashboard...", Toast.LENGTH_SHORT).show());
+
+            bottomSheetDialog.setContentView(sheetView);
+            bottomSheetDialog.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+            bottomSheetDialog.show();
+        });
 
     }
 

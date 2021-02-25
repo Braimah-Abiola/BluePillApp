@@ -9,34 +9,41 @@
     tools:context=".Common.UserLogInSignUp.UserLogin">
 
     <RelativeLayout
-        android:padding="15dp"
+        android:background="@color/signature_blue"
+        android:id="@+id/view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="60dp">
 
         <TextView
-            android:textSize="24sp"
-            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:layout_centerVertical="true"
-            android:text="Enter your details" />
+            android:layout_centerHorizontal="true"
+            android:text="Sign Up" />
 
 
         <ImageView
+            android:layout_marginTop="11dp"
             android:onClick="callUserStartup"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_close"
-            app:tint = "@color/black"
-            android:layout_centerVertical="true"
-            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_bc"
+            app:tint="@color/white"
             tools:ignore="ContentDescription" />
 
     </RelativeLayout>
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="-15dp"
+        android:background="@drawable/round_top" />
+
     <LinearLayout
+        android:background="@drawable/round_top"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -134,12 +141,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
                 android:gravity="center"
                 android:text="or"
                 android:textAlignment="center" />
 
             <LinearLayout
+                android:layout_marginTop="20dp"
                 android:gravity="center"
                 android:layout_gravity="center"
                 android:layout_width="match_parent"
@@ -147,22 +155,33 @@
                 android:orientation="horizontal">
 
                 <Button
+                    android:id="@+id/show"
                     android:backgroundTint="@color/google"
-                    android:layout_width="wrap_content"
-                    android:text="@string/google"
+                    android:background="@drawable/circle"
+                    android:layout_width="50dp"
                     android:drawableLeft="@drawable/ic_google"
                     android:drawableTint="@color/white"
                     android:layout_margin="10dp"
                     android:layout_height="wrap_content"/>
 
                 <Button
-                    android:backgroundTint="@color/facebook"
-                    android:layout_width="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:background="@drawable/circle"
+                    android:layout_width="50dp"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
+                    android:drawablePadding="10dp"
                     android:drawableLeft="@drawable/ic_facebook"
-                    android:drawableTint="#FFFFFF"
-                    android:text="@string/facebook" />
+                    android:drawableTint="#FFFFFF"/>
+
+                <Button
+                    android:layout_margin="10dp"
+                    android:paddingLeft="20dp"
+                    android:background="@drawable/circle"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/ic_facebook"
+                    android:drawableTint="#FFFFFF"/>
 
 
             </LinearLayout>

@@ -31,7 +31,10 @@
     <color name="banner_background_light">#AEFFCA7D</color>
     <color name="banner_background">#FFCC83</color>
 
-    <color name="google">#F53239</color>
+    <color name="google">#FF1E26</color>
     <color name="facebook">#275AA8</color>
+
+
+    <color name="signature_blue_transparent">#DEE6EC</color>
 
 </resources>

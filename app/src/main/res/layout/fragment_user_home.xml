@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:id="@+id/content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/white"
     tools:context=".User.UserHomeFragment">
@@ -33,13 +34,218 @@
 
  </RelativeLayout>
 
+
+
+ <RelativeLayout
+     android:id="@+id/one"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:background="@drawable/top_overlay"
+     android:orientation="vertical"
+     android:padding="33dp">
+
+  <TextView
+      android:id="@+id/txt_one"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      android:text="Good Morning \nAbiola"
+      android:textColor="@color/black"
+      android:textSize="28sp" />
+
+  <com.airbnb.lottie.LottieAnimationView
+      android:layout_toRightOf="@+id/txt_one"
+      android:id="@+id/anim"
+      app:lottie_rawRes="@raw/heart"
+      app:lottie_autoPlay="true"
+      app:lottie_loop="true"
+      android:layout_width="80dp"
+      android:layout_height="80dp"/>
+
+  <TextView
+      android:id="@+id/txt_two"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/txt_one"
+      android:layout_marginTop="15dp"
+      android:text="Your target for today is to keep positive mindset and smile to everyone you meet"
+      android:textColor="@color/signature_blue"
+      android:textSize="16sp" />
+
+  <Button
+      android:id="@+id/btn_one"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/txt_two"
+      android:layout_marginTop="20dp"
+      android:text="More details" />
+
+  <Button
+      android:id="@+id/btn_two"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/txt_two"
+      android:layout_marginLeft="20dp"
+      android:layout_marginTop="20dp"
+      android:layout_toRightOf="@id/btn_one"
+      android:text="view your profile" />
+ </RelativeLayout>
+
  <ScrollView
      android:layout_width="match_parent"
      android:layout_height="wrap_content">
 
+  <LinearLayout
+      android:padding="20dp"
+      android:id="@+id/fit"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+   <TextView
+       android:textColor="@color/signature_blue"
+       android:layout_marginLeft="10dp"
+       android:layout_marginBottom="20dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="What are you doing today?"/>
+
+   <RelativeLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/icon__brain"
+        android:src="@drawable/icon__brain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/doc"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/icon__brain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Doctors"/>
+
+    <TextView
+        android:id="@+id/doc2"
+        android:layout_below="@id/doc"
+        android:layout_marginLeft="20dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@+id/icon__brain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Brain Checkout"/>
+
+    <TextView
+        android:id="@+id/doc3"
+        android:layout_below="@id/doc2"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/icon__brain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Have an appointment today"/>
+
+    <Button
+        android:text="View"
+        android:layout_marginLeft="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/doc2"/>
+
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/doc3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/components_divider"/>
+
+   </RelativeLayout>
+
+   <RelativeLayout
+       android:layout_marginBottom="550dp"
+       android:layout_marginTop="20dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/icon__tube"
+        android:src="@drawable/icon__tube"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tube"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/icon__tube"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pharmacy"/>
+
+    <TextView
+        android:id="@+id/tube2"
+        android:layout_below="@id/tube"
+        android:layout_marginLeft="20dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@+id/icon__tube"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Brain Checkout"/>
+
+    <TextView
+        android:id="@+id/tube3"
+        android:layout_below="@id/tube2"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/icon__tube"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't forget to bring the list"/>
+
+    <Button
+        android:text="View"
+        android:layout_marginLeft="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tube2"/>
+
+    <ImageView
+        android:id="@+id/separator"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/tube3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/components_divider"/>
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/separator"
+        android:textColor="@color/signature_blue"
+        android:text="Visit a Specialists"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+     <androidx.recyclerview.widget.RecyclerView
+         android:elevation="8dp"
+         android:id="@+id/specialists_recycler"
+         android:layout_width="match_parent"
+         android:layout_height="140dp"
+         android:layout_marginTop="130dp" />
+
+    </LinearLayout>
+
+   </RelativeLayout>
+
+  </LinearLayout>
 
  </ScrollView>
-
-
 
 </LinearLayout>
