@@ -1,0 +1,346 @@
+<resources>
+    <!-- APP STRINGS -->
+
+    <string name="app_name">Blue Pill</string>
+    <string name="slogan">Your Health care is A Click Away</string>
+    <string name="terms_and_conditions">By signing in to Blue Pill, you agree to our <b>Terms</b> and <b>Privacy Policy</b></string>
+
+    <!-- END APP STRINGS -->
+
+    <!-- ON BOARDING SCREEN -->
+
+    <string name="skip">Skip</string>
+    <string name="done">Done</string>
+    <string name="fleming_1">Get Answers to Queries</string>
+    <string name="fleming_2">FLEMING</string>
+    <string name="fleming_3">Free 24/7 access to Artificially Intelligent Medical ChatBot online or offline</string>
+    <string name="telemed_1">Get closer to your Doctor</string>
+    <string name="telemed_2">TELEMED</string>
+    <string name="telemed_3">Book virtual consultations with doctors and chat with your favourite doctors</string>
+    <string name="track_1">Track your health</string>
+    <string name="track_2">STATS</string>
+    <string name="track_3">Track your vitals right on your phone all for free</string>
+
+    <!-- END ON BOARDING SCREEN-->
+
+
+    <!-- START UP SCREEN -->
+
+    <string name="sign_up">Sign Up</string>
+    <string name="how_we_work">How we work?</string>
+    <string name="doctor_welcome">Welcome Back, Sign In or Log In as a Doctor</string>
+    <string name="user_welcome">Welcome Back, Sign In or Log In as a User</string>
+    <string name="log_in">Log In</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="user">I am a User</string>
+    <string name="doctor">I am a Doctor</string>
+    <string name="forget_password">Forgot Password </string>
+    <string name="make_selection">Make Selection</string>
+    <string name="sms">via sms:</string>
+    <string name="password_updated">Password Updated</string>
+    <string name="password_updated_msg">Your password has been updated!</string>
+    <string name="verify_code">Verify Code</string>
+    <string name="new_credentials">New\nCredentials</string>
+    <string name="demo_mail">support@gmail.com</string>
+    <string name="via_mail">via mail:</string>
+    <string name="forget_password_detail">Provide your accounts email for which you want to reset your password!</string>
+    <string name="loading_screen_text_one">We are getting things ready for you …</string>
+    <string name="loading_screen_text_two">Getting things ready  …</string>
+
+    <!-- END STARTUP SCREEN -->
+
+    <!-- HINTS -->
+
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="doctor_id">Doctor ID</string>
+
+    <!-- END HINTS -->
+
+    <!-- SIGN UP / LOGIN -->
+
+    <string name="birthday">When is your birthday?</string>
+    <string name="phone_number">Enter your phone number</string>
+    <string name="gender">Choose your gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="other">Other</string>
+    <string name="next">Next</string>
+    <string name="pg_1">1 of 5</string>
+    <string name="pg_2">2 of 5</string>
+    <string name="pg_3">3 of 5</string>
+    <string name="pg_4">4 of 5</string>
+    <string name="pg_5">5 of 5</string>
+
+    <!-- END SIGN UP / LOGIN -->
+
+
+    <!--- HOME PAGE -->
+
+    <string name="featured_locations">All featured articles</string>
+    <string name="most_viewed">Most Viewed</string>
+    <string name="categories">Categories</string>
+    <string name="view_all">View All</string>
+    <string name="featured_locations_description">All the locations that are featured and have the top demand in town!</string>
+
+    <!-- MAIN MENU STRINGS -->
+
+    <string name="home">HOME</string>
+    <string name="search">SEARCH</string>
+    <string name="articles">HEALTH ARTICLES</string>
+    <string name="fleming_lens">FLEMING LENS</string>
+    <string name="reminder">REMINDER</string>
+    <string name="navigation">NAVIGATION</string>
+    <string name="meal_planner">MEAL PLANNER</string>
+    <string name="ar">AR</string>
+    <string name="log_out">LOG OUT</string>
+    <string name="settings">SETTINGS</string>
+    <string name="share">SHARE</string>
+    <string name="feedback">HELP &amp; FEEDBACK</string>
+    <string name="about">ABOUT BLUEPILL</string>
+    <string name="help">HELP</string>
+    <string name="more">MORE</string>
+    <string name="profile">PROFILE</string>
+    <string name="features">FEATURES</string>
+
+    <!-- END MAIN MENU STRINGS -->
+
+    <!-- TELEMED STRINGS -->
+
+    <string name="med_empty_1">Looks like you have not added any doctors</string>
+    <string name="med_empty_2">Press the button below to start finding doctors</string>
+    <string name="add_doctors">Add Doctors</string>
+
+    <!-- END TELEMED STRINGS -->
+
+
+    <!-- APP RATE -->
+
+    <!-- END APP RATE -->
+
+
+    <!-- USER HOME -->
+
+    <string name="enter_a_message">Type a message</string>
+
+    <!-- END USER HOME -->
+
+    <!-- DOC HOME -->
+
+    <string name="doc1">Doctor Stephen Strange</string>
+
+    <!-- END DOC HOME -->
+
+
+    <!-- CHAT KIT STRINGS -->
+
+    <string name="hello_blank_fragment">hello_blank_fragment</string>
+    <string name="you_need_an_internet_connection_to_use_bluepill_check_your_connection_and_try_again">You need an internet connection to use BluePill. Check your connection and try again</string>
+    <string name="looks_like_you_are_offline">Looks like you are offline</string>
+    <string name="retry">Retry</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="telemed">TeleMed</string>
+    <string name="fleming">Fleming</string>
+    <string name="home_">Home</string>
+    <string name="first_aid">First Aid</string>
+    <string name="doctors">Doctors</string>
+    <string name="pharmacies">Pharmacies</string>
+    <string name="hospitals">Hospitals</string>
+    <string name="search2">Search</string>
+    <string name="feedback_explanation">Tell us what you like or not about Blue Pill and we promise that we will improve! 😇 (You can also use this to report bugs)</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- END CHAT KIT STRINGS -->
+
+
+    <!-- SETTINGS STRINGS -->
+
+    <!-- Preference Titles -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Messages Preferences -->
+    <string name="notifications">Notifications</string>
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+
+    <!-- Sync Preferences -->
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails</string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supersedes those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efficient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+    </string>
+    <string name="spaces">\\A\\w{1,20}\\z</string>
+
+    <!-- END SETTINGS STRINGS -->
+
+
+    <!-- DUMMY STRINGS -->
+
+    <string name="any_letter">(?=.*[a-zA-Z])</string>
+
+    <!-- END DUMMY STRINGS -->
+
+    <!-- VALIDATION STRINGS -->
+
+    <string name="one_special_char"><![CDATA[(?=.*[@#$%^&+=])]]></string>
+    <string name="no_white_spaces">(?=\\S+$)</string>
+    <string name="eight_char">.{8,}</string>
+    <string name="dollar_sign">$</string>
+    <string name="error_password">Password should contain 8 characters!</string>
+    <string name="error_empty">Field cannot be empty!</string>
+    <string name="power_sign">^</string>
+    <string name="error_username_long">Username is too long!</string>
+    <string name="no_spaces">No spaces are allowed!</string>
+    <string name="payment_confirmation"><b>Dr. John Doe</b> Confirmation</string>
+    <string name="learn_more">Click <u><b>here</b></u> to learn more!</string>
+    <string name="upcoming">Upcoming</string>
+
+
+    <string name="timeline">Timeline</string>
+    <string name="explore">Explore</string>
+    <string name="title_activity_edit_reminder">Edit Reminder</string>
+    <string name="add_reminder">Reminder</string>
+
+    <!-- END VALIDATION STRINGS -->
+
+    <string name="date">Date</string>
+
+    <string name="time">Time</string>
+    <string name="repeat">Repeat</string>
+    <string name="repeat_off">Off</string>
+    <string name="repeat_no">Repetition Interval </string>
+    <string name="repeat_type">Type of Repetitions</string>
+    <string name="about_bhyte">Situated in the heart of Ghana, Bhyte Inc., has a long-lasting tradition of providing the best software products while providing value for the user.</string>
+    <string name="title_activity_doctor_settings">DoctorSettingsActivity</string>
+    <string name="morning">Good Morning</string>
+    <string name="afternoon">Good Afternoon</string>
+    <string name="evening">Good Evening</string>
+    <string name="night">Good Night</string>
+    <string name="please_fill_in_your_details">Please fill in your details</string>
+    <string name="full_name">Full Name</string>
+    <string name="pin_view">pin view</string>
+    <string name="verification">Verification</string>
+    <string name="verify_your_number_with_code_sent_to_you">Verify your number with code sent to you</string>
+    <string name="i_did_not_receive_the_code">I did not receive the code</string>
+    <string name="resend">resend</string>
+    <string name="if_you_are_new">If you are new /</string>
+    <string name="create_new">Create New</string>
+    <string name="forgot_passcode">Forgot Passcode ?</string>
+    <string name="reset">Reset</string>
+    <string name="login">Login</string>
+    <string name="account_not_verified">Account not verified</string>
+    <string name="head_over_to_the_user_profile_page_to_activate_your_email">Head over to the user profile page to activate your email</string>
+    <string name="no">No</string>
+    <string name="go_to_profile_page">Go to Profile page</string>
+    <string name="this_is_a_custom_dialog">This is a custom dialog</string>
+    <string name="yes">yes</string>
+    <string name="show_dialog">Show Dialog</string>
+    <string name="cancel">Cancel</string>
+    <string name="continue_txt">Continue</string>
+    <string name="do_you_want_to_verify_you_email_now">Do you want to verify you email now</string>
+    <string name="send_verification_email">Send Verification Email</string>
+    <string name="view_profile">view profile</string>
+    <string name="more_details">More details</string>
+    <string name="menu_icon">menu_icon</string>
+    <string name="bottom_sheet">bottom_sheet_bar</string>
+
+    <!-- CONTENT DESCRIPTIONS -->
+    <string name="settings_icon">settings_icon</string>
+    <string name="quick_search">Quick Search</string>
+    <string name="recent_clients">Recent Clients</string>
+    <string name="upcoming_appointments">Upcoming Appointments</string>
+    <string name="remove_picture">Remove picture</string>
+    <string name="choose_from_gallery">Choose from gallery</string>
+    <string name="take_a_photo">Take a photo</string>
+    <string-array name="home_message">
+        <item>Your target is to keep positive mindset and smile to everyone you meet</item>
+        <item>Your target is to eat clean and avoid any junk food</item>
+        <item>Your target is to manage your stress levels by taking breaks in between tasks</item>
+    </string-array>
+    <string-array name="doc_home_message">
+        <item>Your target is to keep positive mindset and smile to everyone you meet</item>
+        <item>Your target is to eat clean and avoid any junk food</item>
+        <item>Your target is to manage your stress levels by taking breaks in between tasks</item>
+    </string-array>
+
+
+</resources>

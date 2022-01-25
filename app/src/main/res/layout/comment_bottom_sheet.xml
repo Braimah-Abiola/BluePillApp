@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:background="@drawable/bottom_sheet_background"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:paddingTop="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-40dp"
+            android:src="@drawable/rectangle_1" />
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_gravity="center"
+            app:lottie_autoPlay="true"
+            android:layout_marginTop="-30dp"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/comment_lottie"
+            android:layout_width="150dp"
+            android:layout_height="150dp"/>
+
+       <EditText
+           android:maxLength="100"
+           android:layout_marginTop="5dp"
+           android:drawablePadding="20dp"
+           android:drawableStart="@drawable/ic_comment"
+           android:padding="15dp"
+           android:hint="Write Comment"
+           android:background="@drawable/date_bg"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/signature_blue"
+            android:background="@drawable/round_btn"
+            android:text="Submit"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:layout_width="200dp"
+            android:layout_height="50dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

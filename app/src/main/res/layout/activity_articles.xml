@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.Features.Articles.Articles"
+    android:id="@+id/drawer_layout">
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:background="@color/signature_blue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/back_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_bc" />
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Articles"/>
+
+            <ImageView
+                android:onClick="callNotifications"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_notification"
+                app:tint="@color/white" />
+
+            <ImageView
+                android:onClick="callFilterTag"
+                app:tint="@color/white"
+                android:layout_marginRight="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_tags" />
+
+            <ImageView
+                android:onClick="callBookmarks"
+                app:tint="@color/white"
+                android:layout_marginRight="80dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_bookmarks" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                        <EditText
+                            android:elevation="8dp"
+                            android:inputType="text"
+                            android:layout_margin="20dp"
+                            android:padding="15dp"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"
+                            android:drawablePadding="10dp"
+                            android:background="@drawable/search_box_border"
+                            android:drawableRight="@drawable/ic_search"
+                            android:hint="Search"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </RelativeLayout>
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/robotomedium"
+                    android:textSize="18sp"
+                    android:textAllCaps="true"
+                    android:layout_height="wrap_content"
+                    android:text="Explore"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:onClick="callArticleDetail"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/card_1"
+                            android:elevation="3dp">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_hospital" />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="@string/hospitals"
+                            android:textAlignment="center" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/card_2"
+                            android:elevation="3dp">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_pharmacy" />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="@string/pharmacies"
+                            android:textAlignment="center" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/card_3"
+                            android:elevation="3dp">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_person_pin" />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="@string/doctors"
+                            android:textAlignment="center" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/card_4"
+                            android:elevation="3dp">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_heal" />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="@string/first_aid"
+                            android:textAlignment="center" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="20dp">
+
+                    <LinearLayout
+                        android:id="@+id/featured_background"
+                        android:layout_width="170dp"
+                        android:layout_height="280dp"
+                        android:layout_margin="10dp"
+                        android:background="@color/banner_background_light"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="@font/robotomedium"
+                            android:layout_marginTop="50dp"
+                            android:text="@string/featured_locations"
+                            android:textAllCaps="true"
+                            android:textSize="25sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/featured_locations_description" />
+
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/featured_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_toEndOf="@id/featured_background"
+                        android:background="@color/white" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-10dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:paddingLeft="20dp"
+                        android:paddingTop="20dp"
+                        android:paddingRight="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/robotomedium"
+                            android:text="@string/most_viewed"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                    </RelativeLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:id="@+id/most_viewed_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="8dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-10dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:padding="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/robotomedium"
+                            android:text="@string/categories"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                    </RelativeLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:id="@+id/categories_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        android:layout_marginTop="-20dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="-50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:padding="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/robotomedium"
+                            android:text="Daily Read"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                    </RelativeLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:id="@+id/articles_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-20dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white_two"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_marginBottom="5dp"
+            android:textSize="22sp"
+            android:textColor="@color/signature_blue"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price Details"/>
+
+
+        <ImageView
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/components_divider"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="20sp"
+                android:text="Total Cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginLeft="230dp"
+                android:text="$490"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Discount"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:layout_marginLeft="260dp"
+                android:text="20%"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Additional Charges"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:layout_marginLeft="180dp"
+                android:text="Free"
+                android:textColor="@color/dark_green_button"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/components_divider"/>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/black"
+                android:fontFamily="@font/muli_black"
+                android:text="Total"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:layout_marginLeft="280dp"
+                android:text="$ 32"
+                android:textColor="@color/dark_green_button"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

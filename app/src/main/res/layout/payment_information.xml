@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/payment_information_sheet"
+    android:background="@drawable/bottom_sheet_background"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:paddingTop="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-40dp"
+            android:src="@drawable/rectangle_1" />
+
+        <ImageView
+            android:layout_marginTop="-60dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/help" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-50dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/muli_black"
+            android:text="Are you sure you want to pay the money"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You will be notified of the transaction via email"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

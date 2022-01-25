@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".User.Features.Videos.VideoPlayer">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/signature_blue"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_bc"/>
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Video Player"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <VideoView
+            android:id="@+id/video_player"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="17sp"
+                    android:layout_marginTop="2dp"
+                    android:layout_below="@id/title"
+                    android:id="@+id/view_count"
+                    android:text="953,967 views"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:id="@+id/title"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Can You Handle Both Of Us?"/>
+
+            </RelativeLayout>
+
+            <!--LIKE UNLIKE SHARE DOWNLOAD-->
+            <RelativeLayout
+                android:padding="10dp"
+                android:id="@+id/user_interactions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/icons"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/like"/>
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/dislike"/>
+
+                    <ImageView
+                        android:id="@+id/share_video"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_share"/>
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_add"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/icons"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        android:text="Likes"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        android:text="Unlikes"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        android:text="Share"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:layout_weight="1"
+                        android:text="Save"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/large_text"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

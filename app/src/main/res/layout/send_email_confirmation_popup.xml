@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/send_email_confirmation"
+    android:layout_width="350dp"
+    android:padding="20dp"
+    android:layout_height="350dp"
+    android:layout_gravity="center"
+    android:elevation="8dp"
+    android:background="@drawable/blue_border"
+    android:orientation="vertical">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_anim"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/email" />
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lottie_anim"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="@string/do_you_want_to_verify_you_email_now"
+        android:textAlignment="center" />
+
+
+    <RelativeLayout
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:backgroundTint="@color/signature_blue_darker"
+            android:id="@+id/positive"
+            android:layout_marginEnd="10dp"
+            android:layout_width="120dp"
+            android:textColor="@color/white"
+            android:layout_height="55dp"
+            android:text="@string/continue_txt" />
+
+        <Button
+            android:textColor="@color/white"
+            android:backgroundTint="@color/google"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/positive"
+            android:id="@+id/negative"
+            android:layout_width="120dp"
+            android:layout_height="55dp"
+            android:text="@string/cancel" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

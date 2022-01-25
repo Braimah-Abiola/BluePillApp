@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".User.Features.Payment.Payment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/signature_blue"
+        android:padding="15dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_bc" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Checkout"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/info"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_about"
+            app:tint="@color/white" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/payment_confirmation"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/date_holder"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/date_bg">
+
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="Thu, 09 Apr"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/date"
+            android:text="08:00"
+            android:textColor="#4CAF50"
+            android:textSize="22sp" />
+
+    </RelativeLayout>
+
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/date_holder"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="-25dp"
+            android:src="@drawable/components_divider" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_navigation" />
+
+        <TextView
+            android:textSize="18sp"
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/icon"
+            android:text="2 Rue de Ermesinde\nFrisange - Luxembourg\n3 km" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/location"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/components_divider" />
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/price_details"/>
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:id="@+id/help"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/signature_blue"
+            android:textSize="19sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select the card"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@id/help"
+            android:layout_marginTop="20dp"
+            android:id="@+id/credit_card_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/credit_card_recycler"
+            android:id="@+id/manage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:textSize="19sp"
+                android:id="@+id/manage_txt"
+                android:textColor="@color/signature_blue"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Manage cards "/>
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/manage_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_navigate_next"/>
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/show"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/manage"
+            android:textAllCaps="false"
+            android:text="Pay Now"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"/>
+
+    </RelativeLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

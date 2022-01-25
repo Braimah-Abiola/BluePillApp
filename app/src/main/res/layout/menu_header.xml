@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:background="@drawable/nav_header_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_marginBottom="10dp"
+                android:layout_above="@id/app_name"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="@color/white"
+                android:background="@drawable/round"
+                android:layout_width="60dp"
+                android:layout_height="60dp">
+
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/pulse"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/app_name"
+                android:fontFamily="@font/muli_black"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/white"
+                android:layout_above="@id/slogan"
+                android:textSize="20sp"
+                android:layout_marginBottom="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"/>
+
+            <TextView
+                android:fontFamily="@font/muli"
+                android:id="@+id/slogan"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:text="@string/slogan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

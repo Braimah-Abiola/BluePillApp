@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/Theme.BluePill.Custom2"
+    tools:context=".User.Features.Videos.VideoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/fragment_container"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:elevation="8dp"
+            android:onClick="callUserDashboardActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_bc"
+            android:padding="15dp"/>
+
+        <com.ismaeldivita.chipnavigation.ChipNavigationBar
+            android:id="@+id/bottom_nav_menu"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            app:cnb_menuResource="@menu/video_menu"
+            android:layout_alignParentBottom="true"
+            android:background="@color/signature_blue"
+            app:cnb_unselectedColor="@color/black"
+            android:elevation="8dp"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

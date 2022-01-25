@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="@string/upcoming"
+        android:id="@+id/appointment_upcoming"
+        android:icon="@drawable/ic_schedule"
+        app:cnb_backgroundColor="@color/signature_blue_darker" />
+
+    <item
+        android:title="@string/timeline"
+        android:id="@+id/appointment_past"
+        android:icon="@drawable/ic_timeline"
+        app:cnb_backgroundColor="@color/signature_blue_darker" />
+
+</menu>

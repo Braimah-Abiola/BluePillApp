@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="EXPLORE">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_home"
+                    android:icon="@drawable/ic_home"
+                    android:title="@string/home" />
+
+                <item
+                    android:id="@+id/nav_search"
+                    android:icon="@drawable/ic_search"
+                    android:title="@string/search" />
+
+                <item
+                    android:id="@+id/nav_health_articles"
+                    android:icon="@drawable/ic_article"
+                    android:title="@string/articles" />
+
+                <item
+                    android:id="@+id/nav_videos"
+                    android:icon="@drawable/ic_vids"
+                    android:title="VIDEOS" />
+
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/features">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/fleming_lens"
+                    android:icon="@drawable/ic_fleming_lens"
+                    android:title="@string/fleming_lens" />
+                <item
+                    android:id="@+id/reminder"
+                    android:icon="@drawable/ic_notification"
+                    android:title="@string/reminder" />
+                <item
+                    android:id="@+id/navigation"
+                    android:icon="@drawable/ic_navigation"
+                    android:title="@string/navigation" />
+                <item
+                    android:icon="@drawable/ic_planner"
+                    android:title="@string/meal_planner" />
+                <item
+                    android:icon="@drawable/ic_brush"
+                    android:title="@string/ar" />
+
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/profile">
+        <menu>
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_profile"
+                    android:icon="@drawable/ic_profile"
+                    android:title="@string/profile" />
+
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/ic_power"
+                    android:title="@string/log_out" />
+
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/more">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/settings"
+                    android:icon="@drawable/ic_settings"
+                    android:title="@string/settings" />
+                <item
+                    android:id="@+id/nav_rate"
+                    android:icon="@drawable/ic_stars"
+                    android:title="RATE US" />
+                <item
+                    android:id="@+id/nav_share"
+                    android:icon="@drawable/ic_share"
+                    android:title="@string/share" />
+                <item
+                    android:id="@+id/nav_feedback"
+                    android:icon="@drawable/ic_feedback"
+                    android:title="FEEDBACK" />
+                <item
+                    android:id="@+id/nav_about"
+                    android:icon="@drawable/ic_about"
+                    android:title="@string/about" />
+
+                <item
+                    android:icon="@drawable/ic_help"
+                    android:title="@string/help" />
+            </group>
+        </menu>
+    </item>
+</menu>

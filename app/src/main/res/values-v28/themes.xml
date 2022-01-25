@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.BluePill.DarkGreen">
+        <item name="android:buttonCornerRadius">50dp</item>
+        <item name="colorPrimary">@color/dark_green_button</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/dark_green_button</item>
+        <item name="colorOnSecondary">@color/white</item>
+    </style>
+</resources>

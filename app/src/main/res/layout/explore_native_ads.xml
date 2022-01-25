@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.gms.ads.nativead.NativeAdView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/signature_blue_darker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <ImageView
+                    android:id="@+id/ad_logo"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/card_2"/>
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/roboto_medium"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16sp"
+                    android:layout_toRightOf="@id/ad_logo"
+                    android:id="@+id/ad_headline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ad Headline"/>
+
+                <TextView
+                    android:layout_below="@id/ad_headline"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/ad_logo"
+                    android:id="@+id/advertiser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Advertiser"/>
+
+                <RatingBar
+                    android:progressTint="@color/gold"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/ad_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.RatingBar.Small"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.gms.ads.nativead.MediaView
+                    android:layout_width="match_parent"
+                    android:id="@+id/ad_media"
+                    android:background="@color/signature_blue_transparent"
+                    android:layout_height="175dp">
+                </com.google.android.gms.ads.nativead.MediaView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp">
+
+                <TextView
+                    android:layout_margin="10dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/roboto_medium"
+                    android:id="@+id/ad_body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Body of Ad"/>
+
+                <Button
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/white"
+                    android:text="Action"
+                    android:id="@+id/call_to_action"
+                    android:textSize="10sp"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="75dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_height="40dp"/>
+
+                <TextView
+                    android:fontFamily="@font/roboto_regular"
+                    android:id="@+id/store"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@id/call_to_action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Store"/>
+
+                <TextView
+                    android:id="@+id/ad_price"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="15dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@id/store"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Price"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</com.google.android.gms.ads.nativead.NativeAdView>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/google"
+    android:padding="5dp"
+    android:id="@+id/not_connected_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:fontFamily="@font/robotomedium"
+        android:textColor="@color/white"
+        android:layout_centerInParent="true"
+        android:text="Not Connected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

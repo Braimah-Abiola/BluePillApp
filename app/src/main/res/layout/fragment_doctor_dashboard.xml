@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/doctor_pink_transparent"
+    android:layout_height="match_parent"
+    tools:context=".Doctor.DoctorDashboardFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/doctor_pink"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="Dashboard"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <!-- Scroll View Goes Here -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:elevation="8dp"
+                android:id="@+id/search"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:focusable="true"
+                android:padding="10dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/search_box_border"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginLeft="5dp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/search_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_search"
+                    app:tint="@color/gray" />
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/search_icon"
+                    android:id="@+id/placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Search places"/>
+
+
+                <ImageView
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_more_vertical"
+                    app:tint="@color/gray" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginBottom="60dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_one"
+                    android:padding="10dp"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:layout_width="160dp"
+                    android:layout_height="220dp"
+                    app:cardCornerRadius="8dp"
+                    android:focusable="true">
+
+                    <TextView
+                        android:id="@+id/txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:text="Appointments" />
+
+                    <ImageView
+                        android:layout_marginBottom="50dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="50dp"
+                        android:src="@drawable/doc_dash_1" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginStart="30dp"
+                    android:layout_toEndOf="@+id/card_one"
+                    android:id="@+id/card_two"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:focusable="true"
+                    android:padding="10dp"
+                    android:layout_width="160dp"
+                    android:layout_height="220dp"
+                    app:cardCornerRadius="8dp">
+
+                    <TextView
+                        android:id="@+id/txt_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:text="Records" />
+
+                    <ImageView
+                        android:layout_marginBottom="50dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="50dp"
+                        android:src="@drawable/doc_dash_2" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:focusable="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/card_one"
+                    android:id="@+id/card_three"
+                    android:padding="10dp"
+                    android:layout_width="160dp"
+                    android:layout_height="220dp"
+                    app:cardCornerRadius="8dp">
+
+                    <TextView
+                        android:id="@+id/txt_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:text="Forums" />
+
+                    <ImageView
+                        android:layout_marginBottom="50dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="50dp"
+                        android:src="@drawable/doc_dash_3" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginTop="20dp"
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:layout_marginStart="30dp"
+                    android:layout_toEndOf="@id/card_three"
+                    android:layout_below="@id/card_two"
+                    android:id="@+id/card_four"
+                    android:padding="10dp"
+                    android:layout_width="160dp"
+                    android:layout_height="220dp"
+                    app:cardCornerRadius="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:text="My Wallet" />
+
+                    <ImageView
+                        android:layout_marginBottom="50dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="50dp"
+                        android:src="@drawable/doc_dash_4" />
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:focusable="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/card_three"
+                    android:id="@+id/card_five"
+                    android:padding="10dp"
+                    android:layout_width="160dp"
+                    android:layout_height="220dp"
+                    app:cardCornerRadius="8dp">
+
+                    <TextView
+                        android:id="@+id/txt_five"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:text="Manage Addresses" />
+
+                    <ImageView
+                        android:layout_marginBottom="50dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_below="@+id/txt_five"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="50dp"
+                        android:src="@drawable/doc_dash_5" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:focusable="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_toEndOf="@id/card_five"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/card_three"
+                    android:id="@+id/card_six"
+                    android:padding="10dp"
+                    android:layout_width="160dp"
+                    android:layout_height="220dp"
+                    app:cardCornerRadius="8dp">
+
+                    <TextView
+                        android:id="@+id/txt_six"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:text="Stats" />
+
+                    <ImageView
+                        android:layout_marginBottom="50dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_below="@+id/txt_five"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="50dp"
+                        android:src="@drawable/doc_dash_6" />
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+</LinearLayout>

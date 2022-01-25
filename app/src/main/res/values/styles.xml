@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Custom User Toast -->
+    <style name="customToastUserNotEligible">
+        <item name="colorBackground">@color/signature_blue</item>
+        <item name="textColor">@color/white</item>
+        <item name="iconLeft">@drawable/ic_error</item>
+    </style>
+    <!-- End Custom Toast -->
+
+    <!-- Custom Doctor Toast -->
+    <style name="customToastDoctorNotEligible">
+        <item name="colorBackground">@color/doctor_pink</item>
+        <item name="textColor">@color/white</item>
+        <item name="iconLeft">@drawable/ic_error</item>
+    </style>
+    <!-- End Custom Toast -->
+
+    <!-- Bottom Sheet & Dialog Box Theme -->
+
+    <style name="BottomSheetTheme" parent="Theme.Design.BottomSheetDialog">
+
+        <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
+
+    </style>
+
+    <style name="BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+
+        <item name="android:background">@android:color/transparent</item>
+
+    </style>
+
+    <!-- End Bottom Sheet & Dialog Box Theme -->
+
+</resources>

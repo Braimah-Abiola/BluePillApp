@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/signature_blue"
+    android:padding="20dp"
+    android:scrollbars="none"
+    tools:context=".Common.UserLogInSignUp.UserStartUpScreen">
+
+    <Button
+        android:fontFamily="@font/roboto_medium"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="callDoctorStartup"
+        android:text="@string/doctor"
+        android:id="@+id/btn_other"
+        android:background="@color/transparent"
+        android:textColor="@color/white"
+        android:focusable="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/background"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/user_startup"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/muli_black"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sloganText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/user_welcome"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/login_btn"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:onClick="callUserLogIn"
+                android:text="@string/log_in"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/signup_btn"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:onClick="callUserSignUp"
+                android:text="@string/sign_up"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

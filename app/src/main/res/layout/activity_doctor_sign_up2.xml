@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="20dp"
+    android:theme="@style/Theme.BluePill.Doctor"
+    android:orientation="vertical"
+    tools:context=".Common.DoctorLogInSignUp.DoctorSignUp2">
+
+
+    <ProgressBar
+        android:progressTint="@color/doctor_pink"
+        android:progress="40"
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/page_number"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pg_2"
+        android:layout_marginBottom="80dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:textColor="@color/black"/>
+
+
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/txt_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="25dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/birthday"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <DatePicker
+            android:id="@+id/doctor_birthday_picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:calendarTextColor="@color/black"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            android:hapticFeedbackEnabled="true"
+            android:spinnersShown="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:onClick="callDoc3"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:layout_height="60dp"
+            android:text="@string/next"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

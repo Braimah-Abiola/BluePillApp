@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".User.Features.Articles.FilterTags">
+
+    <RelativeLayout
+        android:id="@+id/action_bar"
+        android:background="@color/signature_blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/back_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_bc"
+            app:tint="@color/white" />
+
+        <TextView
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filter Tags"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:padding="20dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:theme="@style/Theme.BluePill.Custom"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/google"
+            android:src="@drawable/ic_delete"
+            app:maxImageSize="28dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:theme="@style/Theme.BluePill.Custom"
+            android:layout_alignParentEnd="true"
+            android:backgroundTint="@color/signature_blue"
+            android:src="@drawable/ic_check"/>
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:theme="@style/Theme.BluePill.Custom"
+            android:layout_marginRight="70dp"
+            android:backgroundTint="@color/dark_green_button"
+            android:drawableLeft="@drawable/ic_favorite"
+            android:shadowColor="@color/transparent"
+            android:src="@drawable/ic_favorite"
+            android:text="FAVORITES" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:elevation="8dp"
+        android:id="@+id/added_tags"
+        android:layout_below="@id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+    </RelativeLayout>
+
+</RelativeLayout>

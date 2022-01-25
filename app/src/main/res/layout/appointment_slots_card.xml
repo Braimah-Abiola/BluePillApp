@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="60dp"
+    android:layout_height="80dp"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/card_radio_selector"
+            android:button="@color/transparent"
+            android:lineHeight="30dp"
+            android:textAlignment="center"
+            android:textColor="@drawable/radio_text_color" />
+
+        <TextView
+            android:id="@+id/radio_date"
+            android:padding="10dp"
+            android:lineHeight="40dp"
+            android:textAlignment="center"
+            android:text="Mon\n21"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

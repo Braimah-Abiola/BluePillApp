@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:foreground="?selectableItemBackground"
+    android:clickable="true"
+    app:cardElevation="4dp"
+    android:layout_margin="10dp"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/specialist_image"
+            android:layout_width="80dp"
+            android:layout_centerVertical="true"
+            android:layout_height="80dp"
+            android:src="@drawable/dummy_doctor" />
+
+        <TextView android:id="@+id/mv_title"
+            android:textColor="@color/black"
+            android:text="Physician"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/specialist_image"
+            android:layout_marginStart="20dp"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView android:id="@+id/mv_description"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:textAlignment="center"
+            android:text="John Doe"
+            android:layout_below="@id/mv_title"
+            android:layout_toEndOf="@id/specialist_image" />
+
+        <RatingBar
+            android:theme="@style/Theme.BluePill.RatingBar"
+            android:layout_marginTop="5dp"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mv_description"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/specialist_image"
+            android:rating="2.3" />
+
+        <Button
+            android:layout_alignParentEnd="true"
+            android:theme="@style/Theme.BluePill.Orange"
+            android:background="@drawable/round_btn"
+            android:layout_marginEnd="10dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textSize="12sp"
+            android:text="book"/>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    android:layout_margin="15dp"
+    app:cardBackgroundColor="@color/signature_blue">
+
+
+    <LinearLayout
+        android:layout_margin="25dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textColor="#ADFFFFFF"
+            android:fontFamily="@font/roboto_medium"
+            android:id="@+id/days_left"
+            android:text="In 3 days"
+            android:textSize="22sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textColor="@color/white"
+            android:layout_marginTop="15dp"
+            android:textSize="24sp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Consultation with "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:id="@+id/patient_name"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Eric Su"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_calender"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/date"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/white"
+                android:layout_marginLeft="20dp"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="November 17"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_clock"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/time"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/white"
+                android:layout_marginLeft="20dp"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12:30 PM"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_location"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Main Street, 18"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_call"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/number"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/white"
+                android:layout_marginLeft="20dp"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+233 202 280 564"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="150dp"
+            android:text="RESCHEDULE"
+            android:textColor="@color/white"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            app:strokeColor="@color/white"
+            tools:ignore="MissingPrefix" />
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

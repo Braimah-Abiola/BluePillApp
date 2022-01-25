@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Doctor.DoctorInformationFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Languages"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <ImageView
+                    android:id="@+id/flag_one"
+                    android:layout_width="20dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/flag_united_kingdom" />
+
+                <TextView
+                    android:id="@+id/language_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/flag_one"
+                    android:text="English" />
+
+                <ImageView
+                    android:id="@+id/flag_two"
+                    android:layout_width="20dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/language_one"
+                    android:src="@drawable/flag_france" />
+
+                <TextView
+                    android:id="@+id/language_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/flag_two"
+                    android:text="French" />
+
+                <ImageView
+                    android:id="@+id/flag_three"
+                    android:layout_width="20dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/language_two"
+                    android:src="@drawable/flag_germany" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/flag_three"
+                    android:text="German" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/components_divider" />
+
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Education"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <ImageView
+                    android:id="@+id/bullet_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/bullet" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/bullet_one"
+                    android:text="UCL - Cliniques Saint - Luc (1987 -1999)- Doctor " />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <ImageView
+                    android:id="@+id/bullet_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/bullet" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/bullet_two"
+                    android:text="UCL - Cliniques Saint - Luc (1987 -1999)- Doctor " />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <ImageView
+                    android:id="@+id/bullet_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/bullet" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/bullet_three"
+                    android:text="UCL - Cliniques Saint - Luc (1987 -1999)- Doctor " />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/components_divider" />
+
+
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Publications"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/bullet_one_pub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bullet"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/bullet_one_pub"
+                    android:text="UCL - Cliniques Saint - Luc (1987 -1999)- Doctor "/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/bullet_two_pub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bullet"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/bullet_two_pub"
+                    android:text="UCL - Cliniques Saint - Luc (1987 -1999)- Doctor "/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/components_divider"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/nothing"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:text="You are all caught up"
+                android:layout_height="wrap_content"/>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                android:layout_centerHorizontal="true"
+                app:lottie_rawRes="@raw/sign_up_success"
+                android:layout_below="@id/nothing"
+                android:layout_marginBottom="80dp"
+                android:layout_marginTop="10dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

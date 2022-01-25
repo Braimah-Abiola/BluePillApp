@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/Theme.BluePill.Doctor"
+    tools:context=".Common.DoctorLogInSignUp.DoctorLogin">
+
+    <RelativeLayout
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_pink"
+        android:elevation="8dp"
+        android:padding="10dp"
+        android:visibility="invisible">
+
+        <ProgressBar
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:theme="@style/Theme.BluePill.Custom3" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="34sp"
+            android:textColor="#C6000000"
+            android:fontFamily="@font/robotomedium"
+            android:text="Hey, \nLogin Now."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_gravity="start"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="18sp"
+                android:paddingTop="10dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/if_you_are_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/robotomedium"
+                android:onClick="callDoctorSignUp"
+                android:paddingTop="10dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/create_new"
+                android:textColor="@color/black_faded2"
+                android:textSize="18sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/email"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                android:layout_width="match_parent"
+                app:boxCornerRadiusBottomEnd="8dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:boxBackgroundColor="@color/light_orange"
+                app:boxStrokeWidth="0dp"
+                app:startIconTint="@color/black"
+                app:startIconDrawable="@drawable/ic_email"
+                android:layout_height="wrap_content"
+                android:hint="@string/email"
+                app:placeholderTextColor="@color/black"
+                android:textColorHint="@color/black"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:fontFamily="@font/robotomedium"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/password"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                android:layout_width="match_parent"
+                app:boxCornerRadiusBottomEnd="8dp"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:boxBackgroundColor="@color/pastel_green"
+                app:boxStrokeWidth="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/email"
+                app:boxStrokeWidthFocused="0dp"
+                app:startIconTint="@color/black"
+                app:startIconDrawable="@drawable/ic_lock"
+                android:layout_marginTop="15dp"
+                android:hint="@string/password"
+                app:hintAnimationEnabled="true"
+                app:hintTextColor="@color/black"
+                app:placeholderTextColor="@color/black"
+                android:textColorHint="@color/black"
+                app:passwordToggleTint="@color/black"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:inputType="textPassword"
+                    android:fontFamily="@font/robotomedium"
+                    android:textColor="@color/black"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RelativeLayout
+                android:id="@+id/remember_block"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/password"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="40dp">
+
+                <TextView
+                    android:id="@+id/f_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:backgroundTint="@color/transparent"
+                    android:fontFamily="@font/robotomedium"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/forgot_passcode"
+                    android:textSize="18sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/f_txt"
+                    android:fontFamily="@font/robotomedium"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/reset"
+                    android:textColor="@color/black_faded2"
+                    android:textSize="18sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/login_btn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/remember_block"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:onClick="letDoctorLogin"
+                android:text="@string/log_in"
+                android:textAllCaps="false"
+                tools:ignore="TextContrastCheck" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/terms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/terms_and_conditions"
+        android:textAlignment="center" />
+
+</RelativeLayout>

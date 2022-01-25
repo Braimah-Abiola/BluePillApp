@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/doctor_pink_transparent"
+    android:orientation="vertical"
+    tools:context=".Doctor.DoctorProfileActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/doctor_pink"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Profile"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:onClick="callDoctorDashboardActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_bc" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@color/doctor_pink_dark"
+                android:padding="20dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/dummy_doctor"
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/dummy_doctor"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="3dp" />
+
+                <RelativeLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="-60dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_toRightOf="@id/dummy_doctor"
+                    android:background="@drawable/round"
+                    android:backgroundTint="@color/doctor_pink"
+                    android:elevation="8dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_add_photo"
+                        app:tint="@color/white" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dummy_doctor"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text="Doctor Stephen Strange"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/user_name"
+                    android:layout_centerHorizontal="true"
+                    android:text="San Francisco CA"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="-90dp"
+                android:elevation="8dp"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/search_box_border">
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/search_box_border">
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/search_box_border">
+
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-80dp"
+                android:background="@drawable/bottom_overlay">
+
+                <RelativeLayout
+                    android:id="@+id/schedule_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textSize="18sp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="80dp"
+                        android:id="@+id/schedule"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="My Schedule"/>
+
+                    <ImageView
+                        android:layout_marginRight="15dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="80dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_edit"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_below="@id/schedule"
+                        android:id="@+id/empty_slots_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/languages_view"
+                    android:layout_below="@id/schedule_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_marginRight="15dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_edit"/>
+
+                    <TextView
+                        android:textSize="18sp"
+                        android:layout_marginLeft="15dp"
+                        android:id="@+id/languages"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Languages"/>
+
+
+                    <RelativeLayout
+                        android:layout_marginLeft="15dp"
+                        android:layout_below="@id/languages"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/flag_one"
+                            android:layout_width="20dp"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/flag_united_kingdom" />
+
+                        <TextView
+                            android:id="@+id/language_one"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/flag_one"
+                            android:text="English" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_below="@id/languages_view"
+                    android:layout_marginTop="25dp"
+                    android:id="@+id/education_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textSize="18sp"
+                        android:layout_marginLeft="15dp"
+                        android:id="@+id/education"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Education"/>
+
+                    <ImageView
+                        android:layout_marginRight="15dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_add_outline"
+                        app:tint="@color/black" />
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@id/education"
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No Data"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="25dp"
+                    android:layout_below="@id/education_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textSize="18sp"
+                        android:layout_marginLeft="15dp"
+                        android:id="@+id/publications"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Publications"/>
+
+                    <ImageView
+                        android:layout_marginRight="15dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_add_outline"
+                        app:tint="@color/black" />
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@id/publications"
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No Data"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

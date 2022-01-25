@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="@string/home_"
+        android:id="@+id/bottom_nav_home"
+        android:icon="@drawable/ic_home"
+        app:cnb_backgroundColor="@color/doctor_pink_dark" />
+
+    <item android:title="@string/telemed"
+        android:id="@+id/bottom_nav_tele_medicine"
+        android:icon="@drawable/ic_hospital"
+        app:cnb_backgroundColor="@color/doctor_pink_dark" />
+
+    <item android:title="@string/dashboard"
+        android:id="@+id/bottom_nav_dashboard"
+        android:icon="@drawable/ic_dashboard"
+        app:cnb_backgroundColor="@color/doctor_pink_dark" />
+
+    <item android:title="Calendar"
+        android:id="@+id/bottom_nav_calendar"
+        android:icon="@drawable/ic_calender"
+        app:cnb_backgroundColor="@color/doctor_pink_dark" />
+
+</menu>

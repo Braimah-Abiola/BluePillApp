@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.Features.Articles.ArticleBookmarks">
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:background="@color/signature_blue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_bc"
+                app:tint="@color/white" />
+
+            <TextView
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bookmarks"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_horizontal_split"
+                app:tint="@color/white" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/no_bookmark_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/no_bookmark"/>
+
+                <TextView
+                    android:layout_below="@id/no_bookmark_image"
+                    android:textSize="18sp"
+                    android:layout_marginTop="-100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No bookmarks"/>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_100">#CCA3FF</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#F53239</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_two">#EDEDED</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="black_overlay2">#86000000</color>
+    <color name="black_faded2">#101010</color>
+    <color name="gray">#535353</color>
+    <color name="gray2">#404040</color>
+
+    <color name="purple">#ba53de</color>
+    <color name="signature_blue">#5187D6</color>
+    <color name="signature_blue_darker">#416EAF</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="orange">#FF9800</color>
+    <color name="gold">#FFD700</color>
+    <color name="facebook">#137AF0</color>
+
+    <!-- DOCTOR COLORS-->
+    <color name="doctor_pink">#FF4F5A</color>
+    <color name="doctor_pink_dark">#F12733</color>
+    <color name="banner_background_light">#AEFFCA7D</color>
+    <color name="banner_background">#FFCC83</color>
+
+    <color name="google">#FF1E26</color>
+    <color name="signature_blue_transparent">#DEE6EC</color>
+    <color name="doctor_pink_transparent">#FFEDEE</color>
+
+    <!-- ROUND BUTTONS -->
+    <color name="orange_button">#F75010</color>
+    <color name="sea_blue_button">#47CACC</color>
+    <color name="dark_blue_button">#205072</color>
+    <color name="dark_green_button">#329D9C</color>
+
+    <color name="bg_bubble_self">#62caa6</color>
+    <color name="bg_bubble_watbot">#ecf0f1</color>
+    
+    <!-- COLOR PALETTE -->
+    <color name="inchworm">#9CEC5B</color>
+    <color name="cyber_grape">#533A71</color>
+    <color name="cyber_grape_lighter">#9F76D1</color>
+    <color name="glaucous">#6184D8</color>
+    <color name="medium_turquoise">#50C5B7</color>
+    <color name="icterine">#F0F465</color>
+
+    <!-- NEW PASTEL COLOR PALETTE -->
+    <color name="navy_blue">#0065AA</color>
+    <color name="light_orange">#F7AB61</color>
+    <color name="pastel_green">#5DCEC1</color>
+    <color name="pastel_violet">#726AE4</color>
+    <color name="pastel_yellow">#F7D461</color>
+    <color name="pastel_violet_lighter">#9D99E5</color>
+    <color name="maroon">#AE376D</color>
+    <color name="pastel_red">#FF7575</color>
+
+
+
+</resources>

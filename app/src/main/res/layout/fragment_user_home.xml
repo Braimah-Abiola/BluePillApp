@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".User.UserHomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/signature_blue"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="Home"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:elevation="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_overlay"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <RelativeLayout
+            android:id="@+id/r_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="60dp"
+                android:id="@+id/animation"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@id/txt_one"
+                app:lottie_loop="true"
+                app:lottie_autoPlay="true"
+                app:lottie_rawRes="@raw/night"
+                android:layout_centerVertical="true"
+                android:layout_height="60dp"/>
+
+            <TextView
+                android:id="@+id/txt_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_alt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_one"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Name"
+                android:textColor="@color/gray2"
+                android:textSize="28sp" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/user_goal"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/r_view"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/signature_blue"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_goal"
+            android:layout_marginTop="10dp"
+            android:text="@string/more_details"
+            android:theme="@style/Theme.BluePill.DarkBlue" />
+
+        <Button
+            android:id="@+id/btn_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_goal"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/btn_one"
+            android:text="@string/view_profile"
+            android:textAlignment="center"
+            android:theme="@style/Theme.BluePill.DarkGreen" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="What are you doing today?"
+                    android:textColor="@color/signature_blue" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/icon__brain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon__brain"
+                    app:tint="@color/orange_button" />
+
+                <TextView
+                    android:id="@+id/doc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/icon__brain"
+                    android:text="Doctors" />
+
+                <TextView
+                    android:id="@+id/doc2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/doc"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/icon__brain"
+                    android:text="Brain Checkout"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/doc3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/doc2"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/icon__brain"
+                    android:text="Have an appointment today" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/round_btn"
+                    android:text="View"
+                    android:textSize="12sp"
+                    android:theme="@style/Theme.BluePill.Orange" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/components_divider" />
+
+            <RelativeLayout
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:id="@+id/icon__tube"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon__tube"
+                    app:tint="@color/dark_green_button" />
+
+                <TextView
+                    android:id="@+id/tube"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/icon__tube"
+                    android:text="Pharmacy" />
+
+                <TextView
+                    android:id="@+id/tube2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tube"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/icon__tube"
+                    android:text="Brain Checkout"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tube3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tube2"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/icon__tube"
+                    android:text="Don't forget to bring the list" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/round_btn"
+                    android:text="View"
+                    android:textSize="12sp"
+                    android:theme="@style/Theme.BluePill.SeaBlue" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/components_divider" />
+
+            <RelativeLayout
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:id="@+id/icons_health"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icons_health" />
+
+                <TextView
+                    android:id="@+id/health1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/icons_health"
+                    android:text="Pharmacy" />
+
+                <TextView
+                    android:id="@+id/health2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/health1"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/icons_health"
+                    android:text="Brain Checkout"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/health2"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/icons_health"
+                    android:text="Don't forget to bring the list" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/round_btn"
+                    android:text="View"
+                    android:textSize="12sp"
+                    android:theme="@style/Theme.BluePill.DarkBlue" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tube3"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/components_divider" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@id/txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Visit a Specialists"
+                    android:textColor="@color/signature_blue" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/specialists_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt"
+                    android:layout_marginTop="5dp" />
+
+                <TextView
+                    android:id="@id/text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/specialists_recycler"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Suggested"
+                    android:textColor="@color/signature_blue" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/specialists_recycler2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text2"
+                    android:layout_marginBottom="85dp"
+                    android:layout_marginTop="5dp"
+                    android:focusable="false" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

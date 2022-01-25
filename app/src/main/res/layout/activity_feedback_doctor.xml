@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".User.Features.Payment.Payment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/signature_blue"
+            android:padding="15dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="15dp"
+                android:src="@drawable/ic_bc" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Rate Doctor"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Leave your feedback"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:layout_centerVertical="true"
+               android:layout_width="100dp"
+               android:id="@+id/icon"
+               app:civ_circle_background_color="@color/signature_blue"
+               android:layout_height="100dp"
+               android:src="@drawable/dummy_doctor"/>
+
+            <TextView
+                android:textSize="18sp"
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/icon"
+                android:text="2 Rue de Ermesinde\nFrisange - Luxembourg\n3 km" />
+
+            <RatingBar
+                android:theme="@style/Theme.BluePill.RatingBar"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:rating="2.5"
+                android:layout_marginTop="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@id/location"
+                android:layout_toRightOf="@id/icon"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/location"
+                android:layout_marginTop="90dp"
+                android:src="@drawable/components_divider" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:paddingBottom="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <RatingBar
+                android:theme="@style/Theme.BluePill.RatingBar"
+                android:layout_marginTop="20dp"
+                android:stepSize="1"
+                android:numStars="5"
+                android:id="@+id/rating_chooser"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_below="@id/rating_chooser"
+                android:id="@+id/input_one"
+                android:hint="Type feedback"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="top"
+                app:counterEnabled="true"
+                app:counterMaxLength="1000"
+                app:boxBackgroundColor="@color/white"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:text="Submit Feedback"
+                android:textAllCaps="true"
+                android:layout_marginTop="40dp"
+                android:layout_below="@id/input_one"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

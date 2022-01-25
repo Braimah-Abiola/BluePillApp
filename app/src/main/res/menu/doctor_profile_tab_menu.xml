@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:title="Doctor"
+        android:id="@+id/doctor"
+        android:icon="@drawable/ic_medical_service"
+        app:cnb_backgroundColor="@color/signature_blue_darker" />
+
+    <item
+        android:title="Information"
+        android:id="@+id/information"
+        android:icon="@drawable/ic_help"
+        app:cnb_backgroundColor="@color/signature_blue_darker" />
+
+    <item
+        android:title="Hospital"
+        android:id="@+id/hospital"
+        android:icon="@drawable/ic_hospital"
+        app:cnb_backgroundColor="@color/signature_blue_darker" />
+
+    <item
+        android:title="Reviews"
+        android:id="@+id/feedback"
+        android:icon="@drawable/ic_stars"
+        app:cnb_backgroundColor="@color/signature_blue_darker" />
+
+</menu>

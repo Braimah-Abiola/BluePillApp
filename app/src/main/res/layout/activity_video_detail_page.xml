@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".User.Features.Videos.VideoDetailPage">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/signature_blue"
+            android:padding="15dp">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_bc"/>
+
+        </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:onClick="callVideoPlayer"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/show"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="13dp"
+                    android:background="@drawable/circle"
+                    android:drawableLeft="@drawable/ic_play"
+                    android:drawableTint="@color/white"
+                    android:theme="@style/Theme.BluePill.Custom.Settings" />
+
+                <ImageView
+                    android:id="@+id/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:src="@color/dark_blue_button" />
+
+
+                </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/play_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="PLAY" />
+
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_below="@id/play_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_margin="20dp"
+                    android:fontFamily="@font/muli_black"
+                    android:text="Losing My Virginity - Insights from the\nbook by Richard Branson"/>
+
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_below="@id/title"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/tags"
+                    android:layout_height="wrap_content"
+                    android:text="Leadership | Motivation | Entrepreneurship"/>
+
+                <TextView
+                    android:id="@+id/summary"
+                    android:layout_margin="20dp"
+                    android:layout_below="@id/tags"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Business tycoon, investor and philanthropist Sir Richard Brenson is many things but one thing he is not, is humdrum d philanthropist Sir Richard Brenson is many things but one thing he is not, is humdrum d philanthropist Sir Richard Brenson is many things but one thing he is not, is humdrum d philanthropist Sir Richard Brenson is many things but one thing he is not, is humdrum d philanthropist Sir Richard Brenson is many things but one thing he is not, is humdrum d philanthropist Sir Richard Brenson is many things but one thing he is not, is humdrum."/>
+
+            </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_gravity="center"
+                    android:id="@+id/btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/bookmark_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_bookmark_book"
+                        app:tint="@color/signature_blue" />
+
+                    <TextView
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/bookmark_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/list"
+                        android:text="My List"/>
+
+
+
+                    <ImageView
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@id/list"
+                        android:id="@+id/share_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_share"
+                        app:tint="@color/signature_blue" />
+
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/share_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="My List"/>
+
+                </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/components_divider"/>
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Episodes"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

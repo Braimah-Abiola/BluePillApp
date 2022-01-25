@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/Theme.BluePill.Custom2"
+    tools:context=".User.Features.Appointments.Appointments">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/signature_blue"
+        android:padding="15dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_bc" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Appointments"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_user" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.ismaeldivita.chipnavigation.ChipNavigationBar
+            android:id="@+id/tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:elevation="8dp"
+            android:background="@color/signature_blue"
+            android:padding="10dp"
+            app:cnb_menuResource="@menu/appointment_tab_menu"
+            app:cnb_unselectedColor="@color/black" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

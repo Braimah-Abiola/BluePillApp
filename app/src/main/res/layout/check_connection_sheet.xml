@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/check_connection_sheet"
+    android:background="@drawable/bottom_sheet_background"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:paddingTop="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-40dp"
+            android:src="@drawable/rectangle_1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-140dp"
+            android:src="@drawable/lighthouse" />
+
+
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-90dp"
+            android:fontFamily="@font/muli_black"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:text="Oops !"
+            android:textSize="28sp" />
+
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:text="No Internet Connection Available"
+            android:textSize="22sp" />
+
+
+        <Button
+            android:textColor="@color/white"
+            android:id="@+id/retry"
+            android:backgroundTint="@color/signature_blue"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Retry"/>
+
+        <Button
+            android:textColor="@color/white"
+            android:id="@+id/cancel"
+            android:backgroundTint="@color/google"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="60dp"
+            android:text="Cancel"/>
+
+    </LinearLayout>
+
+</ScrollView>

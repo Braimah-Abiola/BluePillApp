@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_picture"
+            android:layout_centerVertical="true"
+            android:layout_width="60dp"
+            android:src="@drawable/dummy_doctor"
+            android:layout_height="60dp"/>
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/profile_picture"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Specialty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <RatingBar
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <Button
+            android:drawableTint="@color/white"
+            android:drawableLeft="@drawable/ic_add"
+            android:textAllCaps="false"
+            android:text="Add"
+            android:theme="@style/Theme.BluePill.Orange"
+            android:background="@drawable/round_btn"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

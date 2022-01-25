@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".User.Features.Videos.MyListFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/signature_blue"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:text="My Lists"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/image"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/lighthouse"/>
+
+                <TextView
+                    android:fontFamily="@font/muli"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:id="@+id/message1"
+                    android:layout_marginTop="-80dp"
+                    android:layout_below="@id/image"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nothing to show here"/>
+
+                <TextView
+                    android:layout_below="@id/message1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"
+                    android:text="Go to the insight page and save a video to get it here"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

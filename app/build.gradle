@@ -1,0 +1,124 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+repositories {
+    maven {
+        url  "https://dl.bintray.com/ibm-cloud-sdks/ibm-cloud-sdk-repo"
+    }
+}
+
+android {
+    compileSdkVersion 31
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.example.bluepill"
+        minSdkVersion 23
+        targetSdkVersion 31
+        versionCode 1
+        versionName "1.0"
+        ndk {
+            abiFilters "armeabi-v7a", "x86"
+        }
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+}
+
+dependencies {
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.navigation:navigation-fragment:2.3.5'
+    implementation 'androidx.navigation:navigation-ui:2.3.5'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0'
+    implementation 'com.google.firebase:firebase-database:20.0.3'
+    implementation 'androidx.preference:preference:1.1.1'
+    implementation 'com.google.android.gms:play-services-ads:20.5.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'androidx.coordinatorlayout:coordinatorlayout:1.2.0'
+    implementation 'com.google.firebase:firebase-auth:21.0.1'
+    implementation 'com.google.android.gms:play-services-maps:18.0.2'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    // Lottie
+    implementation 'com.airbnb.android:lottie:3.7.0'
+
+    // Chip Navigation
+    implementation 'com.ismaeldivita.chipnavigation:chip-navigation-bar:1.3.4'
+
+    // Liquid Swipe
+    implementation 'com.cuberto:liquid-swipe:1.0.0'
+
+    // Additional
+    implementation 'com.android.support:design:31.0.0'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.5.31'
+    implementation 'androidx.core:core:1.7.0'
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'com.hbb20:ccp:2.3.1'
+    implementation 'com.github.coyarzun89:fabtransitionactivity:0.2.0'
+
+    //OTP PIN VIEW DESIGN
+    implementation 'com.chaos.view:pinview:1.4.3'
+
+    // Flashy Tab Bar
+    implementation 'com.cuberto.flashytabbarandroid:flashytabbarandroid:1.0.0'
+
+    // MP Chart
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
+    // Material Dialog Library
+    implementation 'com.shreyaspatil:MaterialDialog:2.1'
+
+    implementation 'com.github.zhpanvip:BannerViewPager:3.5.0'
+
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    implementation 'com.muddzdev:styleabletoast:2.0.1'
+
+    implementation 'com.allattentionhere:fabulousfilter:0.0.5'
+
+    //Scan Credit Card
+    implementation 'io.card:android-sdk:5.5.1'
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.ibm.watson:assistant:9.0.2'
+    implementation 'com.ibm.watson:text-to-speech:9.0.2'
+    implementation 'com.ibm.watson:speech-to-text:9.0.2'
+    implementation 'com.ibm.watson.developer_cloud:android-sdk:0.5.0'
+    implementation 'com.android.support:multidex:1.0.3'
+
+    implementation ('com.github.bumptech.glide:glide:4.12.0') {
+        exclude group: "com.android.support"
+    }
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+
+    // Slider
+    implementation 'me.relex:circleindicator:1.3.2'
+
+    implementation 'com.getbase:floatingactionbutton:1.10.1'
+    implementation 'com.wdullaer:materialdatetimepicker:4.2.3'
+    implementation 'com.bignerdranch.android:recyclerview-multiselect:0.2'
+    implementation 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.1'
+
+
+    // On-boarding dependency
+    implementation "com.ramotion.paperonboarding:paper-onboarding:1.1.3"
+
+}

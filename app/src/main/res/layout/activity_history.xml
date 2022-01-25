@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".User.Features.History.HistoryActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/signature_blue"
+        android:padding="15dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_bc"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="My History"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/transaction_history_layout"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginLeft="40dp"
+                    android:textSize="18dp"
+                    android:id="@+id/tittle1"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:text="Transaction History"/>
+
+                <TextView
+                    android:layout_marginLeft="40dp"
+                    android:layout_below="@id/tittle1"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="This page displays the list of recent transactions"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_timeline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginLeft="40dp"
+                    android:textSize="18dp"
+                    android:id="@+id/tittle2"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:text="Transaction History"/>
+
+                <TextView
+                    android:layout_marginLeft="40dp"
+                    android:layout_below="@id/tittle2"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="This page displays the list of recent transactions"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".User.Features.UserInfo.AddAddress">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/signature_blue"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Add Address"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_bc" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_my_location"
+            app:tint="@color/white" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_marginTop="-10dp"
+                android:layout_width="150dp"
+                android:layout_gravity="center"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/location_lottie"
+                android:layout_height="100dp"/>
+
+            <Spinner
+                android:backgroundTint="@color/black"
+                android:layout_marginTop="10dp"
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+            </Spinner>
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Full Name" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Name"
+                android:soundEffectsEnabled="true"
+                app:boxStrokeColor="@color/signature_blue"
+                app:startIconDrawable="@drawable/ic_profile">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Street Address"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Street Address"
+                android:soundEffectsEnabled="true"
+                app:boxStrokeColor="@color/signature_blue"
+                app:startIconDrawable="@drawable/ic_profile">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile Number"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Mobile Number"
+                android:soundEffectsEnabled="true"
+                app:boxStrokeColor="@color/signature_blue"
+                app:startIconDrawable="@drawable/ic_profile">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Country"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Country"
+                android:soundEffectsEnabled="true"
+                app:boxStrokeColor="@color/signature_blue"
+                app:startIconDrawable="@drawable/ic_profile">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:text="SUBMIT"
+                android:layout_marginBottom="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

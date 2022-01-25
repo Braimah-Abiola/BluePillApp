@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/logout"
+    android:layout_width="350dp"
+    android:padding="20dp"
+    android:layout_height="350dp"
+    android:layout_gravity="center"
+    android:elevation="8dp"
+    android:background="@drawable/blue_border"
+    android:orientation="vertical">
+
+    <com.airbnb.lottie.LottieAnimationView
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/quit_lottie"
+        android:id="@+id/lottie_anim"
+        android:layout_centerHorizontal="true"
+        android:layout_width="150dp"
+        android:layout_height="150dp"/>
+
+    <TextView
+        android:padding="10dp"
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lottie_anim"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Are you sure you want to logout from your BluePill account ?"
+        android:textAlignment="center" />
+
+
+    <RelativeLayout
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:backgroundTint="@color/google"
+            android:id="@+id/positive"
+            android:layout_marginRight="10dp"
+            android:layout_width="120dp"
+            android:textColor="@color/white"
+            android:layout_height="55dp"
+            android:text="Yes" />
+
+        <Button
+            android:textColor="@color/white"
+            android:backgroundTint="@color/signature_blue_darker"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/positive"
+            android:id="@+id/negative"
+            android:layout_width="120dp"
+            android:layout_height="55dp"
+            android:text="No" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

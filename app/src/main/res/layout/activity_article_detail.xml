@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/signature_blue_darker"
+    tools:context=".User.Features.Articles.ArticleDetail">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_marginTop="40dp"
+            android:background="@drawable/appointment_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title"/>
+
+            <ImageView
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:id="@+id/bookmark_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="25dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_bookmark_book"/>
+
+            <ImageView
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_favorite"
+                app:tint="@color/black"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/bookmark_icon"/>
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:text="5 Healthy protein foods"
+                    android:textSize="22sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="John Doe April 16 | 5 mins read"/>
+
+                <ImageView
+                    android:src="@color/signature_blue_darker"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"/>
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/large_text" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Comments"/>
+
+                    <TextView
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="See all"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_margin="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/user_image"
+                        android:layout_width="80dp"
+                        android:src="@drawable/dummy_doctor"
+                        android:layout_height="80dp"/>
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@id/user_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="John Doe"/>
+
+                    <TextView
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@id/user_image"
+                        android:layout_below="@id/name"
+                        android:id="@+id/date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="29 Dec, 2019"/>
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textSize="19sp"
+                        android:layout_below="@id/user_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Greatest article I have ever read in life"/>
+
+                </RelativeLayout>
+
+                <Button
+                    android:layout_marginBottom="50dp"
+                    android:id="@+id/comment_button"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/signature_blue_darker"
+                    android:background="@drawable/round_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Comment"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

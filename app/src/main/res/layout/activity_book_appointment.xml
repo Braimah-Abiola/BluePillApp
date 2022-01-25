@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/signature_blue"
+    android:orientation="vertical"
+    tools:context=".User.Features.Appointments.BookAppointment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/signature_blue"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="Book Appointment"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_bc" />
+
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/appointment_overlay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/search_one"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/date_bg"
+                    android:textAlignment="center"
+                    android:visibility="visible"
+                    app:queryHint="Search Here">
+
+                </androidx.appcompat.widget.SearchView>
+
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/search_two"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/search_one"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/date_bg"
+                    android:textAlignment="center"
+                    android:visibility="visible"
+                    app:queryHint="Search Here">
+
+                </androidx.appcompat.widget.SearchView>
+
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/search_three"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/search_two"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/date_bg"
+                    android:textAlignment="center"
+                    android:visibility="visible"
+                    app:queryHint="Search Here"
+                    app:searchIcon="@drawable/ic_home">
+
+                </androidx.appcompat.widget.SearchView>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@id/search_three"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:text="Search"
+                    android:textAllCaps="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@id/txt_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Category"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="10dp"
+                    android:text="See all" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_one"
+                    android:layout_marginTop="10dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Top Rating"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="10dp"
+                    android:text="See all" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/date_bg"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/doctor_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/dummy_doctor" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:id="@+id/doctor_name"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/doctor_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dr. Fred Mask"/>
+
+                <TextView
+                    android:id="@+id/doctor_specialization"
+                    android:layout_marginTop="15dp"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/doctor_image"
+                    android:layout_below="@+id/doctor_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Heart surgeon"/>
+
+                <ImageView
+                    android:id="@+id/star"
+                    android:layout_toRightOf="@id/doctor_specialization"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_below="@id/doctor_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_stars"
+                    app:tint="@color/gold" />
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:textSize="12sp"
+                    android:layout_marginTop="19dp"
+                    android:layout_below="@id/doctor_name"
+                    android:text="4.2"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/rate"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/star"/>
+
+                <ImageView
+                    android:id="@+id/location"
+                    android:layout_marginLeft="5dp"
+                    android:layout_below="@id/doctor_name"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@id/rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_location"
+                    app:tint="@color/gold" />
+
+                <TextView
+                    android:textSize="12sp"
+                    android:layout_marginTop="19dp"
+                    android:layout_below="@id/doctor_name"
+                    android:layout_toRightOf="@id/location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13 km"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+

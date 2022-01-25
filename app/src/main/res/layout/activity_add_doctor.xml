@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.Features.TeleMed.AddDoctor">
+
+    <RelativeLayout android:background="@color/signature_blue"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Doctors"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:id="@+id/expand"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_expand"
+            android:layout_width="22dp"
+            android:layout_height="22dp"/>
+
+        <ImageView
+            android:id="@+id/more"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_more_horizontal" />
+
+    </RelativeLayout>
+
+</LinearLayout>

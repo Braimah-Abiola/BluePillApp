@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_margin="10dp"
+    android:background="@color/signature_blue_transparent"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="8dp">
+
+    <RelativeLayout
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/signature_blue_darker">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:text="Credit Card"
+            android:textAllCaps="true"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/hidden_numbers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="XXXX  XXXX  XXXX "
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/card_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/hidden_numbers"
+            android:fontFamily="@font/muli_black"
+            android:text="5639"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/card_holder_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hidden_numbers"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/muli"
+            android:text="Card Holder"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/card_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card_holder_label"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/muli_black"
+            android:text="John Doe"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hidden_numbers"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/muli"
+            android:text="Expires"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/expiry_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card_holder_label"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/muli_black"
+            android:text="08 / 20"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/cvv_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hidden_numbers"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="60dp"
+            android:fontFamily="@font/muli"
+            android:text="CVV"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/cvv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cvv_label"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="52dp"
+            android:fontFamily="@font/muli_black"
+            android:text="5639"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/credit_card_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="22dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/mastercard_color_large" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

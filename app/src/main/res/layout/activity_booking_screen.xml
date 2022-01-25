@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    tools:context=".User.Features.Appointments.BookingScreen">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:padding="20dp"
+            android:background="@drawable/top_overlay_dark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_bc"/>
+
+            <ImageView
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_user"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginLeft="20dp"
+                android:id="@+id/doctor_image"
+                android:layout_width="100dp"
+                android:layout_below="@id/back"
+                android:layout_height="150dp"
+                android:src="@drawable/dummy_doctor"/>
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="65dp"
+                android:id="@+id/doctor_name"
+                android:layout_toRightOf="@id/doctor_image"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dr. Fred Mask"
+                android:textAllCaps="true"/>
+
+            <TextView
+                android:id="@+id/doctor_specialization"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginTop="5sp"
+                android:layout_toRightOf="@id/doctor_image"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@id/doctor_name"
+                android:textColor="@color/white"
+                android:text="Heart surgeon"/>
+
+           <RatingBar
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               style="@style/Widget.AppCompat.RatingBar.Small"
+               android:rating="4"
+               android:layout_marginTop="5dp"
+               android:layout_marginLeft="20dp"
+               android:layout_toRightOf="@id/doctor_image"
+               android:layout_below="@id/doctor_specialization"
+               android:theme="@style/Theme.BluePill.RatingBar"/>
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <RelativeLayout
+                    android:padding="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:id="@+id/month"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="April 2021"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/calender"
+                        android:layout_below="@id/month"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:padding="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/morning"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Morning"/>
+
+                    <RadioGroup
+                        android:id="@+id/radio_group1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/morning"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:layout_width="100dp"
+                            android:padding="10dp"
+                            android:drawableLeft="@drawable/ic_clock"
+                            android:layout_height="40dp"
+                            android:background="@drawable/card_radio_selector"
+                            android:button="@color/transparent"
+                            android:text="08:00"
+                            android:textAlignment="center"
+                            android:textColor="@drawable/radio_text_color" />
+
+                        <RadioButton
+                            android:padding="10dp"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:drawableLeft="@drawable/ic_clock"
+                            android:background="@drawable/card_radio_selector"
+                            android:button="@color/transparent"
+                            android:text="17:00"
+                            android:textAlignment="center"
+                            android:textColor="@drawable/radio_text_color" />
+
+                        <RadioButton
+                            android:padding="10dp"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:drawableLeft="@drawable/ic_clock"
+                            android:background="@drawable/card_radio_selector"
+                            android:button="@color/transparent"
+                            android:text="20:00"
+                            android:textAlignment="center"
+                            android:textColor="@drawable/radio_text_color" />
+
+                    </RadioGroup>
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/radio_group1"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:layout_width="100dp"
+                            android:padding="10dp"
+                            android:drawableLeft="@drawable/ic_clock"
+                            android:layout_height="40dp"
+                            android:background="@drawable/card_radio_selector"
+                            android:button="@color/transparent"
+                            android:text="08:00"
+                            android:textAlignment="center"
+                            android:textColor="@drawable/radio_text_color" />
+
+                        <RadioButton
+                            android:padding="10dp"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:drawableLeft="@drawable/ic_clock"
+                            android:background="@drawable/card_radio_selector"
+                            android:button="@color/transparent"
+                            android:text="17:00"
+                            android:textAlignment="center"
+                            android:textColor="@drawable/radio_text_color" />
+
+                        <RadioButton
+                            android:padding="10dp"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:drawableLeft="@drawable/ic_clock"
+                            android:background="@drawable/card_radio_selector"
+                            android:button="@color/transparent"
+                            android:text="20:00"
+                            android:textAlignment="center"
+                            android:textColor="@drawable/radio_text_color" />
+
+                    </RadioGroup>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:padding="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/evening"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Evening"/>
+
+                    <RadioGroup
+                        android:id="@+id/radio_group3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/evening"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:layout_width="100dp"
+                            android:padding="10dp"
+                            android:drawableLeft="@drawable/ic_clock"
+                            android:layout_height="40dp"
+                            android:background="@drawable/card_radio_selector"
+                            android:button="@color/transparent"
+                            android:text="08:00"
+                            android:textAlignment="center"
+                            android:textColor="@drawable/radio_text_color" />
+
+                        <RadioButton
+                            android:padding="10dp"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:drawableLeft="@drawable/ic_clock"
+                            android:background="@drawable/card_radio_selector"
+                            android:button="@color/transparent"
+                            android:text="17:00"
+                            android:textAlignment="center"
+                            android:textColor="@drawable/radio_text_color" />
+
+                        <RadioButton
+                            android:padding="10dp"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:drawableLeft="@drawable/ic_clock"
+                            android:background="@drawable/card_radio_selector"
+                            android:button="@color/transparent"
+                            android:text="20:00"
+                            android:textAlignment="center"
+                            android:textColor="@drawable/radio_text_color" />
+
+                    </RadioGroup>
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/radio_group3"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:layout_width="100dp"
+                            android:padding="10dp"
+                            android:drawableLeft="@drawable/ic_clock"
+                            android:layout_height="40dp"
+                            android:background="@drawable/card_radio_selector"
+                            android:button="@color/transparent"
+                            android:text="08:00"
+                            android:textAlignment="center"
+                            android:textColor="@drawable/radio_text_color" />
+
+                        <RadioButton
+                            android:padding="10dp"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:drawableLeft="@drawable/ic_clock"
+                            android:background="@drawable/card_radio_selector"
+                            android:button="@color/transparent"
+                            android:text="17:00"
+                            android:textAlignment="center"
+                            android:textColor="@drawable/radio_text_color" />
+
+                        <RadioButton
+                            android:padding="10dp"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:drawableLeft="@drawable/ic_clock"
+                            android:background="@drawable/card_radio_selector"
+                            android:button="@color/transparent"
+                            android:text="20:00"
+                            android:textAlignment="center"
+                            android:textColor="@drawable/radio_text_color" />
+
+                    </RadioGroup>
+
+                </RelativeLayout>
+
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:text="Make An Appointment"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"/>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

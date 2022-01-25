@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:theme="@style/Theme.BluePill.Doctor"
+    android:layout_height="match_parent"
+    tools:context=".Doctor.FeedbackDoctor">
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:background="@color/doctor_pink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <ImageView
+                android:onClick="callDoctorDashboardActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_bc"
+                app:tint="@color/white" />
+
+            <TextView
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Feedback"/>
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="40dp"
+                    android:text="Thanks for your contribution to making this app better"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    app:startIconDrawable="@drawable/ic_feedback"
+                    app:startIconTint="@color/black"
+                    app:counterMaxLength="1000"
+                    app:boxStrokeColor="@color/signature_blue"
+                    app:boxStrokeWidthFocused="2dp"
+                    app:endIconMode="clear_text"
+                    app:counterEnabled="true"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:hint="Your Feedback"
+                        android:layout_height="wrap_content"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    app:startIconTint="@color/black"
+                    android:hint="Email"
+                    app:boxStrokeColor="@color/signature_blue"
+                    app:boxStrokeWidthFocused="2dp"
+                    app:endIconMode="clear_text"
+                    app:startIconDrawable="@drawable/ic_mail_dark"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:textSize="16sp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/feedback_explanation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:drawableTint="@color/white"
+                    android:drawableLeft="@drawable/ic_send"
+                    android:text="SEND FEEDBACK"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>
+

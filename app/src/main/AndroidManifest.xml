@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.bluepill">
+
+    <application
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/Theme.BluePill">
+        <activity
+            android:name=".User.Features.TeleMed.SearchTeleMed"
+            android:exported="true" />
+        <activity
+            android:name=".User.Features.TeleMed.AddDoctor"
+            android:exported="true" />
+        <activity
+            android:name=".Common.UserLogInSignUp.VerifyUserEmail"
+            android:exported="true" />
+        <activity android:name=".User.Features.NavigationActivity" />
+        <activity android:name=".Doctor.FeedbackDoctor" />
+        <activity android:name=".Doctor.DoctorWallet" />
+        <activity android:name=".Doctor.MapView" />
+        <activity android:name=".User.Features.Videos.VideoPlayer" />
+        <activity
+            android:name=".Doctor.LoadingActivity"
+            android:noHistory="true" />
+        <activity android:name=".User.Features.MusicTherapy.SongsActivity" />
+        <activity android:name=".Doctor.DoctorSearchActivity" />
+        <activity
+            android:name=".Doctor.DoctorSettingsActivity"
+            android:label="@string/title_activity_doctor_settings" />
+        <activity android:name=".Doctor.DoctorHistoryActivity" />
+        <activity android:name=".Doctor.DoctorProfileActivity" />
+        <activity android:name=".Doctor.DoctorReminderActivity" />
+        <activity
+            android:name=".Common.UserLogInSignUp.SigningIn"
+            android:noHistory="true" />
+        <activity android:name=".Doctor.DoctorSummary" />
+        <activity android:name=".User.Features.History.TransactionHistory" />
+        <activity android:name=".User.Features.History.HistoryActivity" />
+        <activity android:name=".Doctor.DoctorDashboardActivity" />
+        <activity android:name=".User.Features.Videos.VideoDetailPage" />
+        <activity android:name=".User.Features.Videos.VideoActivity" />
+        <activity android:name=".User.Features.UserInfo.AddAddress" />
+        <activity android:name=".User.Features.UserInfo.ManageAddress" />
+        <activity android:name=".User.Features.Articles.ArticleDetail" />
+        <activity android:name=".User.Features.Appointments.BookingScreen" />
+        <activity android:name=".User.Features.Appointments.Appointments" />
+        <activity android:name=".User.Features.Appointments.BookAppointment" />
+        <activity android:name=".User.Features.Forums.Forums" />
+        <activity android:name=".User.Features.Payment.DataEncrypted" />
+        <activity android:name=".User.Features.Payment.AddCard" />
+        <activity android:name=".Common.About" />
+        <activity android:name=".User.Features.Payment.ManageCards" />
+        <activity android:name=".User.Features.Records.MedicalRecords" />
+        <activity android:name=".User.Features.Appointments.ViewDoctorProfile" />
+        <activity android:name=".User.Features.Payment.PaymentSuccess" />
+        <activity android:name=".User.Features.Appointments.FeedbackDoctor" />
+        <activity android:name=".User.Features.Payment.Payment" />
+        <activity android:name=".User.TurnOnNotification" />
+        <activity android:name=".User.Features.Articles.ArticleNotifications" />
+        <activity android:name=".User.Features.Reminder.AddReminder" />
+        <activity android:name=".User.Features.Reminder.ReminderActivity" />
+        <activity android:name=".User.Features.UserInfo.UserProfile" />
+        <activity android:name=".User.Features.Articles.ArticleBookmarks" />
+        <activity android:name=".User.Features.FlemingLens.FlemingLens" />
+        <activity android:name=".User.Features.Search.Search" />
+        <activity
+            android:name=".User.Settings"
+            android:label="@string/title_activity_settings" />
+        <activity android:name=".User.Features.Articles.FilterTags" />
+        <activity android:name=".User.Feedback" />
+        <activity android:name=".Common.Connection.CheckConnection2" />
+        <activity android:name=".Common.DoctorLogInSignUp.DoctorSignUp5" />
+        <activity android:name=".Common.DoctorLogInSignUp.DoctorSignUp4" />
+        <activity android:name=".Common.DoctorLogInSignUp.DoctorSignUp3" />
+        <activity android:name=".Common.DoctorLogInSignUp.DoctorSignUp2" />
+        <activity android:name=".Common.DoctorLogInSignUp.DoctorSignUp1" />
+        <activity android:name=".User.Features.Articles.Articles" />
+        <activity android:name=".Common.DoctorLogInSignUp.DoctorLogin" />
+        <activity android:name=".Common.ForgotPassword.User.SuccessMessage" />
+        <activity android:name=".Common.ForgotPassword.User.SetNewPassword" />
+        <activity android:name=".Common.ForgotPassword.User.MakeSelection" />
+        <activity android:name=".Common.ForgotPassword.User.ForgotPassword" />
+        <activity android:name=".Common.Connection.CheckConnection" />
+        <activity android:name=".Common.UserLogInSignUp.UserSignUp5" />
+        <activity android:name=".Common.UserLogInSignUp.UserSignUp4" />
+        <activity android:name=".Common.UserLogInSignUp.UserSignUp3" />
+        <activity android:name=".Common.UserLogInSignUp.UserSignUp2" />
+        <activity android:name=".Common.UserLogInSignUp.UserSignUp1" />
+        <activity android:name=".Common.DoctorLogInSignUp.DoctorStartUpScreen" />
+        <activity android:name=".Common.UserLogInSignUp.UserLogin" />
+        <activity android:name=".User.UserDashboardActivity" />
+        <activity android:name=".Common.UserLogInSignUp.UserStartUpScreen" />
+        <activity android:name=".Common.OnBoarding.IntroductoryActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-1751382422478430~1522127127" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBbK_4_ZfvSqLtIt76hjqSescJYoGNJQbM" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+</manifest>

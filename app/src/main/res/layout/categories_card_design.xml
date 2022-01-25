@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="2dp"
+    android:layout_margin="10dp"
+    app:cardElevation="8dp">
+
+    <RelativeLayout
+        android:id="@+id/holder"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:id="@+id/categories_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/appointments" />
+
+        <TextView android:id="@+id/categories_title"
+            android:text="Macdonald's"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

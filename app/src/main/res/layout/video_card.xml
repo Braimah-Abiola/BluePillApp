@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_margin="10dp"
+    android:id="@+id/video_card"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    android:layout_height="170dp">
+
+        <RelativeLayout
+            android:id="@+id/holder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/thumbnail"
+                android:src="@color/dark_blue_button"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"/>
+
+            <TextView
+                android:layout_margin="5dp"
+                android:textSize="12sp"
+                android:id="@+id/title"
+                android:text="Losing My Virginity - Insights from the book by Richard Branson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/thumbnail"/>
+
+        </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

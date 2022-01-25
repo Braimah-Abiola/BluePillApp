@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".User.Features.Payment.Payment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/signature_blue"
+            android:padding="15dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="15dp"
+                android:src="@drawable/ic_bc" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/verified"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/verified" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/verified"
+                android:text="Appointment confirmed!"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/date_bg">
+
+
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="Thu, 09 Apr"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/date"
+                android:text="08:00"
+                android:textColor="#4CAF50"
+                android:textSize="22sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_navigation" />
+
+            <TextView
+                android:textSize="18sp"
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/icon"
+                android:text="2 Rue de Ermesinde\nFrisange - Luxembourg\n3 km" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/location"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/components_divider" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+           <com.airbnb.lottie.LottieAnimationView
+               app:lottie_autoPlay="true"
+               app:lottie_loop="true"
+               app:lottie_rawRes="@raw/transaction_accepted"
+               android:layout_centerHorizontal="true"
+               android:layout_width="match_parent"
+               android:layout_height="200dp"
+               android:id="@+id/confirmed_anim"/>
+
+            <Button
+                android:id="@+id/add_to_reminder"
+                android:layout_marginTop="30dp"
+                android:layout_below="@id/confirmed_anim"
+                android:textAllCaps="false"
+                android:text="Add to reminder"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:text="2 days 3 hours before the appointment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/add_to_reminder"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
