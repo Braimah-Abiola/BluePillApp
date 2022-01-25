@@ -6,7 +6,7 @@
 * Tracker / Dashboard
 * AI Lens
 * Articles
-* Videoss
+* Videos
 
 ---
 ## FLEMING
